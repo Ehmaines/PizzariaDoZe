@@ -41,9 +41,10 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.GhostWhite;
-            label2.Location = new Point(79, 9);
+            label2.Location = new Point(55, 5);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(557, 65);
+            label2.Size = new Size(378, 45);
             label2.TabIndex = 6;
             label2.Text = "Cadastro de Ingredientes";
             // 
@@ -52,28 +53,30 @@
             label15.AutoSize = true;
             label15.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label15.ForeColor = Color.GhostWhite;
-            label15.Location = new Point(74, 161);
+            label15.Location = new Point(52, 97);
+            label15.Margin = new Padding(2, 0, 2, 0);
             label15.Name = "label15";
-            label15.Size = new Size(80, 32);
+            label15.Size = new Size(53, 21);
             label15.TabIndex = 30;
             label15.Text = "Nome";
             // 
             // txtNomeIngrediente
             // 
             txtNomeIngrediente.BackColor = Color.GhostWhite;
-            txtNomeIngrediente.Location = new Point(70, 197);
-            txtNomeIngrediente.Margin = new Padding(4);
+            txtNomeIngrediente.Location = new Point(49, 118);
+            txtNomeIngrediente.Margin = new Padding(3, 2, 3, 2);
             txtNomeIngrediente.Name = "txtNomeIngrediente";
-            txtNomeIngrediente.Size = new Size(579, 31);
+            txtNomeIngrediente.Size = new Size(406, 23);
             txtNomeIngrediente.TabIndex = 0;
             // 
             // btnSalvarIngrediente
             // 
             btnSalvarIngrediente.BackColor = Color.FromArgb(114, 138, 244);
             btnSalvarIngrediente.FlatAppearance.BorderColor = Color.GhostWhite;
-            btnSalvarIngrediente.Location = new Point(503, 248);
+            btnSalvarIngrediente.Location = new Point(352, 149);
+            btnSalvarIngrediente.Margin = new Padding(2, 2, 2, 2);
             btnSalvarIngrediente.Name = "btnSalvarIngrediente";
-            btnSalvarIngrediente.Size = new Size(146, 41);
+            btnSalvarIngrediente.Size = new Size(102, 25);
             btnSalvarIngrediente.TabIndex = 31;
             btnSalvarIngrediente.Text = "Salvar";
             btnSalvarIngrediente.UseVisualStyleBackColor = false;
@@ -83,9 +86,10 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.GhostWhite;
-            label1.Location = new Point(74, 90);
+            label1.Location = new Point(52, 54);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(91, 32);
+            label1.Size = new Size(60, 21);
             label1.TabIndex = 33;
             label1.Text = "Código";
             // 
@@ -93,24 +97,25 @@
             // 
             txtIngredienteId.BackColor = Color.GhostWhite;
             txtIngredienteId.Enabled = false;
-            txtIngredienteId.Location = new Point(74, 126);
-            txtIngredienteId.Margin = new Padding(4);
+            txtIngredienteId.Location = new Point(52, 76);
+            txtIngredienteId.Margin = new Padding(3, 2, 3, 2);
             txtIngredienteId.Name = "txtIngredienteId";
-            txtIngredienteId.Size = new Size(111, 31);
+            txtIngredienteId.Size = new Size(79, 23);
             txtIngredienteId.TabIndex = 1;
             // 
             // CadastroIngredienteForms
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(39, 39, 41);
-            ClientSize = new Size(705, 311);
+            ClientSize = new Size(487, 186);
             Controls.Add(label1);
             Controls.Add(txtIngredienteId);
             Controls.Add(btnSalvarIngrediente);
             Controls.Add(label15);
             Controls.Add(txtNomeIngrediente);
             Controls.Add(label2);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "CadastroIngredienteForms";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Cadastro Ingrediente";

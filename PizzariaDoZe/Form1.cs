@@ -2,14 +2,14 @@ namespace PizzariaDoZe
 {
     public partial class PaginaPrincipalForm : Form
     {
-        //CadastroFuncionarioForm cadastroFuncionario;
+        CadastroFuncionarioForms cadastroFuncionario;
         CadastroClienteForms cadastroCliente;
         CadastroIngredienteForms cadastroIgrediente;
         CadastroSaborForms cadastroSabor;
         public PaginaPrincipalForm()
         {
             InitializeComponent();
-            //cadastroFuncionario = new CadastroFuncionarioForm();
+            cadastroFuncionario = new CadastroFuncionarioForms();
             cadastroCliente = new CadastroClienteForms();
             cadastroIgrediente = new CadastroIngredienteForms();
             cadastroSabor = new CadastroSaborForms();
@@ -17,7 +17,7 @@ namespace PizzariaDoZe
 
         private void btnCadastroFuncionario_Click(object sender, EventArgs e)
         {
-            //cadastroFuncionario.ShowDialog();
+            cadastroFuncionario.ShowDialog();
         }
 
         private void btnCadastroCliente_Click(object sender, EventArgs e)
