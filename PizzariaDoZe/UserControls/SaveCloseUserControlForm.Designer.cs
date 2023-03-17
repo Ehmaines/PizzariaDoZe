@@ -28,10 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            btnSalvar = new Button();
+            btnCancelar = new Button();
+            panelBtnCancelarSalvar = new Panel();
+            panelBtnCancelarSalvar.SuspendLayout();
+            SuspendLayout();
+            // 
+            // btnSalvar
+            // 
+            btnSalvar.BackColor = Color.FromArgb(114, 138, 244);
+            btnSalvar.DialogResult = DialogResult.OK;
+            btnSalvar.FlatAppearance.BorderColor = Color.GhostWhite;
+            btnSalvar.Location = new Point(113, 5);
+            btnSalvar.Margin = new Padding(2);
+            btnSalvar.Name = "btnSalvar";
+            btnSalvar.Size = new Size(102, 25);
+            btnSalvar.TabIndex = 32;
+            btnSalvar.Text = "Salvar";
+            btnSalvar.UseVisualStyleBackColor = false;
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.BackColor = Color.FromArgb(114, 138, 244);
+            btnCancelar.DialogResult = DialogResult.Cancel;
+            btnCancelar.FlatAppearance.BorderColor = Color.GhostWhite;
+            btnCancelar.Location = new Point(7, 4);
+            btnCancelar.Margin = new Padding(2);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(102, 25);
+            btnCancelar.TabIndex = 33;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.UseVisualStyleBackColor = false;
+            // 
+            // panelBtnCancelarSalvar
+            // 
+            panelBtnCancelarSalvar.Controls.Add(btnCancelar);
+            panelBtnCancelarSalvar.Controls.Add(btnSalvar);
+            panelBtnCancelarSalvar.Location = new Point(3, 3);
+            panelBtnCancelarSalvar.Name = "panelBtnCancelarSalvar";
+            panelBtnCancelarSalvar.Size = new Size(218, 32);
+            panelBtnCancelarSalvar.TabIndex = 34;
+            // 
+            // SaveCloseUserControlForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(39, 39, 41);
+            Controls.Add(panelBtnCancelarSalvar);
+            Name = "SaveCloseUserControlForm";
+            Size = new Size(227, 43);
+            panelBtnCancelarSalvar.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion
+
+        public Button btnSalvar;
+        public Button btnCancelar;
+        public Panel panelBtnCancelarSalvar;
     }
 }
