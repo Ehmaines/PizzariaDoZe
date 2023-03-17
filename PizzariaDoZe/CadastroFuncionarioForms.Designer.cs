@@ -31,6 +31,7 @@
             enderecoUserControlForm1 = new EnderecoUserControlForm();
             label2 = new Label();
             panel1 = new Panel();
+            label11 = new Label();
             label10 = new Label();
             textBox1 = new TextBox();
             dateTimeValidadeCarteira = new DateTimePicker();
@@ -56,6 +57,7 @@
             txtEmail = new TextBox();
             maskedTxtTelefone = new MaskedTextBox();
             label13 = new Label();
+            saveCloseUserControlForm1 = new SaveCloseUserControlForm();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -63,7 +65,7 @@
             // 
             enderecoUserControlForm1.BackColor = Color.FromArgb(39, 39, 41);
             enderecoUserControlForm1.Location = new Point(364, 100);
-            enderecoUserControlForm1.Margin = new Padding(1, 1, 1, 1);
+            enderecoUserControlForm1.Margin = new Padding(1);
             enderecoUserControlForm1.Name = "enderecoUserControlForm1";
             enderecoUserControlForm1.Size = new Size(255, 452);
             enderecoUserControlForm1.TabIndex = 0;
@@ -82,6 +84,7 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(label11);
             panel1.Controls.Add(label10);
             panel1.Controls.Add(textBox1);
             panel1.Controls.Add(dateTimeValidadeCarteira);
@@ -108,10 +111,22 @@
             panel1.Controls.Add(maskedTxtTelefone);
             panel1.Controls.Add(label13);
             panel1.Location = new Point(22, 100);
-            panel1.Margin = new Padding(2, 2, 2, 2);
+            panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
             panel1.Size = new Size(292, 682);
             panel1.TabIndex = 10;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label11.ForeColor = Color.GhostWhite;
+            label11.Location = new Point(27, 262);
+            label11.Margin = new Padding(2, 0, 2, 0);
+            label11.Name = "label11";
+            label11.Size = new Size(54, 21);
+            label11.TabIndex = 64;
+            label11.Text = "Grupo";
             // 
             // label10
             // 
@@ -138,7 +153,7 @@
             // dateTimeValidadeCarteira
             // 
             dateTimeValidadeCarteira.Location = new Point(24, 378);
-            dateTimeValidadeCarteira.Margin = new Padding(2, 2, 2, 2);
+            dateTimeValidadeCarteira.Margin = new Padding(2);
             dateTimeValidadeCarteira.Name = "dateTimeValidadeCarteira";
             dateTimeValidadeCarteira.Size = new Size(219, 23);
             dateTimeValidadeCarteira.TabIndex = 61;
@@ -180,8 +195,8 @@
             // 
             radioBtnGrupoEntregador.AutoSize = true;
             radioBtnGrupoEntregador.ForeColor = Color.GhostWhite;
-            radioBtnGrupoEntregador.Location = new Point(200, 280);
-            radioBtnGrupoEntregador.Margin = new Padding(2, 2, 2, 2);
+            radioBtnGrupoEntregador.Location = new Point(200, 285);
+            radioBtnGrupoEntregador.Margin = new Padding(2);
             radioBtnGrupoEntregador.Name = "radioBtnGrupoEntregador";
             radioBtnGrupoEntregador.Size = new Size(83, 19);
             radioBtnGrupoEntregador.TabIndex = 57;
@@ -193,8 +208,8 @@
             // 
             radioBtnGrupoAtendente.AutoSize = true;
             radioBtnGrupoAtendente.ForeColor = Color.GhostWhite;
-            radioBtnGrupoAtendente.Location = new Point(112, 280);
-            radioBtnGrupoAtendente.Margin = new Padding(2, 2, 2, 2);
+            radioBtnGrupoAtendente.Location = new Point(112, 285);
+            radioBtnGrupoAtendente.Margin = new Padding(2);
             radioBtnGrupoAtendente.Name = "radioBtnGrupoAtendente";
             radioBtnGrupoAtendente.Size = new Size(80, 19);
             radioBtnGrupoAtendente.TabIndex = 56;
@@ -206,8 +221,8 @@
             // 
             radioBtnGrupoAdministrador.AutoSize = true;
             radioBtnGrupoAdministrador.ForeColor = Color.GhostWhite;
-            radioBtnGrupoAdministrador.Location = new Point(2, 280);
-            radioBtnGrupoAdministrador.Margin = new Padding(2, 2, 2, 2);
+            radioBtnGrupoAdministrador.Location = new Point(2, 285);
+            radioBtnGrupoAdministrador.Margin = new Padding(2);
             radioBtnGrupoAdministrador.Name = "radioBtnGrupoAdministrador";
             radioBtnGrupoAdministrador.Size = new Size(101, 19);
             radioBtnGrupoAdministrador.TabIndex = 55;
@@ -219,7 +234,7 @@
             // 
             maskedTxtVerificarSenha.ForeColor = Color.FromArgb(39, 39, 41);
             maskedTxtVerificarSenha.Location = new Point(24, 238);
-            maskedTxtVerificarSenha.Margin = new Padding(2, 2, 2, 2);
+            maskedTxtVerificarSenha.Margin = new Padding(2);
             maskedTxtVerificarSenha.Name = "maskedTxtVerificarSenha";
             maskedTxtVerificarSenha.PasswordChar = '*';
             maskedTxtVerificarSenha.Size = new Size(219, 23);
@@ -241,7 +256,7 @@
             // 
             maskedTxtSenha.ForeColor = Color.FromArgb(39, 39, 41);
             maskedTxtSenha.Location = new Point(24, 188);
-            maskedTxtSenha.Margin = new Padding(2, 2, 2, 2);
+            maskedTxtSenha.Margin = new Padding(2);
             maskedTxtSenha.Name = "maskedTxtSenha";
             maskedTxtSenha.PasswordChar = '*';
             maskedTxtSenha.Size = new Size(219, 23);
@@ -284,7 +299,7 @@
             // 
             maskedTxtCPF.ForeColor = Color.FromArgb(39, 39, 41);
             maskedTxtCPF.Location = new Point(90, 38);
-            maskedTxtCPF.Margin = new Padding(2, 2, 2, 2);
+            maskedTxtCPF.Margin = new Padding(2);
             maskedTxtCPF.Name = "maskedTxtCPF";
             maskedTxtCPF.Size = new Size(152, 23);
             maskedTxtCPF.TabIndex = 44;
@@ -369,7 +384,7 @@
             // 
             maskedTxtTelefone.ForeColor = Color.FromArgb(39, 39, 41);
             maskedTxtTelefone.Location = new Point(24, 599);
-            maskedTxtTelefone.Margin = new Padding(2, 2, 2, 2);
+            maskedTxtTelefone.Margin = new Padding(2);
             maskedTxtTelefone.Name = "maskedTxtTelefone";
             maskedTxtTelefone.Size = new Size(219, 23);
             maskedTxtTelefone.TabIndex = 23;
@@ -386,16 +401,26 @@
             label13.TabIndex = 24;
             label13.Text = "E-Mail";
             // 
+            // saveCloseUserControlForm1
+            // 
+            saveCloseUserControlForm1.BackColor = Color.FromArgb(39, 39, 41);
+            saveCloseUserControlForm1.Location = new Point(392, 739);
+            saveCloseUserControlForm1.Name = "saveCloseUserControlForm1";
+            saveCloseUserControlForm1.Size = new Size(227, 43);
+            saveCloseUserControlForm1.TabIndex = 11;
+            // 
             // CadastroFuncionarioForms
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(39, 39, 41);
             ClientSize = new Size(627, 789);
+            Controls.Add(saveCloseUserControlForm1);
             Controls.Add(panel1);
             Controls.Add(label2);
             Controls.Add(enderecoUserControlForm1);
-            Margin = new Padding(2, 2, 2, 2);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Margin = new Padding(2);
             Name = "CadastroFuncionarioForms";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CadastroFuncionarioForms";
@@ -435,5 +460,7 @@
         private TextBox textBox1;
         private DateTimePicker dateTimeValidadeCarteira;
         private Label label9;
+        private Label label11;
+        private SaveCloseUserControlForm saveCloseUserControlForm1;
     }
 }

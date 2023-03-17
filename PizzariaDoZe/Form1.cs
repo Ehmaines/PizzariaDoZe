@@ -34,5 +34,21 @@ namespace PizzariaDoZe
         {
             cadastroSabor.ShowDialog();
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void PaginaPrincipalForm_Resize(object sender, EventArgs e)
+        {
+            //tabControl1.Width = this.Width - 300;
+        }
+
+        private void PaginaPrincipalForm_Load(object sender, EventArgs e)
+        {
+            //tabControl1.Width = this.ClientSize.Width;
+
+        }
     }
 }

@@ -31,9 +31,9 @@
             label2 = new Label();
             label15 = new Label();
             txtNomeIngrediente = new TextBox();
-            btnSalvarIngrediente = new Button();
             label1 = new Label();
             txtIngredienteId = new TextBox();
+            saveCloseUserControlForm1 = new SaveCloseUserControlForm();
             SuspendLayout();
             // 
             // label2
@@ -69,18 +69,6 @@
             txtNomeIngrediente.Size = new Size(406, 23);
             txtNomeIngrediente.TabIndex = 0;
             // 
-            // btnSalvarIngrediente
-            // 
-            btnSalvarIngrediente.BackColor = Color.FromArgb(114, 138, 244);
-            btnSalvarIngrediente.FlatAppearance.BorderColor = Color.GhostWhite;
-            btnSalvarIngrediente.Location = new Point(352, 149);
-            btnSalvarIngrediente.Margin = new Padding(2, 2, 2, 2);
-            btnSalvarIngrediente.Name = "btnSalvarIngrediente";
-            btnSalvarIngrediente.Size = new Size(102, 25);
-            btnSalvarIngrediente.TabIndex = 31;
-            btnSalvarIngrediente.Text = "Salvar";
-            btnSalvarIngrediente.UseVisualStyleBackColor = false;
-            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -97,11 +85,19 @@
             // 
             txtIngredienteId.BackColor = Color.GhostWhite;
             txtIngredienteId.Enabled = false;
-            txtIngredienteId.Location = new Point(52, 76);
+            txtIngredienteId.Location = new Point(49, 77);
             txtIngredienteId.Margin = new Padding(3, 2, 3, 2);
             txtIngredienteId.Name = "txtIngredienteId";
             txtIngredienteId.Size = new Size(79, 23);
             txtIngredienteId.TabIndex = 1;
+            // 
+            // saveCloseUserControlForm1
+            // 
+            saveCloseUserControlForm1.BackColor = Color.FromArgb(39, 39, 41);
+            saveCloseUserControlForm1.Location = new Point(240, 146);
+            saveCloseUserControlForm1.Name = "saveCloseUserControlForm1";
+            saveCloseUserControlForm1.Size = new Size(230, 36);
+            saveCloseUserControlForm1.TabIndex = 34;
             // 
             // CadastroIngredienteForms
             // 
@@ -109,13 +105,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(39, 39, 41);
             ClientSize = new Size(487, 186);
+            Controls.Add(saveCloseUserControlForm1);
             Controls.Add(label1);
             Controls.Add(txtIngredienteId);
-            Controls.Add(btnSalvarIngrediente);
             Controls.Add(label15);
             Controls.Add(txtNomeIngrediente);
             Controls.Add(label2);
-            Margin = new Padding(2, 2, 2, 2);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Margin = new Padding(2);
             Name = "CadastroIngredienteForms";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Cadastro Ingrediente";
@@ -128,8 +125,8 @@
         private Label label2;
         private Label label15;
         private TextBox txtNomeIngrediente;
-        private Button btnSalvarIngrediente;
         private Label label1;
         private TextBox txtIngredienteId;
+        private SaveCloseUserControlForm saveCloseUserControlForm1;
     }
 }
