@@ -31,40 +31,40 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BarraLateralUserControlForm));
             panelBarraLateral = new Panel();
             panelConfiguracoes = new Panel();
-            pictureBox6 = new PictureBox();
+            pictureBoxConfiguracoes = new PictureBox();
             labelConfiguracoes = new Label();
             labelGrupo = new Label();
             labelBemVindo = new Label();
             pictureBoxUsuario = new PictureBox();
             panelSabores = new Panel();
-            pictureBox4 = new PictureBox();
+            pictureBoxSabores = new PictureBox();
             labelSabores = new Label();
             panelIngredientes = new Panel();
-            pictureBox3 = new PictureBox();
+            pictureBoxIngredientes = new PictureBox();
             labelIngredientes = new Label();
             panelClientes = new Panel();
-            pictureBox5 = new PictureBox();
+            pictureBoxClientes = new PictureBox();
             labelClientes = new Label();
             panelFuncionario = new Panel();
-            pictureBox2 = new PictureBox();
+            pictureBoxFuncionario = new PictureBox();
             labelFuncionarios = new Label();
             panelInicio = new Panel();
-            pictureBox1 = new PictureBox();
+            pictureBoxInicio = new PictureBox();
             labelInicio = new Label();
             panelBarraLateral.SuspendLayout();
             panelConfiguracoes.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxConfiguracoes).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxUsuario).BeginInit();
             panelSabores.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxSabores).BeginInit();
             panelIngredientes.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxIngredientes).BeginInit();
             panelClientes.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxClientes).BeginInit();
             panelFuncionario.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxFuncionario).BeginInit();
             panelInicio.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxInicio).BeginInit();
             SuspendLayout();
             // 
             // panelBarraLateral
@@ -86,23 +86,23 @@
             // panelConfiguracoes
             // 
             panelConfiguracoes.BackColor = Color.FromArgb(88, 95, 105);
-            panelConfiguracoes.Controls.Add(pictureBox6);
+            panelConfiguracoes.Controls.Add(pictureBoxConfiguracoes);
             panelConfiguracoes.Controls.Add(labelConfiguracoes);
             panelConfiguracoes.Location = new Point(3, 759);
             panelConfiguracoes.Name = "panelConfiguracoes";
             panelConfiguracoes.Size = new Size(318, 61);
             panelConfiguracoes.TabIndex = 5;
             // 
-            // pictureBox6
+            // pictureBoxConfiguracoes
             // 
-            pictureBox6.ErrorImage = null;
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(3, 9);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(45, 47);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 4;
-            pictureBox6.TabStop = false;
+            pictureBoxConfiguracoes.ErrorImage = null;
+            pictureBoxConfiguracoes.Image = (Image)resources.GetObject("pictureBoxConfiguracoes.Image");
+            pictureBoxConfiguracoes.Location = new Point(3, 9);
+            pictureBoxConfiguracoes.Name = "pictureBoxConfiguracoes";
+            pictureBoxConfiguracoes.Size = new Size(45, 47);
+            pictureBoxConfiguracoes.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxConfiguracoes.TabIndex = 4;
+            pictureBoxConfiguracoes.TabStop = false;
             // 
             // labelConfiguracoes
             // 
@@ -150,22 +150,22 @@
             // panelSabores
             // 
             panelSabores.BackColor = Color.FromArgb(88, 95, 105);
-            panelSabores.Controls.Add(pictureBox4);
+            panelSabores.Controls.Add(pictureBoxSabores);
             panelSabores.Controls.Add(labelSabores);
             panelSabores.Location = new Point(3, 692);
             panelSabores.Name = "panelSabores";
             panelSabores.Size = new Size(318, 61);
             panelSabores.TabIndex = 4;
             // 
-            // pictureBox4
+            // pictureBoxSabores
             // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(3, 9);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(45, 47);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 4;
-            pictureBox4.TabStop = false;
+            pictureBoxSabores.Image = (Image)resources.GetObject("pictureBoxSabores.Image");
+            pictureBoxSabores.Location = new Point(3, 9);
+            pictureBoxSabores.Name = "pictureBoxSabores";
+            pictureBoxSabores.Size = new Size(45, 47);
+            pictureBoxSabores.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxSabores.TabIndex = 4;
+            pictureBoxSabores.TabStop = false;
             // 
             // labelSabores
             // 
@@ -181,22 +181,22 @@
             // panelIngredientes
             // 
             panelIngredientes.BackColor = Color.FromArgb(88, 95, 105);
-            panelIngredientes.Controls.Add(pictureBox3);
+            panelIngredientes.Controls.Add(pictureBoxIngredientes);
             panelIngredientes.Controls.Add(labelIngredientes);
             panelIngredientes.Location = new Point(3, 625);
             panelIngredientes.Name = "panelIngredientes";
             panelIngredientes.Size = new Size(318, 61);
             panelIngredientes.TabIndex = 3;
             // 
-            // pictureBox3
+            // pictureBoxIngredientes
             // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(3, 11);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(45, 47);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 3;
-            pictureBox3.TabStop = false;
+            pictureBoxIngredientes.Image = (Image)resources.GetObject("pictureBoxIngredientes.Image");
+            pictureBoxIngredientes.Location = new Point(3, 11);
+            pictureBoxIngredientes.Name = "pictureBoxIngredientes";
+            pictureBoxIngredientes.Size = new Size(45, 47);
+            pictureBoxIngredientes.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxIngredientes.TabIndex = 3;
+            pictureBoxIngredientes.TabStop = false;
             // 
             // labelIngredientes
             // 
@@ -212,22 +212,22 @@
             // panelClientes
             // 
             panelClientes.BackColor = Color.FromArgb(88, 95, 105);
-            panelClientes.Controls.Add(pictureBox5);
+            panelClientes.Controls.Add(pictureBoxClientes);
             panelClientes.Controls.Add(labelClientes);
             panelClientes.Location = new Point(3, 558);
             panelClientes.Name = "panelClientes";
             panelClientes.Size = new Size(318, 61);
             panelClientes.TabIndex = 2;
             // 
-            // pictureBox5
+            // pictureBoxClientes
             // 
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(3, 7);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(45, 47);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 4;
-            pictureBox5.TabStop = false;
+            pictureBoxClientes.Image = (Image)resources.GetObject("pictureBoxClientes.Image");
+            pictureBoxClientes.Location = new Point(3, 7);
+            pictureBoxClientes.Name = "pictureBoxClientes";
+            pictureBoxClientes.Size = new Size(45, 47);
+            pictureBoxClientes.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxClientes.TabIndex = 4;
+            pictureBoxClientes.TabStop = false;
             // 
             // labelClientes
             // 
@@ -243,22 +243,22 @@
             // panelFuncionario
             // 
             panelFuncionario.BackColor = Color.FromArgb(88, 95, 105);
-            panelFuncionario.Controls.Add(pictureBox2);
+            panelFuncionario.Controls.Add(pictureBoxFuncionario);
             panelFuncionario.Controls.Add(labelFuncionarios);
             panelFuncionario.Location = new Point(3, 491);
             panelFuncionario.Name = "panelFuncionario";
             panelFuncionario.Size = new Size(318, 61);
             panelFuncionario.TabIndex = 1;
             // 
-            // pictureBox2
+            // pictureBoxFuncionario
             // 
-            pictureBox2.Image = Properties.Resources.users_alt;
-            pictureBox2.Location = new Point(3, 10);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(45, 47);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 2;
-            pictureBox2.TabStop = false;
+            pictureBoxFuncionario.Image = Properties.Resources.users_alt;
+            pictureBoxFuncionario.Location = new Point(3, 10);
+            pictureBoxFuncionario.Name = "pictureBoxFuncionario";
+            pictureBoxFuncionario.Size = new Size(45, 47);
+            pictureBoxFuncionario.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxFuncionario.TabIndex = 2;
+            pictureBoxFuncionario.TabStop = false;
             // 
             // labelFuncionarios
             // 
@@ -274,22 +274,22 @@
             // panelInicio
             // 
             panelInicio.BackColor = Color.FromArgb(163, 184, 247);
-            panelInicio.Controls.Add(pictureBox1);
+            panelInicio.Controls.Add(pictureBoxInicio);
             panelInicio.Controls.Add(labelInicio);
             panelInicio.Location = new Point(3, 424);
             panelInicio.Name = "panelInicio";
             panelInicio.Size = new Size(318, 61);
             panelInicio.TabIndex = 0;
             // 
-            // pictureBox1
+            // pictureBoxInicio
             // 
-            pictureBox1.Image = Properties.Resources.home1;
-            pictureBox1.Location = new Point(3, 8);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(45, 47);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
+            pictureBoxInicio.Image = Properties.Resources.home1;
+            pictureBoxInicio.Location = new Point(3, 8);
+            pictureBoxInicio.Name = "pictureBoxInicio";
+            pictureBoxInicio.Size = new Size(45, 47);
+            pictureBoxInicio.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxInicio.TabIndex = 1;
+            pictureBoxInicio.TabStop = false;
             // 
             // labelInicio
             // 
@@ -314,23 +314,23 @@
             panelBarraLateral.PerformLayout();
             panelConfiguracoes.ResumeLayout(false);
             panelConfiguracoes.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxConfiguracoes).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxUsuario).EndInit();
             panelSabores.ResumeLayout(false);
             panelSabores.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxSabores).EndInit();
             panelIngredientes.ResumeLayout(false);
             panelIngredientes.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxIngredientes).EndInit();
             panelClientes.ResumeLayout(false);
             panelClientes.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxClientes).EndInit();
             panelFuncionario.ResumeLayout(false);
             panelFuncionario.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxFuncionario).EndInit();
             panelInicio.ResumeLayout(false);
             panelInicio.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxInicio).EndInit();
             ResumeLayout(false);
         }
 
@@ -350,13 +350,13 @@
         public PictureBox pictureBoxUsuario;
         public Label labelGrupo;
         private Label labelBemVindo;
-        private PictureBox pictureBox1;
         public Panel panelConfiguracoes;
-        private PictureBox pictureBox6;
         public Label labelConfiguracoes;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox2;
+        public PictureBox pictureBoxInicio;
+        public PictureBox pictureBoxConfiguracoes;
+        public PictureBox pictureBoxSabores;
+        public PictureBox pictureBoxIngredientes;
+        public PictureBox pictureBoxClientes;
+        public PictureBox pictureBoxFuncionario;
     }
 }
