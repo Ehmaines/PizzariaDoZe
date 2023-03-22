@@ -46,8 +46,8 @@
             textBoxPesquisa = new TextBox();
             barraLateralUserControlForm = new BarraLateralUserControlForm();
             panelPrincipalInicio = new Panel();
-            dataGridView1 = new DataGridView();
             labelReultadosInicio = new Label();
+            dataGridView1 = new DataGridView();
             panel1.SuspendLayout();
             panelCadastroSabor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxCadastroSabor).BeginInit();
@@ -83,7 +83,7 @@
             panelCadastroSabor.Controls.Add(labelCadastroSabor);
             panelCadastroSabor.Controls.Add(pictureBoxCadastroSabor);
             panelCadastroSabor.Cursor = Cursors.Hand;
-            panelCadastroSabor.Location = new Point(1564, 46);
+            panelCadastroSabor.Location = new Point(1156, 39);
             panelCadastroSabor.Name = "panelCadastroSabor";
             panelCadastroSabor.Size = new Size(373, 79);
             panelCadastroSabor.TabIndex = 6;
@@ -118,7 +118,7 @@
             panelCadastroFuncionario.Controls.Add(labelAdicionarFuncionario);
             panelCadastroFuncionario.Controls.Add(pictureBox1);
             panelCadastroFuncionario.Cursor = Cursors.Hand;
-            panelCadastroFuncionario.Location = new Point(1564, 46);
+            panelCadastroFuncionario.Location = new Point(1156, 39);
             panelCadastroFuncionario.Name = "panelCadastroFuncionario";
             panelCadastroFuncionario.Size = new Size(373, 79);
             panelCadastroFuncionario.TabIndex = 4;
@@ -153,7 +153,7 @@
             panelCadastroIngrediente.Controls.Add(labelCadastroIngrediente);
             panelCadastroIngrediente.Controls.Add(pictureBoxCadastroIngrediente);
             panelCadastroIngrediente.Cursor = Cursors.Hand;
-            panelCadastroIngrediente.Location = new Point(1564, 46);
+            panelCadastroIngrediente.Location = new Point(1156, 39);
             panelCadastroIngrediente.Name = "panelCadastroIngrediente";
             panelCadastroIngrediente.Size = new Size(373, 79);
             panelCadastroIngrediente.TabIndex = 6;
@@ -199,7 +199,7 @@
             panelCadastroCliente.Controls.Add(labelCadastrarCliente);
             panelCadastroCliente.Controls.Add(pictureBoxCadastrarCliente);
             panelCadastroCliente.Cursor = Cursors.Hand;
-            panelCadastroCliente.Location = new Point(1564, 46);
+            panelCadastroCliente.Location = new Point(1156, 39);
             panelCadastroCliente.Name = "panelCadastroCliente";
             panelCadastroCliente.Size = new Size(373, 79);
             panelCadastroCliente.TabIndex = 5;
@@ -241,7 +241,7 @@
             barraLateralUserControlForm.BackColor = Color.FromArgb(64, 65, 71);
             barraLateralUserControlForm.Location = new Point(-2, 0);
             barraLateralUserControlForm.Name = "barraLateralUserControlForm";
-            barraLateralUserControlForm.Size = new Size(331, 1202);
+            barraLateralUserControlForm.Size = new Size(330, 1024);
             barraLateralUserControlForm.TabIndex = 2;
             // 
             // panelPrincipalInicio
@@ -250,8 +250,19 @@
             panelPrincipalInicio.Controls.Add(dataGridView1);
             panelPrincipalInicio.Location = new Point(375, 205);
             panelPrincipalInicio.Name = "panelPrincipalInicio";
-            panelPrincipalInicio.Size = new Size(1879, 954);
+            panelPrincipalInicio.Size = new Size(1480, 795);
             panelPrincipalInicio.TabIndex = 3;
+            // 
+            // labelReultadosInicio
+            // 
+            labelReultadosInicio.AutoSize = true;
+            labelReultadosInicio.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            labelReultadosInicio.ForeColor = Color.GhostWhite;
+            labelReultadosInicio.Location = new Point(656, 31);
+            labelReultadosInicio.Name = "labelReultadosInicio";
+            labelReultadosInicio.Size = new Size(142, 65);
+            labelReultadosInicio.TabIndex = 1;
+            labelReultadosInicio.Text = "Inicio";
             // 
             // dataGridView1
             // 
@@ -261,26 +272,15 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
             dataGridView1.RowTemplate.Height = 33;
-            dataGridView1.Size = new Size(1830, 820);
+            dataGridView1.Size = new Size(1431, 661);
             dataGridView1.TabIndex = 0;
-            // 
-            // labelReultadosInicio
-            // 
-            labelReultadosInicio.AutoSize = true;
-            labelReultadosInicio.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            labelReultadosInicio.ForeColor = Color.GhostWhite;
-            labelReultadosInicio.Location = new Point(848, 28);
-            labelReultadosInicio.Name = "labelReultadosInicio";
-            labelReultadosInicio.Size = new Size(142, 65);
-            labelReultadosInicio.TabIndex = 1;
-            labelReultadosInicio.Text = "Inicio";
             // 
             // PaginaPrincipalForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(39, 39, 41);
-            ClientSize = new Size(2288, 1187);
+            ClientSize = new Size(1877, 1017);
             Controls.Add(panelPrincipalInicio);
             Controls.Add(barraLateralUserControlForm);
             Controls.Add(panel1);

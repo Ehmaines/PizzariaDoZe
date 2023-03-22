@@ -80,7 +80,7 @@
             panelBarraLateral.Controls.Add(panelInicio);
             panelBarraLateral.Location = new Point(3, 3);
             panelBarraLateral.Name = "panelBarraLateral";
-            panelBarraLateral.Size = new Size(324, 1240);
+            panelBarraLateral.Size = new Size(324, 1067);
             panelBarraLateral.TabIndex = 0;
             // 
             // panelConfiguracoes
@@ -88,7 +88,7 @@
             panelConfiguracoes.BackColor = Color.FromArgb(88, 95, 105);
             panelConfiguracoes.Controls.Add(pictureBoxConfiguracoes);
             panelConfiguracoes.Controls.Add(labelConfiguracoes);
-            panelConfiguracoes.Location = new Point(3, 759);
+            panelConfiguracoes.Location = new Point(3, 680);
             panelConfiguracoes.Name = "panelConfiguracoes";
             panelConfiguracoes.Size = new Size(318, 61);
             panelConfiguracoes.TabIndex = 5;
@@ -152,7 +152,7 @@
             panelSabores.BackColor = Color.FromArgb(88, 95, 105);
             panelSabores.Controls.Add(pictureBoxSabores);
             panelSabores.Controls.Add(labelSabores);
-            panelSabores.Location = new Point(3, 692);
+            panelSabores.Location = new Point(3, 613);
             panelSabores.Name = "panelSabores";
             panelSabores.Size = new Size(318, 61);
             panelSabores.TabIndex = 4;
@@ -183,7 +183,7 @@
             panelIngredientes.BackColor = Color.FromArgb(88, 95, 105);
             panelIngredientes.Controls.Add(pictureBoxIngredientes);
             panelIngredientes.Controls.Add(labelIngredientes);
-            panelIngredientes.Location = new Point(3, 625);
+            panelIngredientes.Location = new Point(3, 546);
             panelIngredientes.Name = "panelIngredientes";
             panelIngredientes.Size = new Size(318, 61);
             panelIngredientes.TabIndex = 3;
@@ -214,7 +214,7 @@
             panelClientes.BackColor = Color.FromArgb(88, 95, 105);
             panelClientes.Controls.Add(pictureBoxClientes);
             panelClientes.Controls.Add(labelClientes);
-            panelClientes.Location = new Point(3, 558);
+            panelClientes.Location = new Point(3, 479);
             panelClientes.Name = "panelClientes";
             panelClientes.Size = new Size(318, 61);
             panelClientes.TabIndex = 2;
@@ -245,7 +245,7 @@
             panelFuncionario.BackColor = Color.FromArgb(88, 95, 105);
             panelFuncionario.Controls.Add(pictureBoxFuncionario);
             panelFuncionario.Controls.Add(labelFuncionarios);
-            panelFuncionario.Location = new Point(3, 491);
+            panelFuncionario.Location = new Point(3, 412);
             panelFuncionario.Name = "panelFuncionario";
             panelFuncionario.Size = new Size(318, 61);
             panelFuncionario.TabIndex = 1;
@@ -276,7 +276,7 @@
             panelInicio.BackColor = Color.FromArgb(163, 184, 247);
             panelInicio.Controls.Add(pictureBoxInicio);
             panelInicio.Controls.Add(labelInicio);
-            panelInicio.Location = new Point(3, 424);
+            panelInicio.Location = new Point(3, 345);
             panelInicio.Name = "panelInicio";
             panelInicio.Size = new Size(318, 61);
             panelInicio.TabIndex = 0;
@@ -309,7 +309,7 @@
             BackColor = Color.FromArgb(64, 65, 71);
             Controls.Add(panelBarraLateral);
             Name = "BarraLateralUserControlForm";
-            Size = new Size(327, 1243);
+            Size = new Size(327, 1073);
             panelBarraLateral.ResumeLayout(false);
             panelBarraLateral.PerformLayout();
             panelConfiguracoes.ResumeLayout(false);

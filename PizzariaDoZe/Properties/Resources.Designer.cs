@@ -63,16 +63,6 @@ namespace PizzariaDoZe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BolsaTermicaDeSementes__1_ {
-            get {
-                object obj = ResourceManager.GetObject("BolsaTermicaDeSementes (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap funcionarios {
             get {
                 object obj = ResourceManager.GetObject("funcionarios", resourceCulture);
@@ -96,16 +86,6 @@ namespace PizzariaDoZe.Properties {
         internal static System.Drawing.Bitmap home1 {
             get {
                 object obj = ResourceManager.GetObject("home1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap PizzaMock {
-            get {
-                object obj = ResourceManager.GetObject("PizzaMock", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
