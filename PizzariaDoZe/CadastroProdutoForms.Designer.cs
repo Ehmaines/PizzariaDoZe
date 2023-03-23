@@ -186,7 +186,9 @@
             Controls.Add(labelNome);
             Controls.Add(txtNomeIngrediente);
             Controls.Add(labelCadastroProdutos);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "CadastroProdutoForms";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "CadastroProdutoForms";
             ResumeLayout(false);
             PerformLayout();

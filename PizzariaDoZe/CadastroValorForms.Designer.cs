@@ -97,7 +97,7 @@
             labelCadastroValores.AutoSize = true;
             labelCadastroValores.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point);
             labelCadastroValores.ForeColor = Color.GhostWhite;
-            labelCadastroValores.Location = new Point(46, 9);
+            labelCadastroValores.Location = new Point(21, 9);
             labelCadastroValores.Margin = new Padding(2, 0, 2, 0);
             labelCadastroValores.Name = "labelCadastroValores";
             labelCadastroValores.Size = new Size(374, 54);
@@ -172,7 +172,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(39, 39, 41);
-            ClientSize = new Size(450, 618);
+            ClientSize = new Size(396, 618);
             Controls.Add(labelCategoria);
             Controls.Add(comboBox1);
             Controls.Add(labelTamanho);
@@ -185,7 +185,9 @@
             Controls.Add(labelValor);
             Controls.Add(txtValorTradicional);
             Controls.Add(labelCadastroValores);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "CadastroValorForms";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "CadastroValorForms";
             ResumeLayout(false);
             PerformLayout();
