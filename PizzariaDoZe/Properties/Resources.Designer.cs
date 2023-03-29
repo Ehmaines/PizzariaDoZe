@@ -91,6 +91,69 @@ namespace PizzariaDoZe.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Clientes.
+        /// </summary>
+        internal static string labelClientes_Text {
+            get {
+                return ResourceManager.GetString("labelClientes.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Configurações.
+        /// </summary>
+        internal static string labelConfiguracoes {
+            get {
+                return ResourceManager.GetString("labelConfiguracoes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Funcionários.
+        /// </summary>
+        internal static string labelFuncionarios_Text {
+            get {
+                return ResourceManager.GetString("labelFuncionarios.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ingredientes.
+        /// </summary>
+        internal static string labelIngredientes_Text {
+            get {
+                return ResourceManager.GetString("labelIngredientes.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Inicio.
+        /// </summary>
+        internal static string labelInicio_Text {
+            get {
+                return ResourceManager.GetString("labelInicio.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Produtos.
+        /// </summary>
+        internal static string labelProdutos_Text {
+            get {
+                return ResourceManager.GetString("labelProdutos.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sabores.
+        /// </summary>
+        internal static string labelSabores_Text {
+            get {
+                return ResourceManager.GetString("labelSabores.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap search {

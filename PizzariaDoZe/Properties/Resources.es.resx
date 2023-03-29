@@ -117,47 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="users-alt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\users-alt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="users-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\users-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="funcionarios" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\funcionarios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="home1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="labelClientes.Text" xml:space="preserve">
     <value>Clientes</value>
   </data>
-  <data name="labelConfiguracoes" xml:space="preserve">
-    <value>Configurações</value>
+  <data name="labelConfiguracoes.Text" xml:space="preserve">
+    <value>ajustes</value>
   </data>
   <data name="labelFuncionarios.Text" xml:space="preserve">
-    <value>Funcionários</value>
+    <value>Empleados</value>
   </data>
   <data name="labelIngredientes.Text" xml:space="preserve">
     <value>Ingredientes</value>
   </data>
   <data name="labelInicio.Text" xml:space="preserve">
-    <value>Inicio</value>
+    <value>Comenzar</value>
   </data>
   <data name="labelProdutos.Text" xml:space="preserve">
-    <value>Produtos</value>
+    <value>Productos</value>
   </data>
   <data name="labelSabores.Text" xml:space="preserve">
     <value>Sabores</value>
+  </data>
+  <data name="labelValores.Text" xml:space="preserve">
+    <value>Valores</value>
   </data>
 </root>

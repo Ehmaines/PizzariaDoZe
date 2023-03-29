@@ -11,6 +11,7 @@ namespace PizzariaDoZe
         public PaginaPrincipalForm()
         {
             InitializeComponent();
+
             cadastroFuncionario = new CadastroFuncionarioForms();
             cadastroCliente = new CadastroClienteForms();
             cadastroIgrediente = new CadastroIngredienteForms();

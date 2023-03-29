@@ -31,32 +31,32 @@
             enderecoUserControlForm1 = new EnderecoUserControlForm();
             label2 = new Label();
             panel1 = new Panel();
-            label11 = new Label();
-            label10 = new Label();
+            labelGrupo = new Label();
+            labelObservacao = new Label();
             textBox1 = new TextBox();
             dateTimeValidadeCarteira = new DateTimePicker();
-            label9 = new Label();
-            label8 = new Label();
+            labelValidade = new Label();
+            labelCarteiraMotorista = new Label();
             txtCarteiraMotorista = new TextBox();
             radioBtnGrupoEntregador = new RadioButton();
             radioBtnGrupoAtendente = new RadioButton();
             radioBtnGrupoAdministrador = new RadioButton();
             maskedTxtVerificarSenha = new MaskedTextBox();
-            label7 = new Label();
+            labelVerificarSenha = new Label();
             maskedTxtSenha = new MaskedTextBox();
-            label6 = new Label();
-            label4 = new Label();
+            labelSenha = new Label();
+            labelMatricula = new Label();
             txtMatricula = new TextBox();
             maskedTxtCPF = new MaskedTextBox();
-            label5 = new Label();
-            label3 = new Label();
+            labelCPF = new Label();
+            labelId = new Label();
             txtID = new TextBox();
-            label1 = new Label();
+            labelNome = new Label();
             txtNome = new TextBox();
-            label12 = new Label();
+            labelTelefone = new Label();
             txtEmail = new TextBox();
             maskedTxtTelefone = new MaskedTextBox();
-            label13 = new Label();
+            labelEmail = new Label();
             saveCloseUserControlForm1 = new SaveCloseUserControlForm();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -84,61 +84,61 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(label11);
-            panel1.Controls.Add(label10);
+            panel1.Controls.Add(labelGrupo);
+            panel1.Controls.Add(labelObservacao);
             panel1.Controls.Add(textBox1);
             panel1.Controls.Add(dateTimeValidadeCarteira);
-            panel1.Controls.Add(label9);
-            panel1.Controls.Add(label8);
+            panel1.Controls.Add(labelValidade);
+            panel1.Controls.Add(labelCarteiraMotorista);
             panel1.Controls.Add(txtCarteiraMotorista);
             panel1.Controls.Add(radioBtnGrupoEntregador);
             panel1.Controls.Add(radioBtnGrupoAtendente);
             panel1.Controls.Add(radioBtnGrupoAdministrador);
             panel1.Controls.Add(maskedTxtVerificarSenha);
-            panel1.Controls.Add(label7);
+            panel1.Controls.Add(labelVerificarSenha);
             panel1.Controls.Add(maskedTxtSenha);
-            panel1.Controls.Add(label6);
-            panel1.Controls.Add(label4);
+            panel1.Controls.Add(labelSenha);
+            panel1.Controls.Add(labelMatricula);
             panel1.Controls.Add(txtMatricula);
             panel1.Controls.Add(maskedTxtCPF);
-            panel1.Controls.Add(label5);
-            panel1.Controls.Add(label3);
+            panel1.Controls.Add(labelCPF);
+            panel1.Controls.Add(labelId);
             panel1.Controls.Add(txtID);
-            panel1.Controls.Add(label1);
+            panel1.Controls.Add(labelNome);
             panel1.Controls.Add(txtNome);
-            panel1.Controls.Add(label12);
+            panel1.Controls.Add(labelTelefone);
             panel1.Controls.Add(txtEmail);
             panel1.Controls.Add(maskedTxtTelefone);
-            panel1.Controls.Add(label13);
+            panel1.Controls.Add(labelEmail);
             panel1.Location = new Point(25, 133);
             panel1.Margin = new Padding(2, 3, 2, 3);
             panel1.Name = "panel1";
             panel1.Size = new Size(334, 909);
             panel1.TabIndex = 10;
             // 
-            // label11
+            // labelGrupo
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.ForeColor = Color.GhostWhite;
-            label11.Location = new Point(31, 349);
-            label11.Margin = new Padding(2, 0, 2, 0);
-            label11.Name = "label11";
-            label11.Size = new Size(68, 28);
-            label11.TabIndex = 64;
-            label11.Text = "Grupo";
+            labelGrupo.AutoSize = true;
+            labelGrupo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelGrupo.ForeColor = Color.GhostWhite;
+            labelGrupo.Location = new Point(31, 349);
+            labelGrupo.Margin = new Padding(2, 0, 2, 0);
+            labelGrupo.Name = "labelGrupo";
+            labelGrupo.Size = new Size(68, 28);
+            labelGrupo.TabIndex = 64;
+            labelGrupo.Text = "Grupo";
             // 
-            // label10
+            // labelObservacao
             // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.ForeColor = Color.GhostWhite;
-            label10.Location = new Point(31, 549);
-            label10.Margin = new Padding(2, 0, 2, 0);
-            label10.Name = "label10";
-            label10.Size = new Size(115, 28);
-            label10.TabIndex = 62;
-            label10.Text = "Observação";
+            labelObservacao.AutoSize = true;
+            labelObservacao.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelObservacao.ForeColor = Color.GhostWhite;
+            labelObservacao.Location = new Point(31, 549);
+            labelObservacao.Margin = new Padding(2, 0, 2, 0);
+            labelObservacao.Name = "labelObservacao";
+            labelObservacao.Size = new Size(115, 28);
+            labelObservacao.TabIndex = 62;
+            labelObservacao.Text = "Observação";
             // 
             // textBox1
             // 
@@ -157,29 +157,29 @@
             dateTimeValidadeCarteira.Size = new Size(250, 27);
             dateTimeValidadeCarteira.TabIndex = 61;
             // 
-            // label9
+            // labelValidade
             // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.ForeColor = Color.GhostWhite;
-            label9.Location = new Point(31, 476);
-            label9.Margin = new Padding(2, 0, 2, 0);
-            label9.Name = "label9";
-            label9.Size = new Size(87, 28);
-            label9.TabIndex = 60;
-            label9.Text = "Validade";
+            labelValidade.AutoSize = true;
+            labelValidade.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelValidade.ForeColor = Color.GhostWhite;
+            labelValidade.Location = new Point(31, 476);
+            labelValidade.Margin = new Padding(2, 0, 2, 0);
+            labelValidade.Name = "labelValidade";
+            labelValidade.Size = new Size(87, 28);
+            labelValidade.TabIndex = 60;
+            labelValidade.Text = "Validade";
             // 
-            // label8
+            // labelCarteiraMotorista
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.ForeColor = Color.GhostWhite;
-            label8.Location = new Point(31, 405);
-            label8.Margin = new Padding(2, 0, 2, 0);
-            label8.Name = "label8";
-            label8.Size = new Size(198, 28);
-            label8.TabIndex = 58;
-            label8.Text = "Carteira de Motorista";
+            labelCarteiraMotorista.AutoSize = true;
+            labelCarteiraMotorista.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelCarteiraMotorista.ForeColor = Color.GhostWhite;
+            labelCarteiraMotorista.Location = new Point(31, 405);
+            labelCarteiraMotorista.Margin = new Padding(2, 0, 2, 0);
+            labelCarteiraMotorista.Name = "labelCarteiraMotorista";
+            labelCarteiraMotorista.Size = new Size(198, 28);
+            labelCarteiraMotorista.TabIndex = 58;
+            labelCarteiraMotorista.Text = "Carteira de Motorista";
             // 
             // txtCarteiraMotorista
             // 
@@ -238,17 +238,17 @@
             maskedTxtVerificarSenha.Size = new Size(250, 27);
             maskedTxtVerificarSenha.TabIndex = 53;
             // 
-            // label7
+            // labelVerificarSenha
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.ForeColor = Color.GhostWhite;
-            label7.Location = new Point(27, 289);
-            label7.Margin = new Padding(2, 0, 2, 0);
-            label7.Name = "label7";
-            label7.Size = new Size(140, 28);
-            label7.TabIndex = 54;
-            label7.Text = "Verificar Senha";
+            labelVerificarSenha.AutoSize = true;
+            labelVerificarSenha.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelVerificarSenha.ForeColor = Color.GhostWhite;
+            labelVerificarSenha.Location = new Point(27, 289);
+            labelVerificarSenha.Margin = new Padding(2, 0, 2, 0);
+            labelVerificarSenha.Name = "labelVerificarSenha";
+            labelVerificarSenha.Size = new Size(140, 28);
+            labelVerificarSenha.TabIndex = 54;
+            labelVerificarSenha.Text = "Verificar Senha";
             // 
             // maskedTxtSenha
             // 
@@ -260,29 +260,29 @@
             maskedTxtSenha.Size = new Size(250, 27);
             maskedTxtSenha.TabIndex = 51;
             // 
-            // label6
+            // labelSenha
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.ForeColor = Color.GhostWhite;
-            label6.Location = new Point(27, 223);
-            label6.Margin = new Padding(2, 0, 2, 0);
-            label6.Name = "label6";
-            label6.Size = new Size(65, 28);
-            label6.TabIndex = 52;
-            label6.Text = "Senha";
+            labelSenha.AutoSize = true;
+            labelSenha.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelSenha.ForeColor = Color.GhostWhite;
+            labelSenha.Location = new Point(27, 223);
+            labelSenha.Margin = new Padding(2, 0, 2, 0);
+            labelSenha.Name = "labelSenha";
+            labelSenha.Size = new Size(65, 28);
+            labelSenha.TabIndex = 52;
+            labelSenha.Text = "Senha";
             // 
-            // label4
+            // labelMatricula
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.GhostWhite;
-            label4.Location = new Point(31, 156);
-            label4.Margin = new Padding(2, 0, 2, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(94, 28);
-            label4.TabIndex = 49;
-            label4.Text = "Matricula";
+            labelMatricula.AutoSize = true;
+            labelMatricula.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelMatricula.ForeColor = Color.GhostWhite;
+            labelMatricula.Location = new Point(31, 156);
+            labelMatricula.Margin = new Padding(2, 0, 2, 0);
+            labelMatricula.Name = "labelMatricula";
+            labelMatricula.Size = new Size(94, 28);
+            labelMatricula.TabIndex = 49;
+            labelMatricula.Text = "Matricula";
             // 
             // txtMatricula
             // 
@@ -301,29 +301,29 @@
             maskedTxtCPF.Size = new Size(173, 27);
             maskedTxtCPF.TabIndex = 44;
             // 
-            // label5
+            // labelCPF
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.ForeColor = Color.GhostWhite;
-            label5.Location = new Point(103, 23);
-            label5.Margin = new Padding(2, 0, 2, 0);
-            label5.Name = "label5";
-            label5.Size = new Size(45, 28);
-            label5.TabIndex = 48;
-            label5.Text = "CPF";
+            labelCPF.AutoSize = true;
+            labelCPF.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelCPF.ForeColor = Color.GhostWhite;
+            labelCPF.Location = new Point(103, 23);
+            labelCPF.Margin = new Padding(2, 0, 2, 0);
+            labelCPF.Name = "labelCPF";
+            labelCPF.Size = new Size(45, 28);
+            labelCPF.TabIndex = 48;
+            labelCPF.Text = "CPF";
             // 
-            // label3
+            // labelId
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.GhostWhite;
-            label3.Location = new Point(27, 23);
-            label3.Margin = new Padding(2, 0, 2, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(29, 28);
-            label3.TabIndex = 47;
-            label3.Text = "Id";
+            labelId.AutoSize = true;
+            labelId.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelId.ForeColor = Color.GhostWhite;
+            labelId.Location = new Point(27, 23);
+            labelId.Margin = new Padding(2, 0, 2, 0);
+            labelId.Name = "labelId";
+            labelId.Size = new Size(29, 28);
+            labelId.TabIndex = 47;
+            labelId.Text = "Id";
             // 
             // txtID
             // 
@@ -334,17 +334,17 @@
             txtID.Size = new Size(69, 27);
             txtID.TabIndex = 43;
             // 
-            // label1
+            // labelNome
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.GhostWhite;
-            label1.Location = new Point(31, 91);
-            label1.Margin = new Padding(2, 0, 2, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(66, 28);
-            label1.TabIndex = 45;
-            label1.Text = "Nome";
+            labelNome.AutoSize = true;
+            labelNome.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelNome.ForeColor = Color.GhostWhite;
+            labelNome.Location = new Point(31, 91);
+            labelNome.Margin = new Padding(2, 0, 2, 0);
+            labelNome.Name = "labelNome";
+            labelNome.Size = new Size(66, 28);
+            labelNome.TabIndex = 45;
+            labelNome.Text = "Nome";
             // 
             // txtNome
             // 
@@ -354,17 +354,17 @@
             txtNome.Size = new Size(250, 27);
             txtNome.TabIndex = 46;
             // 
-            // label12
+            // labelTelefone
             // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label12.ForeColor = Color.GhostWhite;
-            label12.Location = new Point(27, 771);
-            label12.Margin = new Padding(2, 0, 2, 0);
-            label12.Name = "label12";
-            label12.Size = new Size(84, 28);
-            label12.TabIndex = 23;
-            label12.Text = "Telefone";
+            labelTelefone.AutoSize = true;
+            labelTelefone.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelTelefone.ForeColor = Color.GhostWhite;
+            labelTelefone.Location = new Point(27, 771);
+            labelTelefone.Margin = new Padding(2, 0, 2, 0);
+            labelTelefone.Name = "labelTelefone";
+            labelTelefone.Size = new Size(84, 28);
+            labelTelefone.TabIndex = 23;
+            labelTelefone.Text = "Telefone";
             // 
             // txtEmail
             // 
@@ -383,17 +383,17 @@
             maskedTxtTelefone.Size = new Size(250, 27);
             maskedTxtTelefone.TabIndex = 23;
             // 
-            // label13
+            // labelEmail
             // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label13.ForeColor = Color.GhostWhite;
-            label13.Location = new Point(27, 839);
-            label13.Margin = new Padding(2, 0, 2, 0);
-            label13.Name = "label13";
-            label13.Size = new Size(68, 28);
-            label13.TabIndex = 24;
-            label13.Text = "E-Mail";
+            labelEmail.AutoSize = true;
+            labelEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelEmail.ForeColor = Color.GhostWhite;
+            labelEmail.Location = new Point(27, 839);
+            labelEmail.Margin = new Padding(2, 0, 2, 0);
+            labelEmail.Name = "labelEmail";
+            labelEmail.Size = new Size(68, 28);
+            labelEmail.TabIndex = 24;
+            labelEmail.Text = "E-Mail";
             // 
             // saveCloseUserControlForm1
             // 
@@ -432,31 +432,31 @@
         private Label label2;
         private Panel panel1;
         private MaskedTextBox maskedTxtCPF;
-        private Label label5;
-        private Label label3;
+        private Label labelCPF;
+        private Label labelId;
         private TextBox txtID;
-        private Label label1;
+        private Label labelNome;
         private TextBox txtNome;
-        private Label label12;
+        private Label labelTelefone;
         private TextBox txtEmail;
         private MaskedTextBox maskedTxtTelefone;
-        private Label label13;
+        private Label labelEmail;
         private MaskedTextBox maskedTxtVerificarSenha;
-        private Label label7;
+        private Label labelVerificarSenha;
         private MaskedTextBox maskedTxtSenha;
-        private Label label6;
-        private Label label4;
+        private Label labelSenha;
+        private Label labelMatricula;
         private TextBox txtMatricula;
-        private Label label8;
+        private Label labelCarteiraMotorista;
         private TextBox txtCarteiraMotorista;
         private RadioButton radioBtnGrupoEntregador;
         private RadioButton radioBtnGrupoAtendente;
         private RadioButton radioBtnGrupoAdministrador;
-        private Label label10;
+        private Label labelObservacao;
         private TextBox textBox1;
         private DateTimePicker dateTimeValidadeCarteira;
-        private Label label9;
-        private Label label11;
+        private Label labelValidade;
+        private Label labelGrupo;
         private SaveCloseUserControlForm saveCloseUserControlForm1;
     }
 }

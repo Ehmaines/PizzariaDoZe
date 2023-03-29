@@ -1,3 +1,5 @@
+using System.Globalization;
+
 namespace PizzariaDoZe
 {
     internal static class Program
@@ -8,10 +10,15 @@ namespace PizzariaDoZe
         [STAThread]
         static void Main()
         {
+            string auxIdiomaRegiao = "es"; // en-US, es, pt-BR, etc
+                                              //ajusta o idioma/região
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(auxIdiomaRegiao);
+            Thread.CurrentThread.CurrentCulture = new CultureInfo(auxIdiomaRegiao);
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new PaginaPrincipalForm());
+
         }
     }
 }

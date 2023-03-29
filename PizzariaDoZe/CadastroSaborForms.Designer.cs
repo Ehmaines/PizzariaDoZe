@@ -29,96 +29,101 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroSaborForms));
-            label1 = new Label();
+            labelId = new Label();
             txtSaborId = new TextBox();
-            label2 = new Label();
-            label15 = new Label();
+            labelCadastroSabores = new Label();
+            labelNome = new Label();
             txtNomeSabor = new TextBox();
-            labal16 = new Label();
+            labalCategoria = new Label();
             comboBoxCategoriaSabor = new ComboBox();
             comboBoxTipoSabor = new ComboBox();
-            label3 = new Label();
+            labelTipo = new Label();
             panel1 = new Panel();
-            label4 = new Label();
+            labelImagem = new Label();
             pictureBox1 = new PictureBox();
             checkedListBox1 = new CheckedListBox();
-            label5 = new Label();
+            labelIngredientes = new Label();
             saveCloseUserControlForm1 = new SaveCloseUserControlForm();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // labelId
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.GhostWhite;
-            label1.Location = new Point(14, 12);
-            label1.Name = "label1";
-            label1.Size = new Size(91, 32);
-            label1.TabIndex = 35;
-            label1.Text = "Código";
+            labelId.AutoSize = true;
+            labelId.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelId.ForeColor = Color.GhostWhite;
+            labelId.Location = new Point(11, 10);
+            labelId.Margin = new Padding(2, 0, 2, 0);
+            labelId.Name = "labelId";
+            labelId.Size = new Size(29, 28);
+            labelId.TabIndex = 35;
+            labelId.Text = "Id";
             // 
             // txtSaborId
             // 
             txtSaborId.BackColor = Color.GhostWhite;
             txtSaborId.Enabled = false;
-            txtSaborId.Location = new Point(14, 48);
-            txtSaborId.Margin = new Padding(4, 3, 4, 3);
+            txtSaborId.Location = new Point(11, 38);
+            txtSaborId.Margin = new Padding(3, 2, 3, 2);
             txtSaborId.Name = "txtSaborId";
-            txtSaborId.Size = new Size(111, 31);
+            txtSaborId.Size = new Size(90, 27);
             txtSaborId.TabIndex = 34;
             // 
-            // label2
+            // labelCadastroSabores
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.GhostWhite;
-            label2.Location = new Point(94, 8);
-            label2.Name = "label2";
-            label2.Size = new Size(462, 65);
-            label2.TabIndex = 36;
-            label2.Text = "Cadastro de Sabores";
+            labelCadastroSabores.AutoSize = true;
+            labelCadastroSabores.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            labelCadastroSabores.ForeColor = Color.GhostWhite;
+            labelCadastroSabores.Location = new Point(75, 6);
+            labelCadastroSabores.Margin = new Padding(2, 0, 2, 0);
+            labelCadastroSabores.Name = "labelCadastroSabores";
+            labelCadastroSabores.Size = new Size(387, 54);
+            labelCadastroSabores.TabIndex = 36;
+            labelCadastroSabores.Text = "Cadastro de Sabores";
             // 
-            // label15
+            // labelNome
             // 
-            label15.AutoSize = true;
-            label15.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label15.ForeColor = Color.GhostWhite;
-            label15.Location = new Point(14, 97);
-            label15.Name = "label15";
-            label15.Size = new Size(80, 32);
-            label15.TabIndex = 38;
-            label15.Text = "Nome";
+            labelNome.AutoSize = true;
+            labelNome.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelNome.ForeColor = Color.GhostWhite;
+            labelNome.Location = new Point(11, 78);
+            labelNome.Margin = new Padding(2, 0, 2, 0);
+            labelNome.Name = "labelNome";
+            labelNome.Size = new Size(66, 28);
+            labelNome.TabIndex = 38;
+            labelNome.Text = "Nome";
             // 
             // txtNomeSabor
             // 
             txtNomeSabor.BackColor = Color.GhostWhite;
-            txtNomeSabor.Location = new Point(10, 133);
-            txtNomeSabor.Margin = new Padding(4, 3, 4, 3);
+            txtNomeSabor.Location = new Point(8, 106);
+            txtNomeSabor.Margin = new Padding(3, 2, 3, 2);
             txtNomeSabor.Name = "txtNomeSabor";
-            txtNomeSabor.Size = new Size(297, 31);
+            txtNomeSabor.Size = new Size(238, 27);
             txtNomeSabor.TabIndex = 37;
             // 
-            // labal16
+            // labalCategoria
             // 
-            labal16.AutoSize = true;
-            labal16.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            labal16.ForeColor = Color.GhostWhite;
-            labal16.Location = new Point(10, 178);
-            labal16.Name = "labal16";
-            labal16.Size = new Size(116, 32);
-            labal16.TabIndex = 39;
-            labal16.Text = "Categoria";
+            labalCategoria.AutoSize = true;
+            labalCategoria.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labalCategoria.ForeColor = Color.GhostWhite;
+            labalCategoria.Location = new Point(8, 142);
+            labalCategoria.Margin = new Padding(2, 0, 2, 0);
+            labalCategoria.Name = "labalCategoria";
+            labalCategoria.Size = new Size(97, 28);
+            labalCategoria.TabIndex = 39;
+            labalCategoria.Text = "Categoria";
             // 
             // comboBoxCategoriaSabor
             // 
             comboBoxCategoriaSabor.BackColor = Color.GhostWhite;
             comboBoxCategoriaSabor.FormattingEnabled = true;
             comboBoxCategoriaSabor.Items.AddRange(new object[] { "tradicional", "especial" });
-            comboBoxCategoriaSabor.Location = new Point(10, 213);
+            comboBoxCategoriaSabor.Location = new Point(8, 170);
+            comboBoxCategoriaSabor.Margin = new Padding(2, 2, 2, 2);
             comboBoxCategoriaSabor.Name = "comboBoxCategoriaSabor";
-            comboBoxCategoriaSabor.Size = new Size(297, 33);
+            comboBoxCategoriaSabor.Size = new Size(238, 28);
             comboBoxCategoriaSabor.TabIndex = 40;
             // 
             // comboBoxTipoSabor
@@ -126,56 +131,61 @@
             comboBoxTipoSabor.BackColor = Color.GhostWhite;
             comboBoxTipoSabor.FormattingEnabled = true;
             comboBoxTipoSabor.Items.AddRange(new object[] { "salgada", "doce" });
-            comboBoxTipoSabor.Location = new Point(9, 308);
+            comboBoxTipoSabor.Location = new Point(7, 246);
+            comboBoxTipoSabor.Margin = new Padding(2, 2, 2, 2);
             comboBoxTipoSabor.Name = "comboBoxTipoSabor";
-            comboBoxTipoSabor.Size = new Size(297, 33);
+            comboBoxTipoSabor.Size = new Size(238, 28);
             comboBoxTipoSabor.TabIndex = 42;
             // 
-            // label3
+            // labelTipo
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.GhostWhite;
-            label3.Location = new Point(9, 273);
-            label3.Name = "label3";
-            label3.Size = new Size(61, 32);
-            label3.TabIndex = 41;
-            label3.Text = "Tipo";
+            labelTipo.AutoSize = true;
+            labelTipo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelTipo.ForeColor = Color.GhostWhite;
+            labelTipo.Location = new Point(7, 218);
+            labelTipo.Margin = new Padding(2, 0, 2, 0);
+            labelTipo.Name = "labelTipo";
+            labelTipo.Size = new Size(51, 28);
+            labelTipo.TabIndex = 41;
+            labelTipo.Text = "Tipo";
             // 
             // panel1
             // 
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(label1);
+            panel1.Controls.Add(labelImagem);
+            panel1.Controls.Add(labelId);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(txtSaborId);
             panel1.Controls.Add(comboBoxTipoSabor);
             panel1.Controls.Add(txtNomeSabor);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(label15);
+            panel1.Controls.Add(labelTipo);
+            panel1.Controls.Add(labelNome);
             panel1.Controls.Add(comboBoxCategoriaSabor);
-            panel1.Controls.Add(labal16);
-            panel1.Location = new Point(11, 98);
+            panel1.Controls.Add(labalCategoria);
+            panel1.Location = new Point(9, 78);
+            panel1.Margin = new Padding(2, 2, 2, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(360, 668);
+            panel1.Size = new Size(288, 534);
             panel1.TabIndex = 44;
             // 
-            // label4
+            // labelImagem
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.GhostWhite;
-            label4.Location = new Point(14, 368);
-            label4.Name = "label4";
-            label4.Size = new Size(101, 32);
-            label4.TabIndex = 43;
-            label4.Text = "Imagem";
+            labelImagem.AutoSize = true;
+            labelImagem.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelImagem.ForeColor = Color.GhostWhite;
+            labelImagem.Location = new Point(11, 294);
+            labelImagem.Margin = new Padding(2, 0, 2, 0);
+            labelImagem.Name = "labelImagem";
+            labelImagem.Size = new Size(83, 28);
+            labelImagem.TabIndex = 43;
+            labelImagem.Text = "Imagem";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(10, 403);
+            pictureBox1.Location = new Point(8, 322);
+            pictureBox1.Margin = new Padding(2, 2, 2, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(321, 255);
+            pictureBox1.Size = new Size(257, 204);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 45;
             pictureBox1.TabStop = false;
@@ -186,45 +196,48 @@
             checkedListBox1.ForeColor = Color.FromArgb(39, 39, 41);
             checkedListBox1.FormattingEnabled = true;
             checkedListBox1.Items.AddRange(new object[] { "Queijo", "Frango", "Catupiry", "Cebola", "Tomate", "Bacon", "Cheddar" });
-            checkedListBox1.Location = new Point(409, 138);
+            checkedListBox1.Location = new Point(327, 110);
+            checkedListBox1.Margin = new Padding(2, 2, 2, 2);
             checkedListBox1.Name = "checkedListBox1";
-            checkedListBox1.Size = new Size(213, 592);
+            checkedListBox1.Size = new Size(171, 466);
             checkedListBox1.TabIndex = 45;
             // 
-            // label5
+            // labelIngredientes
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.ForeColor = Color.GhostWhite;
-            label5.Location = new Point(409, 98);
-            label5.Name = "label5";
-            label5.Size = new Size(147, 32);
-            label5.TabIndex = 46;
-            label5.Text = "Ingredientes";
+            labelIngredientes.AutoSize = true;
+            labelIngredientes.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelIngredientes.ForeColor = Color.GhostWhite;
+            labelIngredientes.Location = new Point(327, 78);
+            labelIngredientes.Margin = new Padding(2, 0, 2, 0);
+            labelIngredientes.Name = "labelIngredientes";
+            labelIngredientes.Size = new Size(120, 28);
+            labelIngredientes.TabIndex = 46;
+            labelIngredientes.Text = "Ingredientes";
             // 
             // saveCloseUserControlForm1
             // 
             saveCloseUserControlForm1.BackColor = Color.FromArgb(39, 39, 41);
-            saveCloseUserControlForm1.Location = new Point(311, 775);
-            saveCloseUserControlForm1.Margin = new Padding(6, 8, 6, 8);
+            saveCloseUserControlForm1.Location = new Point(249, 620);
+            saveCloseUserControlForm1.Margin = new Padding(5, 6, 5, 6);
             saveCloseUserControlForm1.Name = "saveCloseUserControlForm1";
-            saveCloseUserControlForm1.Size = new Size(324, 72);
+            saveCloseUserControlForm1.Size = new Size(259, 58);
             saveCloseUserControlForm1.TabIndex = 48;
             // 
             // CadastroSaborForms
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(39, 39, 41);
-            ClientSize = new Size(630, 843);
+            ClientSize = new Size(507, 682);
             Controls.Add(saveCloseUserControlForm1);
-            Controls.Add(label5);
+            Controls.Add(labelIngredientes);
             Controls.Add(checkedListBox1);
             Controls.Add(panel1);
-            Controls.Add(label2);
+            Controls.Add(labelCadastroSabores);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
-            MaximumSize = new Size(652, 899);
-            MinimumSize = new Size(652, 899);
+            Margin = new Padding(2, 2, 2, 2);
+            MaximumSize = new Size(525, 729);
+            MinimumSize = new Size(525, 729);
             Name = "CadastroSaborForms";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CadastroSaborForms";
@@ -237,20 +250,20 @@
 
         #endregion
 
-        private Label label1;
+        private Label labelId;
         private TextBox txtSaborId;
-        private Label label2;
-        private Label label15;
+        private Label labelCadastroSabores;
+        private Label labelNome;
         private TextBox txtNomeSabor;
-        private Label labal16;
+        private Label labalCategoria;
         private ComboBox comboBoxCategoriaSabor;
         private ComboBox comboBoxTipoSabor;
-        private Label label3;
+        private Label labelTipo;
         private Panel panel1;
-        private Label label4;
+        private Label labelImagem;
         private PictureBox pictureBox1;
         private CheckedListBox checkedListBox1;
-        private Label label5;
+        private Label labelIngredientes;
         private SaveCloseUserControlForm saveCloseUserControlForm1;
     }
 }

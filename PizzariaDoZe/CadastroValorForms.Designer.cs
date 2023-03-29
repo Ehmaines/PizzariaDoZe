@@ -163,9 +163,9 @@
             labelCategoria.Location = new Point(37, 294);
             labelCategoria.Margin = new Padding(2, 0, 2, 0);
             labelCategoria.Name = "labelCategoria";
-            labelCategoria.Size = new Size(91, 28);
+            labelCategoria.Size = new Size(97, 28);
             labelCategoria.TabIndex = 51;
-            labelCategoria.Text = "Tamanho";
+            labelCategoria.Text = "Categoria";
             // 
             // CadastroValorForms
             // 
