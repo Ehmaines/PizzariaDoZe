@@ -117,28 +117,124 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="labelBairro.Text" xml:space="preserve">
+    <value>Neighborhood</value>
+  </data>
+  <data name="labelBemVindo.Text" xml:space="preserve">
+    <value>Welcome to)</value>
+  </data>
+  <data name="labelCarteiraMotorista.Text" xml:space="preserve">
+    <value>Driver's license</value>
+  </data>
+  <data name="labelCEP.Text" xml:space="preserve">
+    <value>Zip code</value>
+  </data>
+  <data name="labelCidade.Text" xml:space="preserve">
+    <value>City</value>
+  </data>
   <data name="labelClientes.Text" xml:space="preserve">
     <value>Customers</value>
+  </data>
+  <data name="labelClientes.Text1" xml:space="preserve">
+    <value>Customers</value>
+  </data>
+  <data name="labelComplemento.Text" xml:space="preserve">
+    <value>Complement</value>
+  </data>
+  <data name="labelConfiguracoes" xml:space="preserve">
+    <value>settings</value>
   </data>
   <data name="labelConfiguracoes.Text" xml:space="preserve">
     <value>Settings</value>
   </data>
+  <data name="labelCPF.Text" xml:space="preserve">
+    <value>CPF</value>
+  </data>
+  <data name="labelEmail.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="labelEstado.Text" xml:space="preserve">
+    <value>state</value>
+  </data>
   <data name="labelFuncionarios.Text" xml:space="preserve">
     <value>Employees</value>
   </data>
+  <data name="labelFuncionarios.Text1" xml:space="preserve">
+    <value>Employees</value>
+  </data>
+  <data name="labelGrupo.Text" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="labelId.Text" xml:space="preserve">
+    <value>Code</value>
+  </data>
   <data name="labelIngredientes.Text" xml:space="preserve">
+    <value>Ingredients</value>
+  </data>
+  <data name="labelIngredientes.Text1" xml:space="preserve">
     <value>Ingredients</value>
   </data>
   <data name="labelInicio.Text" xml:space="preserve">
     <value>Start</value>
   </data>
+  <data name="labelInicio.Text1" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="labelLogradouro.Text" xml:space="preserve">
+    <value>Public place</value>
+  </data>
+  <data name="labelMatricula.Text" xml:space="preserve">
+    <value>Registration</value>
+  </data>
+  <data name="labelNome.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="labelNumero.Text" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="labelObservacao.Text" xml:space="preserve">
+    <value>Observation</value>
+  </data>
+  <data name="labelPais.Text" xml:space="preserve">
+    <value>Country</value>
+  </data>
   <data name="labelProdutos.Text" xml:space="preserve">
     <value>Products</value>
+  </data>
+  <data name="labelProdutos.Text1" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="labelReultadosInicio.Text" xml:space="preserve">
+    <value>Start</value>
   </data>
   <data name="labelSabores.Text" xml:space="preserve">
     <value>Flavors</value>
   </data>
+  <data name="labelSabores.Text1" xml:space="preserve">
+    <value>Flavors</value>
+  </data>
+  <data name="labelSenha.Text" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="labelTelefone.Text" xml:space="preserve">
+    <value>Telephone</value>
+  </data>
+  <data name="labelValidade.Text" xml:space="preserve">
+    <value>Validity</value>
+  </data>
   <data name="labelValores.Text" xml:space="preserve">
     <value>Values</value>
+  </data>
+  <data name="labelVerificarSenha.Text" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="radioBtnGrupoAdministrador.Text" xml:space="preserve">
+    <value>Administrator</value>
+  </data>
+  <data name="radioBtnGrupoAtendente.Text" xml:space="preserve">
+    <value>Attendant</value>
+  </data>
+  <data name="radioBtnGrupoEntregador.Text" xml:space="preserve">
+    <value>Deliveryman</value>
   </data>
 </root>

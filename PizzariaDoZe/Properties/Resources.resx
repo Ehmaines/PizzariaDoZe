@@ -139,14 +139,47 @@
   <data name="home1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="labelBairro.Text" xml:space="preserve">
+    <value>Bairro</value>
+  </data>
+  <data name="labelBemVindo.Text" xml:space="preserve">
+    <value>Bem Vindo(a)</value>
+  </data>
+  <data name="labelCarteiraMotorista.Text" xml:space="preserve">
+    <value>Carteira de Motorista</value>
+  </data>
+  <data name="labelCEP.Text" xml:space="preserve">
+    <value>CEP</value>
+  </data>
+  <data name="labelCidade.Text" xml:space="preserve">
+    <value>Cidade</value>
+  </data>
   <data name="labelClientes.Text" xml:space="preserve">
     <value>Clientes</value>
+  </data>
+  <data name="labelComplemento.Text" xml:space="preserve">
+    <value>Complemento</value>
   </data>
   <data name="labelConfiguracoes" xml:space="preserve">
     <value>Configurações</value>
   </data>
+  <data name="labelCPF.Text" xml:space="preserve">
+    <value>CPF</value>
+  </data>
+  <data name="labelEmail.Text" xml:space="preserve">
+    <value>E-Mail</value>
+  </data>
+  <data name="labelEstado.Text" xml:space="preserve">
+    <value>Estado</value>
+  </data>
   <data name="labelFuncionarios.Text" xml:space="preserve">
     <value>Funcionários</value>
+  </data>
+  <data name="labelGrupo.Text" xml:space="preserve">
+    <value>Grupo</value>
+  </data>
+  <data name="labelId.Text" xml:space="preserve">
+    <value>Código</value>
   </data>
   <data name="labelIngredientes.Text" xml:space="preserve">
     <value>Ingredientes</value>
@@ -154,10 +187,52 @@
   <data name="labelInicio.Text" xml:space="preserve">
     <value>Inicio</value>
   </data>
+  <data name="labelLogradouro.Text" xml:space="preserve">
+    <value>Logradouro</value>
+  </data>
+  <data name="labelMatricula.Text" xml:space="preserve">
+    <value>Matricula</value>
+  </data>
+  <data name="labelNome.Text" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="labelNumero.Text" xml:space="preserve">
+    <value>Numero</value>
+  </data>
+  <data name="labelObservacao.Text" xml:space="preserve">
+    <value>Observação</value>
+  </data>
+  <data name="labelPais.Text" xml:space="preserve">
+    <value>País</value>
+  </data>
   <data name="labelProdutos.Text" xml:space="preserve">
     <value>Produtos</value>
   </data>
+  <data name="labelReultadosInicio.Text" xml:space="preserve">
+    <value>Inicio</value>
+  </data>
   <data name="labelSabores.Text" xml:space="preserve">
     <value>Sabores</value>
+  </data>
+  <data name="labelSenha.Text" xml:space="preserve">
+    <value>Senha</value>
+  </data>
+  <data name="labelTelefone.Text" xml:space="preserve">
+    <value>Telefone</value>
+  </data>
+  <data name="labelValidade.Text" xml:space="preserve">
+    <value>Validade</value>
+  </data>
+  <data name="labelVerificarSenha.Text" xml:space="preserve">
+    <value>Verificar Senha</value>
+  </data>
+  <data name="radioBtnGrupoAdministrador.Text" xml:space="preserve">
+    <value>Administrador</value>
+  </data>
+  <data name="radioBtnGrupoAtendente.Text" xml:space="preserve">
+    <value>Atendente</value>
+  </data>
+  <data name="radioBtnGrupoEntregador.Text" xml:space="preserve">
+    <value>Entregador</value>
   </data>
 </root>

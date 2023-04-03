@@ -91,11 +91,65 @@ namespace PizzariaDoZe.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bairro.
+        /// </summary>
+        internal static string labelBairro_Text {
+            get {
+                return ResourceManager.GetString("labelBairro.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bem Vindo(a).
+        /// </summary>
+        internal static string labelBemVindo_Text {
+            get {
+                return ResourceManager.GetString("labelBemVindo.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Carteira de Motorista.
+        /// </summary>
+        internal static string labelCarteiraMotorista_Text {
+            get {
+                return ResourceManager.GetString("labelCarteiraMotorista.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CEP.
+        /// </summary>
+        internal static string labelCEP_Text {
+            get {
+                return ResourceManager.GetString("labelCEP.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cidade.
+        /// </summary>
+        internal static string labelCidade_Text {
+            get {
+                return ResourceManager.GetString("labelCidade.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Clientes.
         /// </summary>
         internal static string labelClientes_Text {
             get {
                 return ResourceManager.GetString("labelClientes.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Complemento.
+        /// </summary>
+        internal static string labelComplemento_Text {
+            get {
+                return ResourceManager.GetString("labelComplemento.Text", resourceCulture);
             }
         }
         
@@ -109,11 +163,56 @@ namespace PizzariaDoZe.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CPF.
+        /// </summary>
+        internal static string labelCPF_Text {
+            get {
+                return ResourceManager.GetString("labelCPF.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to E-Mail.
+        /// </summary>
+        internal static string labelEmail_Text {
+            get {
+                return ResourceManager.GetString("labelEmail.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Estado.
+        /// </summary>
+        internal static string labelEstado_Text {
+            get {
+                return ResourceManager.GetString("labelEstado.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Funcionários.
         /// </summary>
         internal static string labelFuncionarios_Text {
             get {
                 return ResourceManager.GetString("labelFuncionarios.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Grupo.
+        /// </summary>
+        internal static string labelGrupo_Text {
+            get {
+                return ResourceManager.GetString("labelGrupo.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Código.
+        /// </summary>
+        internal static string labelId_Text {
+            get {
+                return ResourceManager.GetString("labelId.Text", resourceCulture);
             }
         }
         
@@ -136,6 +235,60 @@ namespace PizzariaDoZe.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Logradouro.
+        /// </summary>
+        internal static string labelLogradouro_Text {
+            get {
+                return ResourceManager.GetString("labelLogradouro.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Matricula.
+        /// </summary>
+        internal static string labelMatricula_Text {
+            get {
+                return ResourceManager.GetString("labelMatricula.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nome.
+        /// </summary>
+        internal static string labelNome_Text {
+            get {
+                return ResourceManager.GetString("labelNome.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Numero.
+        /// </summary>
+        internal static string labelNumero_Text {
+            get {
+                return ResourceManager.GetString("labelNumero.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Observação.
+        /// </summary>
+        internal static string labelObservacao_Text {
+            get {
+                return ResourceManager.GetString("labelObservacao.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to País.
+        /// </summary>
+        internal static string labelPais_Text {
+            get {
+                return ResourceManager.GetString("labelPais.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Produtos.
         /// </summary>
         internal static string labelProdutos_Text {
@@ -145,11 +298,83 @@ namespace PizzariaDoZe.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Inicio.
+        /// </summary>
+        internal static string labelReultadosInicio_Text {
+            get {
+                return ResourceManager.GetString("labelReultadosInicio.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sabores.
         /// </summary>
         internal static string labelSabores_Text {
             get {
                 return ResourceManager.GetString("labelSabores.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Senha.
+        /// </summary>
+        internal static string labelSenha_Text {
+            get {
+                return ResourceManager.GetString("labelSenha.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Telefone.
+        /// </summary>
+        internal static string labelTelefone_Text {
+            get {
+                return ResourceManager.GetString("labelTelefone.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Validade.
+        /// </summary>
+        internal static string labelValidade_Text {
+            get {
+                return ResourceManager.GetString("labelValidade.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Verificar Senha.
+        /// </summary>
+        internal static string labelVerificarSenha_Text {
+            get {
+                return ResourceManager.GetString("labelVerificarSenha.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Administrador.
+        /// </summary>
+        internal static string radioBtnGrupoAdministrador_Text {
+            get {
+                return ResourceManager.GetString("radioBtnGrupoAdministrador.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Atendente.
+        /// </summary>
+        internal static string radioBtnGrupoAtendente_Text {
+            get {
+                return ResourceManager.GetString("radioBtnGrupoAtendente.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Entregador.
+        /// </summary>
+        internal static string radioBtnGrupoEntregador_Text {
+            get {
+                return ResourceManager.GetString("radioBtnGrupoEntregador.Text", resourceCulture);
             }
         }
         

@@ -32,7 +32,7 @@
             labelEndereco = new Label();
             labelPais = new Label();
             textBox4 = new TextBox();
-            labelUF = new Label();
+            labelEstado = new Label();
             txtUF = new TextBox();
             labelCidade = new Label();
             textBox3 = new TextBox();
@@ -54,7 +54,7 @@
             panelCadastroFuncionarioGeral.Controls.Add(labelEndereco);
             panelCadastroFuncionarioGeral.Controls.Add(labelPais);
             panelCadastroFuncionarioGeral.Controls.Add(textBox4);
-            panelCadastroFuncionarioGeral.Controls.Add(labelUF);
+            panelCadastroFuncionarioGeral.Controls.Add(labelEstado);
             panelCadastroFuncionarioGeral.Controls.Add(txtUF);
             panelCadastroFuncionarioGeral.Controls.Add(labelCidade);
             panelCadastroFuncionarioGeral.Controls.Add(textBox3);
@@ -69,7 +69,7 @@
             panelCadastroFuncionarioGeral.Controls.Add(labelCEP);
             panelCadastroFuncionarioGeral.Controls.Add(txtCep);
             panelCadastroFuncionarioGeral.Location = new Point(2, 2);
-            panelCadastroFuncionarioGeral.Margin = new Padding(2, 2, 2, 2);
+            panelCadastroFuncionarioGeral.Margin = new Padding(2);
             panelCadastroFuncionarioGeral.Name = "panelCadastroFuncionarioGeral";
             panelCadastroFuncionarioGeral.Size = new Size(293, 606);
             panelCadastroFuncionarioGeral.TabIndex = 9;
@@ -106,17 +106,17 @@
             textBox4.Size = new Size(250, 27);
             textBox4.TabIndex = 39;
             // 
-            // labelUF
+            // labelEstado
             // 
-            labelUF.AutoSize = true;
-            labelUF.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            labelUF.ForeColor = Color.GhostWhite;
-            labelUF.Location = new Point(25, 461);
-            labelUF.Margin = new Padding(2, 0, 2, 0);
-            labelUF.Name = "labelUF";
-            labelUF.Size = new Size(36, 28);
-            labelUF.TabIndex = 38;
-            labelUF.Text = "UF";
+            labelEstado.AutoSize = true;
+            labelEstado.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelEstado.ForeColor = Color.GhostWhite;
+            labelEstado.Location = new Point(25, 461);
+            labelEstado.Margin = new Padding(2, 0, 2, 0);
+            labelEstado.Name = "labelEstado";
+            labelEstado.Size = new Size(71, 28);
+            labelEstado.TabIndex = 38;
+            labelEstado.Text = "Estado";
             // 
             // txtUF
             // 
@@ -252,7 +252,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(39, 39, 41);
             Controls.Add(panelCadastroFuncionarioGeral);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "EnderecoUserControlForm";
             Size = new Size(298, 613);
             panelCadastroFuncionarioGeral.ResumeLayout(false);
@@ -265,7 +265,7 @@
         private Panel panelCadastroFuncionarioGeral;
         private Label labelEndereco;
         private Label labelPais;
-        private Label labelUF;
+        private Label labelEstado;
         private Label labelCidade;
         private Label labelBairro;
         private Label labelComplemento;

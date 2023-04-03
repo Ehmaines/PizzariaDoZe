@@ -207,9 +207,9 @@
             labelGrupo.Location = new Point(2, 150);
             labelGrupo.Margin = new Padding(2, 0, 2, 0);
             labelGrupo.Name = "labelGrupo";
-            labelGrupo.Size = new Size(118, 23);
+            labelGrupo.Size = new Size(58, 23);
             labelGrupo.TabIndex = 7;
-            labelGrupo.Text = "Administrador";
+            labelGrupo.Text = "Grupo";
             // 
             // labelBemVindo
             // 
