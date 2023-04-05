@@ -1,3 +1,4 @@
+using System.Configuration;
 using System.Globalization;
 
 namespace PizzariaDoZe
@@ -10,10 +11,12 @@ namespace PizzariaDoZe
         [STAThread]
         static void Main()
         {
-            string auxIdiomaRegiao = "es"; // en-US, es, pt-BR, etc
-                                              //ajusta o idioma/região
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo(auxIdiomaRegiao);
-            Thread.CurrentThread.CurrentCulture = new CultureInfo(auxIdiomaRegiao);
+            string? auxIdiomaRegiao =
+                (ConfigurationManager.AppSettings.Get("IdiomaRegiao") is not null) ?
+                ConfigurationManager.AppSettings.Get("IdiomaRegiao") : ""; // en-US, es, pt-BR, etc
+                                                           //ajusta o idioma/região
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(auxIdiomaRegiao!);
+            Thread.CurrentThread.CurrentCulture = new CultureInfo(auxIdiomaRegiao!);
 
             ApplicationConfiguration.Initialize();
             Application.Run(new PaginaPrincipalForm());

@@ -51,9 +51,7 @@
             pictureBoxCadastrarCliente = new PictureBox();
             textBoxPesquisa = new TextBox();
             barraLateralUserControlForm = new BarraLateralUserControlForm();
-            panelPrincipalInicio = new Panel();
-            labelReultadosInicio = new Label();
-            dataGridView1 = new DataGridView();
+            configuracoesUserControlForm2 = new UserControls.ConfiguracoesUserControlForm();
             panel1.SuspendLayout();
             panelCadastroProduto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxCadastroProduto).BeginInit();
@@ -68,8 +66,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panelCadastroCliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxCadastrarCliente).BeginInit();
-            panelPrincipalInicio.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -84,10 +80,10 @@
             panel1.Controls.Add(panelCadastroCliente);
             panel1.Controls.Add(textBoxPesquisa);
             panel1.ForeColor = Color.GhostWhite;
-            panel1.Location = new Point(324, 0);
+            panel1.Location = new Point(259, 0);
             panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1554, 171);
+            panel1.Size = new Size(1243, 137);
             panel1.TabIndex = 1;
             // 
             // panelCadastroProduto
@@ -96,10 +92,10 @@
             panelCadastroProduto.Controls.Add(labelCadastrarProduto);
             panelCadastroProduto.Controls.Add(pictureBoxCadastroProduto);
             panelCadastroProduto.Cursor = Cursors.Hand;
-            panelCadastroProduto.Location = new Point(1156, 39);
+            panelCadastroProduto.Location = new Point(925, 31);
             panelCadastroProduto.Margin = new Padding(2);
             panelCadastroProduto.Name = "panelCadastroProduto";
-            panelCadastroProduto.Size = new Size(372, 79);
+            panelCadastroProduto.Size = new Size(298, 63);
             panelCadastroProduto.TabIndex = 8;
             panelCadastroProduto.Click += btnCadastroProdutos_Click;
             // 
@@ -108,10 +104,10 @@
             labelCadastrarProduto.AutoSize = true;
             labelCadastrarProduto.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             labelCadastrarProduto.ForeColor = Color.GhostWhite;
-            labelCadastrarProduto.Location = new Point(81, 21);
+            labelCadastrarProduto.Location = new Point(65, 17);
             labelCadastrarProduto.Margin = new Padding(2, 0, 2, 0);
             labelCadastrarProduto.Name = "labelCadastrarProduto";
-            labelCadastrarProduto.Size = new Size(240, 38);
+            labelCadastrarProduto.Size = new Size(205, 32);
             labelCadastrarProduto.TabIndex = 1;
             labelCadastrarProduto.Text = "Cadastrar Produto";
             labelCadastrarProduto.Click += btnCadastroProdutos_Click;
@@ -119,10 +115,10 @@
             // pictureBoxCadastroProduto
             // 
             pictureBoxCadastroProduto.Image = (Image)resources.GetObject("pictureBoxCadastroProduto.Image");
-            pictureBoxCadastroProduto.Location = new Point(6, 9);
+            pictureBoxCadastroProduto.Location = new Point(5, 7);
             pictureBoxCadastroProduto.Margin = new Padding(2);
             pictureBoxCadastroProduto.Name = "pictureBoxCadastroProduto";
-            pictureBoxCadastroProduto.Size = new Size(69, 62);
+            pictureBoxCadastroProduto.Size = new Size(55, 50);
             pictureBoxCadastroProduto.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxCadastroProduto.TabIndex = 0;
             pictureBoxCadastroProduto.TabStop = false;
@@ -134,10 +130,10 @@
             panelCadastroValor.Controls.Add(labelCadastrarValor);
             panelCadastroValor.Controls.Add(pictureBoxCadastroValor);
             panelCadastroValor.Cursor = Cursors.Hand;
-            panelCadastroValor.Location = new Point(1156, 39);
+            panelCadastroValor.Location = new Point(925, 31);
             panelCadastroValor.Margin = new Padding(2);
             panelCadastroValor.Name = "panelCadastroValor";
-            panelCadastroValor.Size = new Size(372, 79);
+            panelCadastroValor.Size = new Size(298, 63);
             panelCadastroValor.TabIndex = 7;
             panelCadastroValor.Click += btnCadastroValores_Click;
             // 
@@ -146,10 +142,10 @@
             labelCadastrarValor.AutoSize = true;
             labelCadastrarValor.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             labelCadastrarValor.ForeColor = Color.GhostWhite;
-            labelCadastrarValor.Location = new Point(81, 21);
+            labelCadastrarValor.Location = new Point(65, 17);
             labelCadastrarValor.Margin = new Padding(2, 0, 2, 0);
             labelCadastrarValor.Name = "labelCadastrarValor";
-            labelCadastrarValor.Size = new Size(203, 38);
+            labelCadastrarValor.Size = new Size(173, 32);
             labelCadastrarValor.TabIndex = 1;
             labelCadastrarValor.Text = "Cadastrar Valor";
             labelCadastrarValor.Click += btnCadastroValores_Click;
@@ -157,10 +153,10 @@
             // pictureBoxCadastroValor
             // 
             pictureBoxCadastroValor.Image = (Image)resources.GetObject("pictureBoxCadastroValor.Image");
-            pictureBoxCadastroValor.Location = new Point(6, 9);
+            pictureBoxCadastroValor.Location = new Point(5, 7);
             pictureBoxCadastroValor.Margin = new Padding(2);
             pictureBoxCadastroValor.Name = "pictureBoxCadastroValor";
-            pictureBoxCadastroValor.Size = new Size(69, 62);
+            pictureBoxCadastroValor.Size = new Size(55, 50);
             pictureBoxCadastroValor.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxCadastroValor.TabIndex = 0;
             pictureBoxCadastroValor.TabStop = false;
@@ -172,10 +168,10 @@
             panelCadastroSabor.Controls.Add(labelCadastrarSabor);
             panelCadastroSabor.Controls.Add(pictureBoxCadastroSabor);
             panelCadastroSabor.Cursor = Cursors.Hand;
-            panelCadastroSabor.Location = new Point(1156, 39);
+            panelCadastroSabor.Location = new Point(925, 31);
             panelCadastroSabor.Margin = new Padding(2);
             panelCadastroSabor.Name = "panelCadastroSabor";
-            panelCadastroSabor.Size = new Size(372, 79);
+            panelCadastroSabor.Size = new Size(298, 63);
             panelCadastroSabor.TabIndex = 6;
             panelCadastroSabor.Click += btnCadastroSabores_Click;
             // 
@@ -184,10 +180,10 @@
             labelCadastrarSabor.AutoSize = true;
             labelCadastrarSabor.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             labelCadastrarSabor.ForeColor = Color.GhostWhite;
-            labelCadastrarSabor.Location = new Point(81, 21);
+            labelCadastrarSabor.Location = new Point(65, 17);
             labelCadastrarSabor.Margin = new Padding(2, 0, 2, 0);
             labelCadastrarSabor.Name = "labelCadastrarSabor";
-            labelCadastrarSabor.Size = new Size(212, 38);
+            labelCadastrarSabor.Size = new Size(181, 32);
             labelCadastrarSabor.TabIndex = 1;
             labelCadastrarSabor.Text = "Cadastrar Sabor";
             labelCadastrarSabor.Click += btnCadastroSabores_Click;
@@ -195,10 +191,10 @@
             // pictureBoxCadastroSabor
             // 
             pictureBoxCadastroSabor.Image = (Image)resources.GetObject("pictureBoxCadastroSabor.Image");
-            pictureBoxCadastroSabor.Location = new Point(6, 9);
+            pictureBoxCadastroSabor.Location = new Point(5, 7);
             pictureBoxCadastroSabor.Margin = new Padding(2);
             pictureBoxCadastroSabor.Name = "pictureBoxCadastroSabor";
-            pictureBoxCadastroSabor.Size = new Size(69, 62);
+            pictureBoxCadastroSabor.Size = new Size(55, 50);
             pictureBoxCadastroSabor.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxCadastroSabor.TabIndex = 0;
             pictureBoxCadastroSabor.TabStop = false;
@@ -210,10 +206,10 @@
             panelCadastroFuncionario.Controls.Add(labelCadastrarFuncionario);
             panelCadastroFuncionario.Controls.Add(pictureBoxCadastrarProduto);
             panelCadastroFuncionario.Cursor = Cursors.Hand;
-            panelCadastroFuncionario.Location = new Point(1156, 39);
+            panelCadastroFuncionario.Location = new Point(925, 31);
             panelCadastroFuncionario.Margin = new Padding(2);
             panelCadastroFuncionario.Name = "panelCadastroFuncionario";
-            panelCadastroFuncionario.Size = new Size(372, 79);
+            panelCadastroFuncionario.Size = new Size(298, 63);
             panelCadastroFuncionario.TabIndex = 4;
             panelCadastroFuncionario.Click += btnCadastroFuncionario_Click;
             // 
@@ -222,10 +218,10 @@
             labelCadastrarFuncionario.AutoSize = true;
             labelCadastrarFuncionario.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             labelCadastrarFuncionario.ForeColor = Color.GhostWhite;
-            labelCadastrarFuncionario.Location = new Point(81, 21);
+            labelCadastrarFuncionario.Location = new Point(65, 17);
             labelCadastrarFuncionario.Margin = new Padding(2, 0, 2, 0);
             labelCadastrarFuncionario.Name = "labelCadastrarFuncionario";
-            labelCadastrarFuncionario.Size = new Size(286, 38);
+            labelCadastrarFuncionario.Size = new Size(245, 32);
             labelCadastrarFuncionario.TabIndex = 1;
             labelCadastrarFuncionario.Text = "Cadastrar Funcionário";
             labelCadastrarFuncionario.Click += btnCadastroFuncionario_Click;
@@ -233,10 +229,10 @@
             // pictureBoxCadastrarProduto
             // 
             pictureBoxCadastrarProduto.Image = (Image)resources.GetObject("pictureBoxCadastrarProduto.Image");
-            pictureBoxCadastrarProduto.Location = new Point(6, 9);
+            pictureBoxCadastrarProduto.Location = new Point(5, 7);
             pictureBoxCadastrarProduto.Margin = new Padding(2);
             pictureBoxCadastrarProduto.Name = "pictureBoxCadastrarProduto";
-            pictureBoxCadastrarProduto.Size = new Size(69, 62);
+            pictureBoxCadastrarProduto.Size = new Size(55, 50);
             pictureBoxCadastrarProduto.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxCadastrarProduto.TabIndex = 0;
             pictureBoxCadastrarProduto.TabStop = false;
@@ -248,10 +244,10 @@
             panelCadastroIngrediente.Controls.Add(labelCadastrarIngrediente);
             panelCadastroIngrediente.Controls.Add(pictureBoxCadastroIngrediente);
             panelCadastroIngrediente.Cursor = Cursors.Hand;
-            panelCadastroIngrediente.Location = new Point(1156, 39);
+            panelCadastroIngrediente.Location = new Point(925, 31);
             panelCadastroIngrediente.Margin = new Padding(2);
             panelCadastroIngrediente.Name = "panelCadastroIngrediente";
-            panelCadastroIngrediente.Size = new Size(372, 79);
+            panelCadastroIngrediente.Size = new Size(298, 63);
             panelCadastroIngrediente.TabIndex = 6;
             panelCadastroIngrediente.Click += btnCadastroIngredientes_Click;
             // 
@@ -260,10 +256,10 @@
             labelCadastrarIngrediente.AutoSize = true;
             labelCadastrarIngrediente.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             labelCadastrarIngrediente.ForeColor = Color.GhostWhite;
-            labelCadastrarIngrediente.Location = new Point(81, 21);
+            labelCadastrarIngrediente.Location = new Point(65, 17);
             labelCadastrarIngrediente.Margin = new Padding(2, 0, 2, 0);
             labelCadastrarIngrediente.Name = "labelCadastrarIngrediente";
-            labelCadastrarIngrediente.Size = new Size(295, 38);
+            labelCadastrarIngrediente.Size = new Size(253, 32);
             labelCadastrarIngrediente.TabIndex = 1;
             labelCadastrarIngrediente.Text = "Cadastrar Ingredientes";
             labelCadastrarIngrediente.Click += btnCadastroIngredientes_Click;
@@ -271,10 +267,10 @@
             // pictureBoxCadastroIngrediente
             // 
             pictureBoxCadastroIngrediente.Image = (Image)resources.GetObject("pictureBoxCadastroIngrediente.Image");
-            pictureBoxCadastroIngrediente.Location = new Point(6, 9);
+            pictureBoxCadastroIngrediente.Location = new Point(5, 7);
             pictureBoxCadastroIngrediente.Margin = new Padding(2);
             pictureBoxCadastroIngrediente.Name = "pictureBoxCadastroIngrediente";
-            pictureBoxCadastroIngrediente.Size = new Size(69, 62);
+            pictureBoxCadastroIngrediente.Size = new Size(55, 50);
             pictureBoxCadastroIngrediente.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxCadastroIngrediente.TabIndex = 0;
             pictureBoxCadastroIngrediente.TabStop = false;
@@ -284,10 +280,10 @@
             // 
             pictureBox2.Cursor = Cursors.Hand;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(637, 64);
+            pictureBox2.Location = new Point(510, 51);
             pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(48, 39);
+            pictureBox2.Size = new Size(38, 31);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
@@ -298,10 +294,10 @@
             panelCadastroCliente.Controls.Add(labelCadastrarCliente);
             panelCadastroCliente.Controls.Add(pictureBoxCadastrarCliente);
             panelCadastroCliente.Cursor = Cursors.Hand;
-            panelCadastroCliente.Location = new Point(1156, 39);
+            panelCadastroCliente.Location = new Point(925, 31);
             panelCadastroCliente.Margin = new Padding(2);
             panelCadastroCliente.Name = "panelCadastroCliente";
-            panelCadastroCliente.Size = new Size(372, 79);
+            panelCadastroCliente.Size = new Size(298, 63);
             panelCadastroCliente.TabIndex = 5;
             panelCadastroCliente.Click += btnCadastroCliente_Click;
             // 
@@ -310,10 +306,10 @@
             labelCadastrarCliente.AutoSize = true;
             labelCadastrarCliente.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             labelCadastrarCliente.ForeColor = Color.GhostWhite;
-            labelCadastrarCliente.Location = new Point(81, 21);
+            labelCadastrarCliente.Location = new Point(65, 17);
             labelCadastrarCliente.Margin = new Padding(2, 0, 2, 0);
             labelCadastrarCliente.Name = "labelCadastrarCliente";
-            labelCadastrarCliente.Size = new Size(227, 38);
+            labelCadastrarCliente.Size = new Size(195, 32);
             labelCadastrarCliente.TabIndex = 1;
             labelCadastrarCliente.Text = "Cadastrar Cliente";
             labelCadastrarCliente.Click += btnCadastroCliente_Click;
@@ -321,10 +317,10 @@
             // pictureBoxCadastrarCliente
             // 
             pictureBoxCadastrarCliente.Image = (Image)resources.GetObject("pictureBoxCadastrarCliente.Image");
-            pictureBoxCadastrarCliente.Location = new Point(6, 9);
+            pictureBoxCadastrarCliente.Location = new Point(5, 7);
             pictureBoxCadastrarCliente.Margin = new Padding(2);
             pictureBoxCadastrarCliente.Name = "pictureBoxCadastrarCliente";
-            pictureBoxCadastrarCliente.Size = new Size(69, 62);
+            pictureBoxCadastrarCliente.Size = new Size(55, 50);
             pictureBoxCadastrarCliente.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxCadastrarCliente.TabIndex = 0;
             pictureBoxCadastrarCliente.TabStop = false;
@@ -333,10 +329,10 @@
             // textBoxPesquisa
             // 
             textBoxPesquisa.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxPesquisa.Location = new Point(53, 64);
+            textBoxPesquisa.Location = new Point(42, 51);
             textBoxPesquisa.Margin = new Padding(2);
             textBoxPesquisa.Name = "textBoxPesquisa";
-            textBoxPesquisa.Size = new Size(578, 39);
+            textBoxPesquisa.Size = new Size(463, 34);
             textBoxPesquisa.TabIndex = 1;
             // 
             // barraLateralUserControlForm
@@ -345,54 +341,28 @@
             barraLateralUserControlForm.Location = new Point(-2, 0);
             barraLateralUserControlForm.Margin = new Padding(2);
             barraLateralUserControlForm.Name = "barraLateralUserControlForm";
-            barraLateralUserControlForm.Size = new Size(330, 1024);
+            barraLateralUserControlForm.Size = new Size(263, 1072);
             barraLateralUserControlForm.TabIndex = 2;
             // 
-            // panelPrincipalInicio
+            // configuracoesUserControlForm2
             // 
-            panelPrincipalInicio.Controls.Add(labelReultadosInicio);
-            panelPrincipalInicio.Controls.Add(dataGridView1);
-            panelPrincipalInicio.Location = new Point(375, 205);
-            panelPrincipalInicio.Margin = new Padding(2);
-            panelPrincipalInicio.Name = "panelPrincipalInicio";
-            panelPrincipalInicio.Size = new Size(1480, 795);
-            panelPrincipalInicio.TabIndex = 3;
-            // 
-            // labelReultadosInicio
-            // 
-            labelReultadosInicio.AutoSize = true;
-            labelReultadosInicio.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            labelReultadosInicio.ForeColor = Color.GhostWhite;
-            labelReultadosInicio.Location = new Point(656, 31);
-            labelReultadosInicio.Margin = new Padding(2, 0, 2, 0);
-            labelReultadosInicio.Name = "labelReultadosInicio";
-            labelReultadosInicio.Size = new Size(142, 65);
-            labelReultadosInicio.TabIndex = 1;
-            labelReultadosInicio.Text = "Inicio";
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.BackgroundColor = Color.FromArgb(39, 39, 41);
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(25, 110);
-            dataGridView1.Margin = new Padding(2);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.RowTemplate.Height = 33;
-            dataGridView1.Size = new Size(1431, 661);
-            dataGridView1.TabIndex = 0;
+            configuracoesUserControlForm2.BackColor = Color.FromArgb(39, 39, 41);
+            configuracoesUserControlForm2.Location = new Point(266, 142);
+            configuracoesUserControlForm2.Name = "configuracoesUserControlForm2";
+            configuracoesUserControlForm2.Size = new Size(1228, 660);
+            configuracoesUserControlForm2.TabIndex = 3;
             // 
             // PaginaPrincipalForm
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(39, 39, 41);
-            ClientSize = new Size(1878, 1018);
-            Controls.Add(panelPrincipalInicio);
+            ClientSize = new Size(1502, 814);
+            Controls.Add(configuracoesUserControlForm2);
             Controls.Add(barraLateralUserControlForm);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
-            Margin = new Padding(4, 2, 4, 2);
+            Margin = new Padding(3, 2, 3, 2);
             MinimizeBox = false;
             Name = "PaginaPrincipalForm";
             StartPosition = FormStartPosition.CenterScreen;
@@ -420,22 +390,19 @@
             panelCadastroCliente.ResumeLayout(false);
             panelCadastroCliente.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxCadastrarCliente).EndInit();
-            panelPrincipalInicio.ResumeLayout(false);
-            panelPrincipalInicio.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private BarraLateralUserControlForm barraLateralUserControlForm1;
+        //private BarraLateralUserControlForm barraLateralUserControlForm1;
         private Panel panel1;
         private PictureBox pictureBox2;
         private TextBox textBoxPesquisa;
         private Panel panelCadastroFuncionario;
         private Label labelCadastrarFuncionario;
         private PictureBox pictureBoxCadastrarProduto;
-        private BarraLateralUserControlForm barraLateralUserControlForm;
+        //private BarraLateralUserControlForm barraLateralUserControlForm;
         private Panel panelCadastroCliente;
         private Label labelCadastrarCliente;
         private PictureBox pictureBoxCadastrarCliente;
@@ -445,14 +412,14 @@
         private Panel panelCadastroSabor;
         private Label labelCadastrarSabor;
         private PictureBox pictureBoxCadastroSabor;
-        private Panel panelPrincipalInicio;
-        private Label labelReultadosInicio;
-        private DataGridView dataGridView1;
         private Panel panelCadastroValor;
         private Label labelCadastrarValor;
         private PictureBox pictureBoxCadastroValor;
         private Panel panelCadastroProduto;
         private Label labelCadastrarProduto;
         private PictureBox pictureBoxCadastroProduto;
+        private UserControls.ConfiguracoesUserControlForm configuracoesUserControlForm1;
+        private BarraLateralUserControlForm barraLateralUserControlForm;
+        private UserControls.ConfiguracoesUserControlForm configuracoesUserControlForm2;
     }
 }
