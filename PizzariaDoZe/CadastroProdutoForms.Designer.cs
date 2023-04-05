@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             saveCloseUserControlForm1 = new SaveCloseUserControlForm();
-            labelCodigo = new Label();
+            labelId = new Label();
             txtIngredienteId = new TextBox();
             labelNome = new Label();
             txtNomeIngrediente = new TextBox();
-            labelCadastroProdutos = new Label();
+            labelCadastrarProduto = new Label();
             labelValor = new Label();
             textBox1 = new TextBox();
             listBox1 = new ListBox();
@@ -45,31 +45,32 @@
             // saveCloseUserControlForm1
             // 
             saveCloseUserControlForm1.BackColor = Color.FromArgb(39, 39, 41);
-            saveCloseUserControlForm1.Location = new Point(203, 466);
-            saveCloseUserControlForm1.Margin = new Padding(3, 5, 3, 5);
+            saveCloseUserControlForm1.Location = new Point(254, 582);
+            saveCloseUserControlForm1.Margin = new Padding(4, 6, 4, 6);
             saveCloseUserControlForm1.Name = "saveCloseUserControlForm1";
-            saveCloseUserControlForm1.Size = new Size(263, 48);
+            saveCloseUserControlForm1.Size = new Size(329, 60);
             saveCloseUserControlForm1.TabIndex = 40;
             // 
-            // labelCodigo
+            // labelId
             // 
-            labelCodigo.AutoSize = true;
-            labelCodigo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            labelCodigo.ForeColor = Color.GhostWhite;
-            labelCodigo.Location = new Point(50, 71);
-            labelCodigo.Margin = new Padding(2, 0, 2, 0);
-            labelCodigo.Name = "labelCodigo";
-            labelCodigo.Size = new Size(77, 28);
-            labelCodigo.TabIndex = 39;
-            labelCodigo.Text = "Código";
+            labelId.AutoSize = true;
+            labelId.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelId.ForeColor = Color.GhostWhite;
+            labelId.Location = new Point(62, 89);
+            labelId.Margin = new Padding(2, 0, 2, 0);
+            labelId.Name = "labelId";
+            labelId.Size = new Size(91, 32);
+            labelId.TabIndex = 39;
+            labelId.Text = "Código";
             // 
             // txtIngredienteId
             // 
             txtIngredienteId.BackColor = Color.GhostWhite;
             txtIngredienteId.Enabled = false;
-            txtIngredienteId.Location = new Point(47, 102);
+            txtIngredienteId.Location = new Point(59, 128);
+            txtIngredienteId.Margin = new Padding(4);
             txtIngredienteId.Name = "txtIngredienteId";
-            txtIngredienteId.Size = new Size(90, 27);
+            txtIngredienteId.Size = new Size(112, 31);
             txtIngredienteId.TabIndex = 36;
             // 
             // labelNome
@@ -77,61 +78,64 @@
             labelNome.AutoSize = true;
             labelNome.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelNome.ForeColor = Color.GhostWhite;
-            labelNome.Location = new Point(50, 143);
+            labelNome.Location = new Point(62, 179);
             labelNome.Margin = new Padding(2, 0, 2, 0);
             labelNome.Name = "labelNome";
-            labelNome.Size = new Size(66, 28);
+            labelNome.Size = new Size(80, 32);
             labelNome.TabIndex = 38;
             labelNome.Text = "Nome";
             // 
             // txtNomeIngrediente
             // 
             txtNomeIngrediente.BackColor = Color.GhostWhite;
-            txtNomeIngrediente.Location = new Point(47, 171);
+            txtNomeIngrediente.Location = new Point(59, 214);
+            txtNomeIngrediente.Margin = new Padding(4);
             txtNomeIngrediente.Name = "txtNomeIngrediente";
-            txtNomeIngrediente.Size = new Size(408, 27);
+            txtNomeIngrediente.Size = new Size(509, 31);
             txtNomeIngrediente.TabIndex = 35;
             // 
-            // labelCadastroProdutos
+            // labelCadastrarProduto
             // 
-            labelCadastroProdutos.AutoSize = true;
-            labelCadastroProdutos.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            labelCadastroProdutos.ForeColor = Color.GhostWhite;
-            labelCadastroProdutos.Location = new Point(47, 9);
-            labelCadastroProdutos.Margin = new Padding(2, 0, 2, 0);
-            labelCadastroProdutos.Name = "labelCadastroProdutos";
-            labelCadastroProdutos.Size = new Size(407, 54);
-            labelCadastroProdutos.TabIndex = 37;
-            labelCadastroProdutos.Text = "Cadastro de Produtos";
+            labelCadastrarProduto.AutoSize = true;
+            labelCadastrarProduto.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            labelCadastrarProduto.ForeColor = Color.GhostWhite;
+            labelCadastrarProduto.Location = new Point(59, 11);
+            labelCadastrarProduto.Margin = new Padding(2, 0, 2, 0);
+            labelCadastrarProduto.Name = "labelCadastrarProduto";
+            labelCadastrarProduto.Size = new Size(485, 65);
+            labelCadastrarProduto.TabIndex = 37;
+            labelCadastrarProduto.Text = "Cadastro de Produtos";
             // 
             // labelValor
             // 
             labelValor.AutoSize = true;
             labelValor.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelValor.ForeColor = Color.GhostWhite;
-            labelValor.Location = new Point(50, 217);
+            labelValor.Location = new Point(62, 271);
             labelValor.Margin = new Padding(2, 0, 2, 0);
             labelValor.Name = "labelValor";
-            labelValor.Size = new Size(57, 28);
+            labelValor.Size = new Size(67, 32);
             labelValor.TabIndex = 42;
             labelValor.Text = "Valor";
             // 
             // textBox1
             // 
             textBox1.BackColor = Color.GhostWhite;
-            textBox1.Location = new Point(47, 245);
+            textBox1.Location = new Point(59, 306);
+            textBox1.Margin = new Padding(4);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(408, 27);
+            textBox1.Size = new Size(509, 31);
             textBox1.TabIndex = 41;
             // 
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 20;
+            listBox1.ItemHeight = 25;
             listBox1.Items.AddRange(new object[] { "Refrigerante", "Cerveja", "Água", "Suco" });
-            listBox1.Location = new Point(50, 319);
+            listBox1.Location = new Point(62, 399);
+            listBox1.Margin = new Padding(4);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(142, 124);
+            listBox1.Size = new Size(176, 154);
             listBox1.TabIndex = 43;
             // 
             // labelTipo
@@ -139,10 +143,10 @@
             labelTipo.AutoSize = true;
             labelTipo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelTipo.ForeColor = Color.GhostWhite;
-            labelTipo.Location = new Point(50, 288);
+            labelTipo.Location = new Point(62, 360);
             labelTipo.Margin = new Padding(2, 0, 2, 0);
             labelTipo.Name = "labelTipo";
-            labelTipo.Size = new Size(51, 28);
+            labelTipo.Size = new Size(61, 32);
             labelTipo.TabIndex = 44;
             labelTipo.Text = "Tipo";
             // 
@@ -151,29 +155,30 @@
             labelMl.AutoSize = true;
             labelMl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelMl.ForeColor = Color.GhostWhite;
-            labelMl.Location = new Point(223, 288);
+            labelMl.Location = new Point(279, 360);
             labelMl.Margin = new Padding(2, 0, 2, 0);
             labelMl.Name = "labelMl";
-            labelMl.Size = new Size(39, 28);
+            labelMl.Size = new Size(47, 32);
             labelMl.TabIndex = 46;
             labelMl.Text = "ML";
             // 
             // listBox2
             // 
             listBox2.FormattingEnabled = true;
-            listBox2.ItemHeight = 20;
+            listBox2.ItemHeight = 25;
             listBox2.Items.AddRange(new object[] { "150", "300", "600", "1000", "1500", "2000" });
-            listBox2.Location = new Point(223, 319);
+            listBox2.Location = new Point(279, 399);
+            listBox2.Margin = new Padding(4);
             listBox2.Name = "listBox2";
-            listBox2.Size = new Size(142, 124);
+            listBox2.Size = new Size(176, 154);
             listBox2.TabIndex = 45;
             // 
             // CadastroProdutoForms
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(39, 39, 41);
-            ClientSize = new Size(485, 531);
+            ClientSize = new Size(606, 664);
             Controls.Add(labelMl);
             Controls.Add(listBox2);
             Controls.Add(labelTipo);
@@ -181,12 +186,13 @@
             Controls.Add(labelValor);
             Controls.Add(textBox1);
             Controls.Add(saveCloseUserControlForm1);
-            Controls.Add(labelCodigo);
+            Controls.Add(labelId);
             Controls.Add(txtIngredienteId);
             Controls.Add(labelNome);
             Controls.Add(txtNomeIngrediente);
-            Controls.Add(labelCadastroProdutos);
+            Controls.Add(labelCadastrarProduto);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Margin = new Padding(4);
             Name = "CadastroProdutoForms";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CadastroProdutoForms";
@@ -197,11 +203,11 @@
         #endregion
 
         private SaveCloseUserControlForm saveCloseUserControlForm1;
-        private Label labelCodigo;
+        private Label labelId;
         private TextBox txtIngredienteId;
         private Label labelNome;
         private TextBox txtNomeIngrediente;
-        private Label labelCadastroProdutos;
+        private Label labelCadastrarProduto;
         private Label labelValor;
         private TextBox textBox1;
         private ListBox listBox1;

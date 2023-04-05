@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            labelCadastroIngrediente = new Label();
+            labelCadastrarIngrediente = new Label();
             labelNome = new Label();
             txtNomeIngrediente = new TextBox();
             labelId = new Label();
@@ -36,36 +36,37 @@
             saveCloseUserControlForm1 = new SaveCloseUserControlForm();
             SuspendLayout();
             // 
-            // labelCadastroIngrediente
+            // labelCadastrarIngrediente
             // 
-            labelCadastroIngrediente.AutoSize = true;
-            labelCadastroIngrediente.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            labelCadastroIngrediente.ForeColor = Color.GhostWhite;
-            labelCadastroIngrediente.Location = new Point(63, 7);
-            labelCadastroIngrediente.Margin = new Padding(2, 0, 2, 0);
-            labelCadastroIngrediente.Name = "labelCadastroIngrediente";
-            labelCadastroIngrediente.Size = new Size(470, 54);
-            labelCadastroIngrediente.TabIndex = 6;
-            labelCadastroIngrediente.Text = "Cadastro de Ingredientes";
+            labelCadastrarIngrediente.AutoSize = true;
+            labelCadastrarIngrediente.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            labelCadastrarIngrediente.ForeColor = Color.GhostWhite;
+            labelCadastrarIngrediente.Location = new Point(79, 9);
+            labelCadastrarIngrediente.Margin = new Padding(2, 0, 2, 0);
+            labelCadastrarIngrediente.Name = "labelCadastrarIngrediente";
+            labelCadastrarIngrediente.Size = new Size(557, 65);
+            labelCadastrarIngrediente.TabIndex = 6;
+            labelCadastrarIngrediente.Text = "Cadastro de Ingredientes";
             // 
             // labelNome
             // 
             labelNome.AutoSize = true;
             labelNome.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelNome.ForeColor = Color.GhostWhite;
-            labelNome.Location = new Point(59, 129);
+            labelNome.Location = new Point(74, 161);
             labelNome.Margin = new Padding(2, 0, 2, 0);
             labelNome.Name = "labelNome";
-            labelNome.Size = new Size(66, 28);
+            labelNome.Size = new Size(80, 32);
             labelNome.TabIndex = 30;
             labelNome.Text = "Nome";
             // 
             // txtNomeIngrediente
             // 
             txtNomeIngrediente.BackColor = Color.GhostWhite;
-            txtNomeIngrediente.Location = new Point(56, 157);
+            txtNomeIngrediente.Location = new Point(70, 196);
+            txtNomeIngrediente.Margin = new Padding(4, 4, 4, 4);
             txtNomeIngrediente.Name = "txtNomeIngrediente";
-            txtNomeIngrediente.Size = new Size(463, 27);
+            txtNomeIngrediente.Size = new Size(578, 31);
             txtNomeIngrediente.TabIndex = 0;
             // 
             // labelId
@@ -73,10 +74,10 @@
             labelId.AutoSize = true;
             labelId.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelId.ForeColor = Color.GhostWhite;
-            labelId.Location = new Point(59, 72);
+            labelId.Location = new Point(74, 90);
             labelId.Margin = new Padding(2, 0, 2, 0);
             labelId.Name = "labelId";
-            labelId.Size = new Size(29, 28);
+            labelId.Size = new Size(34, 32);
             labelId.TabIndex = 33;
             labelId.Text = "Id";
             // 
@@ -84,34 +85,35 @@
             // 
             txtIngredienteId.BackColor = Color.GhostWhite;
             txtIngredienteId.Enabled = false;
-            txtIngredienteId.Location = new Point(56, 103);
+            txtIngredienteId.Location = new Point(70, 129);
+            txtIngredienteId.Margin = new Padding(4, 4, 4, 4);
             txtIngredienteId.Name = "txtIngredienteId";
-            txtIngredienteId.Size = new Size(90, 27);
+            txtIngredienteId.Size = new Size(112, 31);
             txtIngredienteId.TabIndex = 1;
             // 
             // saveCloseUserControlForm1
             // 
             saveCloseUserControlForm1.BackColor = Color.FromArgb(39, 39, 41);
-            saveCloseUserControlForm1.Location = new Point(274, 195);
-            saveCloseUserControlForm1.Margin = new Padding(3, 5, 3, 5);
+            saveCloseUserControlForm1.Location = new Point(342, 244);
+            saveCloseUserControlForm1.Margin = new Padding(4, 6, 4, 6);
             saveCloseUserControlForm1.Name = "saveCloseUserControlForm1";
-            saveCloseUserControlForm1.Size = new Size(263, 48);
+            saveCloseUserControlForm1.Size = new Size(329, 60);
             saveCloseUserControlForm1.TabIndex = 34;
             // 
             // CadastroIngredienteForms
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(39, 39, 41);
-            ClientSize = new Size(557, 248);
+            ClientSize = new Size(696, 310);
             Controls.Add(saveCloseUserControlForm1);
             Controls.Add(labelId);
             Controls.Add(txtIngredienteId);
             Controls.Add(labelNome);
             Controls.Add(txtNomeIngrediente);
-            Controls.Add(labelCadastroIngrediente);
+            Controls.Add(labelCadastrarIngrediente);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
-            Margin = new Padding(2, 3, 2, 3);
+            Margin = new Padding(2, 4, 2, 4);
             Name = "CadastroIngredienteForms";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Cadastro Ingrediente";
@@ -121,7 +123,7 @@
 
         #endregion
 
-        private Label labelCadastroIngrediente;
+        private Label labelCadastrarIngrediente;
         private Label labelNome;
         private TextBox txtNomeIngrediente;
         private Label labelId;

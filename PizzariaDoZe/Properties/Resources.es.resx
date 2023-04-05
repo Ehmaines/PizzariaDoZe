@@ -117,14 +117,101 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnCancelar.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="btnSalvar.Text" xml:space="preserve">
+    <value>Ahorrar</value>
+  </data>
+  <data name="labalCategoria.Text" xml:space="preserve">
+    <value>Categoría</value>
+  </data>
+  <data name="labelBairro.Text" xml:space="preserve">
+    <value>Vecindario</value>
+  </data>
+  <data name="labelBemVindo.Text" xml:space="preserve">
+    <value>Bienvenido</value>
+  </data>
+  <data name="labelCadastrarCliente.Text" xml:space="preserve">
+    <value>Registrar al cliente</value>
+  </data>
+  <data name="labelCadastrarFuncionario.Text" xml:space="preserve">
+    <value>Registrar empleado</value>
+  </data>
+  <data name="labelCadastrarIngrediente.Text" xml:space="preserve">
+    <value>Registrar ingrediente</value>
+  </data>
+  <data name="labelCadastrarProduto.Text" xml:space="preserve">
+    <value>Registro de productos</value>
+  </data>
+  <data name="labelCadastrarSabor.Text" xml:space="preserve">
+    <value>Registro del Sabor</value>
+  </data>
+  <data name="labelCadastrarValor.Text" xml:space="preserve">
+    <value>Registro del Valor</value>
+  </data>
+  <data name="labelCadastroCliente.Text" xml:space="preserve">
+    <value>Registración de cliente</value>
+  </data>
+  <data name="labelCadastroFuncionarios.Text" xml:space="preserve">
+    <value>Registración de empleado</value>
+  </data>
+  <data name="labelCadastroIngrediente.Text" xml:space="preserve">
+    <value>Registro de ingredientes</value>
+  </data>
+  <data name="labelCadastroProdutos.Text" xml:space="preserve">
+    <value>Registración del producto</value>
+  </data>
+  <data name="labelCadastroSabores.Text" xml:space="preserve">
+    <value>Registro de sabores</value>
+  </data>
+  <data name="labelCadastroValores.Text" xml:space="preserve">
+    <value>Registro de valores</value>
+  </data>
+  <data name="labelCarteiraMotorista.Text" xml:space="preserve">
+    <value>Licencia de conducir</value>
+  </data>
+  <data name="labelCategoria.Text" xml:space="preserve">
+    <value>Categoría</value>
+  </data>
+  <data name="labelCEP.Text" xml:space="preserve">
+    <value>Código postal</value>
+  </data>
+  <data name="labelCidade.Text" xml:space="preserve">
+    <value>Ciudad</value>
+  </data>
   <data name="labelClientes.Text" xml:space="preserve">
     <value>Clientes</value>
   </data>
+  <data name="labelComplemento.Text" xml:space="preserve">
+    <value>Complementar</value>
+  </data>
   <data name="labelConfiguracoes.Text" xml:space="preserve">
-    <value>ajustes</value>
+    <value>Ajustes</value>
+  </data>
+  <data name="labelCPF.Text" xml:space="preserve">
+    <value>CPF</value>
+  </data>
+  <data name="labelEmail.Text" xml:space="preserve">
+    <value>Correo electrónico</value>
+  </data>
+  <data name="labelEndereco.Text" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
+  <data name="labelEstado.Text" xml:space="preserve">
+    <value>Estado</value>
   </data>
   <data name="labelFuncionarios.Text" xml:space="preserve">
     <value>Empleados</value>
+  </data>
+  <data name="labelGrupo.Text" xml:space="preserve">
+    <value>Grupo</value>
+  </data>
+  <data name="labelId.Text" xml:space="preserve">
+    <value>Código</value>
+  </data>
+  <data name="labelImagem.Text" xml:space="preserve">
+    <value>Imagen</value>
   </data>
   <data name="labelIngredientes.Text" xml:space="preserve">
     <value>Ingredientes</value>
@@ -132,13 +219,64 @@
   <data name="labelInicio.Text" xml:space="preserve">
     <value>Comenzar</value>
   </data>
+  <data name="labelLogradouro.Text" xml:space="preserve">
+    <value>Lugar público</value>
+  </data>
+  <data name="labelMatricula.Text" xml:space="preserve">
+    <value>Registro</value>
+  </data>
+  <data name="labelMl.Text" xml:space="preserve">
+    <value>Ml</value>
+  </data>
+  <data name="labelNome.Text" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="labelNumero.Text" xml:space="preserve">
+    <value>Número</value>
+  </data>
+  <data name="labelObservacao.Text" xml:space="preserve">
+    <value>Observación</value>
+  </data>
+  <data name="labelPais.Text" xml:space="preserve">
+    <value>País</value>
+  </data>
   <data name="labelProdutos.Text" xml:space="preserve">
     <value>Productos</value>
+  </data>
+  <data name="labelReultadosInicio.Text" xml:space="preserve">
+    <value>Comenzar</value>
   </data>
   <data name="labelSabores.Text" xml:space="preserve">
     <value>Sabores</value>
   </data>
-  <data name="labelValores.Text" xml:space="preserve">
-    <value>Valores</value>
+  <data name="labelSenha.Text" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="labelTamanho.Text" xml:space="preserve">
+    <value>Tamaño</value>
+  </data>
+  <data name="labelTelefone.Text" xml:space="preserve">
+    <value>Teléfono</value>
+  </data>
+  <data name="labelTipo.Text" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="labelValidade.Text" xml:space="preserve">
+    <value>Validez</value>
+  </data>
+  <data name="labelValorBorda.Text" xml:space="preserve">
+    <value>Valor fronterizo</value>
+  </data>
+  <data name="labelVerificarSenha.Text" xml:space="preserve">
+    <value>Repita la contraseña</value>
+  </data>
+  <data name="radioBtnGrupoAdministrador.Text" xml:space="preserve">
+    <value>Administrador</value>
+  </data>
+  <data name="radioBtnGrupoAtendente.Text" xml:space="preserve">
+    <value>Asistente</value>
+  </data>
+  <data name="radioBtnGrupoEntregador.Text" xml:space="preserve">
+    <value>Repartidor</value>
   </data>
 </root>

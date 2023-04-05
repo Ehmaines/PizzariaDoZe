@@ -39,7 +39,7 @@
             txtFuncionarioID = new TextBox();
             labelNome = new Label();
             txtNome = new TextBox();
-            labelCadastroCliente = new Label();
+            labelCadastrarCliente = new Label();
             enderecoUserControlForm1 = new EnderecoUserControlForm();
             saveCloseUserControlForm1 = new SaveCloseUserControlForm();
             panel1.SuspendLayout();
@@ -50,28 +50,29 @@
             labelEmail.AutoSize = true;
             labelEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelEmail.ForeColor = Color.GhostWhite;
-            labelEmail.Location = new Point(27, 223);
+            labelEmail.Location = new Point(34, 279);
             labelEmail.Margin = new Padding(2, 0, 2, 0);
             labelEmail.Name = "labelEmail";
-            labelEmail.Size = new Size(68, 28);
+            labelEmail.Size = new Size(82, 32);
             labelEmail.TabIndex = 24;
             labelEmail.Text = "E-Mail";
             // 
             // maskedTxtTelefone
             // 
             maskedTxtTelefone.ForeColor = Color.FromArgb(39, 39, 41);
-            maskedTxtTelefone.Location = new Point(24, 184);
-            maskedTxtTelefone.Margin = new Padding(2, 3, 2, 3);
+            maskedTxtTelefone.Location = new Point(30, 230);
+            maskedTxtTelefone.Margin = new Padding(2, 4, 2, 4);
             maskedTxtTelefone.Name = "maskedTxtTelefone";
-            maskedTxtTelefone.Size = new Size(250, 27);
+            maskedTxtTelefone.Size = new Size(312, 31);
             maskedTxtTelefone.TabIndex = 23;
             // 
             // txtEmail
             // 
             txtEmail.ForeColor = Color.FromArgb(39, 39, 41);
-            txtEmail.Location = new Point(24, 252);
+            txtEmail.Location = new Point(30, 315);
+            txtEmail.Margin = new Padding(4, 4, 4, 4);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(250, 27);
+            txtEmail.Size = new Size(312, 31);
             txtEmail.TabIndex = 24;
             // 
             // labelTelefone
@@ -79,10 +80,10 @@
             labelTelefone.AutoSize = true;
             labelTelefone.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelTelefone.ForeColor = Color.GhostWhite;
-            labelTelefone.Location = new Point(27, 156);
+            labelTelefone.Location = new Point(34, 195);
             labelTelefone.Margin = new Padding(2, 0, 2, 0);
             labelTelefone.Name = "labelTelefone";
-            labelTelefone.Size = new Size(84, 28);
+            labelTelefone.Size = new Size(106, 32);
             labelTelefone.TabIndex = 23;
             labelTelefone.Text = "Telefone";
             // 
@@ -98,19 +99,19 @@
             panel1.Controls.Add(txtEmail);
             panel1.Controls.Add(maskedTxtTelefone);
             panel1.Controls.Add(labelEmail);
-            panel1.Location = new Point(9, 207);
-            panel1.Margin = new Padding(2, 3, 2, 3);
+            panel1.Location = new Point(11, 259);
+            panel1.Margin = new Padding(2, 4, 2, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(285, 291);
+            panel1.Size = new Size(356, 364);
             panel1.TabIndex = 9;
             // 
             // maskedTxtCPF
             // 
             maskedTxtCPF.ForeColor = Color.FromArgb(39, 39, 41);
-            maskedTxtCPF.Location = new Point(103, 51);
-            maskedTxtCPF.Margin = new Padding(2, 3, 2, 3);
+            maskedTxtCPF.Location = new Point(129, 64);
+            maskedTxtCPF.Margin = new Padding(2, 4, 2, 4);
             maskedTxtCPF.Name = "maskedTxtCPF";
-            maskedTxtCPF.Size = new Size(173, 27);
+            maskedTxtCPF.Size = new Size(215, 31);
             maskedTxtCPF.TabIndex = 44;
             // 
             // labelCPF
@@ -118,10 +119,10 @@
             labelCPF.AutoSize = true;
             labelCPF.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelCPF.ForeColor = Color.GhostWhite;
-            labelCPF.Location = new Point(103, 23);
+            labelCPF.Location = new Point(129, 29);
             labelCPF.Margin = new Padding(2, 0, 2, 0);
             labelCPF.Name = "labelCPF";
-            labelCPF.Size = new Size(45, 28);
+            labelCPF.Size = new Size(54, 32);
             labelCPF.TabIndex = 48;
             labelCPF.Text = "CPF";
             // 
@@ -130,10 +131,10 @@
             labelId.AutoSize = true;
             labelId.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelId.ForeColor = Color.GhostWhite;
-            labelId.Location = new Point(27, 23);
+            labelId.Location = new Point(34, 29);
             labelId.Margin = new Padding(2, 0, 2, 0);
             labelId.Name = "labelId";
-            labelId.Size = new Size(29, 28);
+            labelId.Size = new Size(34, 32);
             labelId.TabIndex = 47;
             labelId.Text = "Id";
             // 
@@ -141,9 +142,10 @@
             // 
             txtFuncionarioID.Enabled = false;
             txtFuncionarioID.ForeColor = Color.FromArgb(39, 39, 41);
-            txtFuncionarioID.Location = new Point(29, 51);
+            txtFuncionarioID.Location = new Point(36, 64);
+            txtFuncionarioID.Margin = new Padding(4, 4, 4, 4);
             txtFuncionarioID.Name = "txtFuncionarioID";
-            txtFuncionarioID.Size = new Size(69, 27);
+            txtFuncionarioID.Size = new Size(85, 31);
             txtFuncionarioID.TabIndex = 43;
             // 
             // labelNome
@@ -151,63 +153,64 @@
             labelNome.AutoSize = true;
             labelNome.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelNome.ForeColor = Color.GhostWhite;
-            labelNome.Location = new Point(31, 91);
+            labelNome.Location = new Point(39, 114);
             labelNome.Margin = new Padding(2, 0, 2, 0);
             labelNome.Name = "labelNome";
-            labelNome.Size = new Size(66, 28);
+            labelNome.Size = new Size(80, 32);
             labelNome.TabIndex = 45;
             labelNome.Text = "Nome";
             // 
             // txtNome
             // 
             txtNome.ForeColor = Color.FromArgb(39, 39, 41);
-            txtNome.Location = new Point(27, 119);
+            txtNome.Location = new Point(34, 149);
+            txtNome.Margin = new Padding(4, 4, 4, 4);
             txtNome.Name = "txtNome";
-            txtNome.Size = new Size(250, 27);
+            txtNome.Size = new Size(312, 31);
             txtNome.TabIndex = 46;
             // 
-            // labelCadastroCliente
+            // labelCadastrarCliente
             // 
-            labelCadastroCliente.AutoSize = true;
-            labelCadastroCliente.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            labelCadastroCliente.ForeColor = Color.GhostWhite;
-            labelCadastroCliente.Location = new Point(105, 7);
-            labelCadastroCliente.Margin = new Padding(2, 0, 2, 0);
-            labelCadastroCliente.Name = "labelCadastroCliente";
-            labelCadastroCliente.Size = new Size(388, 54);
-            labelCadastroCliente.TabIndex = 10;
-            labelCadastroCliente.Text = "Cadastro de Clientes";
+            labelCadastrarCliente.AutoSize = true;
+            labelCadastrarCliente.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            labelCadastrarCliente.ForeColor = Color.GhostWhite;
+            labelCadastrarCliente.Location = new Point(131, 9);
+            labelCadastrarCliente.Margin = new Padding(2, 0, 2, 0);
+            labelCadastrarCliente.Name = "labelCadastrarCliente";
+            labelCadastrarCliente.Size = new Size(461, 65);
+            labelCadastrarCliente.TabIndex = 10;
+            labelCadastrarCliente.Text = "Cadastro de Clientes";
             // 
             // enderecoUserControlForm1
             // 
             enderecoUserControlForm1.BackColor = Color.FromArgb(39, 39, 41);
-            enderecoUserControlForm1.Location = new Point(310, 61);
+            enderecoUserControlForm1.Location = new Point(388, 76);
             enderecoUserControlForm1.Margin = new Padding(1);
             enderecoUserControlForm1.Name = "enderecoUserControlForm1";
-            enderecoUserControlForm1.Size = new Size(286, 589);
+            enderecoUserControlForm1.Size = new Size(358, 736);
             enderecoUserControlForm1.TabIndex = 33;
             // 
             // saveCloseUserControlForm1
             // 
             saveCloseUserControlForm1.BackColor = Color.FromArgb(39, 39, 41);
-            saveCloseUserControlForm1.Location = new Point(337, 656);
-            saveCloseUserControlForm1.Margin = new Padding(3, 5, 3, 5);
+            saveCloseUserControlForm1.Location = new Point(421, 820);
+            saveCloseUserControlForm1.Margin = new Padding(4, 6, 4, 6);
             saveCloseUserControlForm1.Name = "saveCloseUserControlForm1";
-            saveCloseUserControlForm1.Size = new Size(259, 57);
+            saveCloseUserControlForm1.Size = new Size(324, 71);
             saveCloseUserControlForm1.TabIndex = 34;
             // 
             // CadastroClienteForms
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(39, 39, 41);
-            ClientSize = new Size(598, 713);
+            ClientSize = new Size(748, 891);
             Controls.Add(saveCloseUserControlForm1);
             Controls.Add(enderecoUserControlForm1);
-            Controls.Add(labelCadastroCliente);
+            Controls.Add(labelCadastrarCliente);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
-            Margin = new Padding(2, 3, 2, 3);
+            Margin = new Padding(2, 4, 2, 4);
             Name = "CadastroClienteForms";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CadastroClienteForms";
@@ -229,7 +232,7 @@
         private TextBox txtFuncionarioID;
         private Label labelNome;
         private TextBox txtNome;
-        private Label labelCadastroCliente;
+        private Label labelCadastrarCliente;
         private EnderecoUserControlForm enderecoUserControlForm1;
         private SaveCloseUserControlForm saveCloseUserControlForm1;
     }

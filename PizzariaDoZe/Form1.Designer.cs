@@ -31,19 +31,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PaginaPrincipalForm));
             panel1 = new Panel();
             panelCadastroProduto = new Panel();
-            labelCadastroProduto = new Label();
+            labelCadastrarProduto = new Label();
             pictureBoxCadastroProduto = new PictureBox();
             panelCadastroValor = new Panel();
-            labelCadastroValor = new Label();
+            labelCadastrarValor = new Label();
             pictureBoxCadastroValor = new PictureBox();
             panelCadastroSabor = new Panel();
-            labelCadastroSabor = new Label();
+            labelCadastrarSabor = new Label();
             pictureBoxCadastroSabor = new PictureBox();
             panelCadastroFuncionario = new Panel();
-            labelAdicionarFuncionario = new Label();
+            labelCadastrarFuncionario = new Label();
             pictureBoxCadastrarProduto = new PictureBox();
             panelCadastroIngrediente = new Panel();
-            labelCadastroIngrediente = new Label();
+            labelCadastrarIngrediente = new Label();
             pictureBoxCadastroIngrediente = new PictureBox();
             pictureBox2 = new PictureBox();
             panelCadastroCliente = new Panel();
@@ -93,7 +93,7 @@
             // panelCadastroProduto
             // 
             panelCadastroProduto.BackColor = Color.FromArgb(114, 138, 244);
-            panelCadastroProduto.Controls.Add(labelCadastroProduto);
+            panelCadastroProduto.Controls.Add(labelCadastrarProduto);
             panelCadastroProduto.Controls.Add(pictureBoxCadastroProduto);
             panelCadastroProduto.Cursor = Cursors.Hand;
             panelCadastroProduto.Location = new Point(1156, 39);
@@ -103,18 +103,18 @@
             panelCadastroProduto.TabIndex = 8;
             panelCadastroProduto.Click += btnCadastroProdutos_Click;
             // 
-            // labelCadastroProduto
+            // labelCadastrarProduto
             // 
-            labelCadastroProduto.AutoSize = true;
-            labelCadastroProduto.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            labelCadastroProduto.ForeColor = Color.GhostWhite;
-            labelCadastroProduto.Location = new Point(81, 21);
-            labelCadastroProduto.Margin = new Padding(2, 0, 2, 0);
-            labelCadastroProduto.Name = "labelCadastroProduto";
-            labelCadastroProduto.Size = new Size(240, 38);
-            labelCadastroProduto.TabIndex = 1;
-            labelCadastroProduto.Text = "Cadastrar Produto";
-            labelCadastroProduto.Click += btnCadastroProdutos_Click;
+            labelCadastrarProduto.AutoSize = true;
+            labelCadastrarProduto.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            labelCadastrarProduto.ForeColor = Color.GhostWhite;
+            labelCadastrarProduto.Location = new Point(81, 21);
+            labelCadastrarProduto.Margin = new Padding(2, 0, 2, 0);
+            labelCadastrarProduto.Name = "labelCadastrarProduto";
+            labelCadastrarProduto.Size = new Size(240, 38);
+            labelCadastrarProduto.TabIndex = 1;
+            labelCadastrarProduto.Text = "Cadastrar Produto";
+            labelCadastrarProduto.Click += btnCadastroProdutos_Click;
             // 
             // pictureBoxCadastroProduto
             // 
@@ -131,7 +131,7 @@
             // panelCadastroValor
             // 
             panelCadastroValor.BackColor = Color.FromArgb(114, 138, 244);
-            panelCadastroValor.Controls.Add(labelCadastroValor);
+            panelCadastroValor.Controls.Add(labelCadastrarValor);
             panelCadastroValor.Controls.Add(pictureBoxCadastroValor);
             panelCadastroValor.Cursor = Cursors.Hand;
             panelCadastroValor.Location = new Point(1156, 39);
@@ -141,18 +141,18 @@
             panelCadastroValor.TabIndex = 7;
             panelCadastroValor.Click += btnCadastroValores_Click;
             // 
-            // labelCadastroValor
+            // labelCadastrarValor
             // 
-            labelCadastroValor.AutoSize = true;
-            labelCadastroValor.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            labelCadastroValor.ForeColor = Color.GhostWhite;
-            labelCadastroValor.Location = new Point(81, 21);
-            labelCadastroValor.Margin = new Padding(2, 0, 2, 0);
-            labelCadastroValor.Name = "labelCadastroValor";
-            labelCadastroValor.Size = new Size(203, 38);
-            labelCadastroValor.TabIndex = 1;
-            labelCadastroValor.Text = "Cadastrar Valor";
-            labelCadastroValor.Click += btnCadastroValores_Click;
+            labelCadastrarValor.AutoSize = true;
+            labelCadastrarValor.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            labelCadastrarValor.ForeColor = Color.GhostWhite;
+            labelCadastrarValor.Location = new Point(81, 21);
+            labelCadastrarValor.Margin = new Padding(2, 0, 2, 0);
+            labelCadastrarValor.Name = "labelCadastrarValor";
+            labelCadastrarValor.Size = new Size(203, 38);
+            labelCadastrarValor.TabIndex = 1;
+            labelCadastrarValor.Text = "Cadastrar Valor";
+            labelCadastrarValor.Click += btnCadastroValores_Click;
             // 
             // pictureBoxCadastroValor
             // 
@@ -169,7 +169,7 @@
             // panelCadastroSabor
             // 
             panelCadastroSabor.BackColor = Color.FromArgb(114, 138, 244);
-            panelCadastroSabor.Controls.Add(labelCadastroSabor);
+            panelCadastroSabor.Controls.Add(labelCadastrarSabor);
             panelCadastroSabor.Controls.Add(pictureBoxCadastroSabor);
             panelCadastroSabor.Cursor = Cursors.Hand;
             panelCadastroSabor.Location = new Point(1156, 39);
@@ -179,18 +179,18 @@
             panelCadastroSabor.TabIndex = 6;
             panelCadastroSabor.Click += btnCadastroSabores_Click;
             // 
-            // labelCadastroSabor
+            // labelCadastrarSabor
             // 
-            labelCadastroSabor.AutoSize = true;
-            labelCadastroSabor.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            labelCadastroSabor.ForeColor = Color.GhostWhite;
-            labelCadastroSabor.Location = new Point(81, 21);
-            labelCadastroSabor.Margin = new Padding(2, 0, 2, 0);
-            labelCadastroSabor.Name = "labelCadastroSabor";
-            labelCadastroSabor.Size = new Size(212, 38);
-            labelCadastroSabor.TabIndex = 1;
-            labelCadastroSabor.Text = "Cadastrar Sabor";
-            labelCadastroSabor.Click += btnCadastroSabores_Click;
+            labelCadastrarSabor.AutoSize = true;
+            labelCadastrarSabor.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            labelCadastrarSabor.ForeColor = Color.GhostWhite;
+            labelCadastrarSabor.Location = new Point(81, 21);
+            labelCadastrarSabor.Margin = new Padding(2, 0, 2, 0);
+            labelCadastrarSabor.Name = "labelCadastrarSabor";
+            labelCadastrarSabor.Size = new Size(212, 38);
+            labelCadastrarSabor.TabIndex = 1;
+            labelCadastrarSabor.Text = "Cadastrar Sabor";
+            labelCadastrarSabor.Click += btnCadastroSabores_Click;
             // 
             // pictureBoxCadastroSabor
             // 
@@ -207,7 +207,7 @@
             // panelCadastroFuncionario
             // 
             panelCadastroFuncionario.BackColor = Color.FromArgb(114, 138, 244);
-            panelCadastroFuncionario.Controls.Add(labelAdicionarFuncionario);
+            panelCadastroFuncionario.Controls.Add(labelCadastrarFuncionario);
             panelCadastroFuncionario.Controls.Add(pictureBoxCadastrarProduto);
             panelCadastroFuncionario.Cursor = Cursors.Hand;
             panelCadastroFuncionario.Location = new Point(1156, 39);
@@ -217,18 +217,18 @@
             panelCadastroFuncionario.TabIndex = 4;
             panelCadastroFuncionario.Click += btnCadastroFuncionario_Click;
             // 
-            // labelAdicionarFuncionario
+            // labelCadastrarFuncionario
             // 
-            labelAdicionarFuncionario.AutoSize = true;
-            labelAdicionarFuncionario.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            labelAdicionarFuncionario.ForeColor = Color.GhostWhite;
-            labelAdicionarFuncionario.Location = new Point(81, 21);
-            labelAdicionarFuncionario.Margin = new Padding(2, 0, 2, 0);
-            labelAdicionarFuncionario.Name = "labelAdicionarFuncionario";
-            labelAdicionarFuncionario.Size = new Size(286, 38);
-            labelAdicionarFuncionario.TabIndex = 1;
-            labelAdicionarFuncionario.Text = "Cadastrar Funcionário";
-            labelAdicionarFuncionario.Click += btnCadastroFuncionario_Click;
+            labelCadastrarFuncionario.AutoSize = true;
+            labelCadastrarFuncionario.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            labelCadastrarFuncionario.ForeColor = Color.GhostWhite;
+            labelCadastrarFuncionario.Location = new Point(81, 21);
+            labelCadastrarFuncionario.Margin = new Padding(2, 0, 2, 0);
+            labelCadastrarFuncionario.Name = "labelCadastrarFuncionario";
+            labelCadastrarFuncionario.Size = new Size(286, 38);
+            labelCadastrarFuncionario.TabIndex = 1;
+            labelCadastrarFuncionario.Text = "Cadastrar Funcionário";
+            labelCadastrarFuncionario.Click += btnCadastroFuncionario_Click;
             // 
             // pictureBoxCadastrarProduto
             // 
@@ -245,7 +245,7 @@
             // panelCadastroIngrediente
             // 
             panelCadastroIngrediente.BackColor = Color.FromArgb(114, 138, 244);
-            panelCadastroIngrediente.Controls.Add(labelCadastroIngrediente);
+            panelCadastroIngrediente.Controls.Add(labelCadastrarIngrediente);
             panelCadastroIngrediente.Controls.Add(pictureBoxCadastroIngrediente);
             panelCadastroIngrediente.Cursor = Cursors.Hand;
             panelCadastroIngrediente.Location = new Point(1156, 39);
@@ -255,18 +255,18 @@
             panelCadastroIngrediente.TabIndex = 6;
             panelCadastroIngrediente.Click += btnCadastroIngredientes_Click;
             // 
-            // labelCadastroIngrediente
+            // labelCadastrarIngrediente
             // 
-            labelCadastroIngrediente.AutoSize = true;
-            labelCadastroIngrediente.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            labelCadastroIngrediente.ForeColor = Color.GhostWhite;
-            labelCadastroIngrediente.Location = new Point(81, 21);
-            labelCadastroIngrediente.Margin = new Padding(2, 0, 2, 0);
-            labelCadastroIngrediente.Name = "labelCadastroIngrediente";
-            labelCadastroIngrediente.Size = new Size(295, 38);
-            labelCadastroIngrediente.TabIndex = 1;
-            labelCadastroIngrediente.Text = "Cadastrar Ingredientes";
-            labelCadastroIngrediente.Click += btnCadastroIngredientes_Click;
+            labelCadastrarIngrediente.AutoSize = true;
+            labelCadastrarIngrediente.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            labelCadastrarIngrediente.ForeColor = Color.GhostWhite;
+            labelCadastrarIngrediente.Location = new Point(81, 21);
+            labelCadastrarIngrediente.Margin = new Padding(2, 0, 2, 0);
+            labelCadastrarIngrediente.Name = "labelCadastrarIngrediente";
+            labelCadastrarIngrediente.Size = new Size(295, 38);
+            labelCadastrarIngrediente.TabIndex = 1;
+            labelCadastrarIngrediente.Text = "Cadastrar Ingredientes";
+            labelCadastrarIngrediente.Click += btnCadastroIngredientes_Click;
             // 
             // pictureBoxCadastroIngrediente
             // 
@@ -433,26 +433,26 @@
         private PictureBox pictureBox2;
         private TextBox textBoxPesquisa;
         private Panel panelCadastroFuncionario;
-        private Label labelAdicionarFuncionario;
+        private Label labelCadastrarFuncionario;
         private PictureBox pictureBoxCadastrarProduto;
         private BarraLateralUserControlForm barraLateralUserControlForm;
         private Panel panelCadastroCliente;
         private Label labelCadastrarCliente;
         private PictureBox pictureBoxCadastrarCliente;
         private Panel panelCadastroIngrediente;
-        private Label labelCadastroIngrediente;
+        private Label labelCadastrarIngrediente;
         private PictureBox pictureBoxCadastroIngrediente;
         private Panel panelCadastroSabor;
-        private Label labelCadastroSabor;
+        private Label labelCadastrarSabor;
         private PictureBox pictureBoxCadastroSabor;
         private Panel panelPrincipalInicio;
         private Label labelReultadosInicio;
         private DataGridView dataGridView1;
         private Panel panelCadastroValor;
-        private Label labelCadastroValor;
+        private Label labelCadastrarValor;
         private PictureBox pictureBoxCadastroValor;
         private Panel panelCadastroProduto;
-        private Label labelCadastroProduto;
+        private Label labelCadastrarProduto;
         private PictureBox pictureBoxCadastroProduto;
     }
 }

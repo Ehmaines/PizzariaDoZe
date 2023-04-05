@@ -235,4 +235,67 @@
   <data name="radioBtnGrupoEntregador.Text" xml:space="preserve">
     <value>Entregador</value>
   </data>
+  <data name="labelCadastrarFuncionario.Text" xml:space="preserve">
+    <value>Cadastrar Funcionário</value>
+  </data>
+  <data name="labelCadastrarCliente.Text" xml:space="preserve">
+    <value>Cadastrar Cliente</value>
+  </data>
+  <data name="labelCadastrarIngrediente.Text" xml:space="preserve">
+    <value>Cadastrar Ingrediente</value>
+  </data>
+  <data name="labelCadastrarProduto.Text" xml:space="preserve">
+    <value>Cadastrar Produto</value>
+  </data>
+  <data name="labelCadastrarSabor.Text" xml:space="preserve">
+    <value>Cadastrar Sabor</value>
+  </data>
+  <data name="labelCadastrarValor.Text" xml:space="preserve">
+    <value>Cadastrar Sabor</value>
+  </data>
+  <data name="btnCancelar.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="btnSalvar.Text" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="labalCategoria.Text" xml:space="preserve">
+    <value>Categoria</value>
+  </data>
+  <data name="labelCadastraFuncionario.Text" xml:space="preserve">
+    <value>Cadastro de Funcionarios</value>
+  </data>
+  <data name="labelCadastroCliente.Text" xml:space="preserve">
+    <value>Cadastro de Clientes</value>
+  </data>
+  <data name="labelCadastroIngrediente.Text" xml:space="preserve">
+    <value>Cadastro de Ingredientes</value>
+  </data>
+  <data name="labelCadastroProdutos.Text" xml:space="preserve">
+    <value>Cadastro de Produtos</value>
+  </data>
+  <data name="labelCadastroSabores.Text" xml:space="preserve">
+    <value>Cadastro de Sabores</value>
+  </data>
+  <data name="labelCadastroValores.Text" xml:space="preserve">
+    <value>Cadastro de Valores</value>
+  </data>
+  <data name="labelEndereco.Text" xml:space="preserve">
+    <value>Endereço</value>
+  </data>
+  <data name="labelImagem.Text" xml:space="preserve">
+    <value>Imagem</value>
+  </data>
+  <data name="labelMl.Text" xml:space="preserve">
+    <value>ML</value>
+  </data>
+  <data name="labelTamanho.Text" xml:space="preserve">
+    <value>Tamanho</value>
+  </data>
+  <data name="labelTipo.Text" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="labelValorBorda.Text" xml:space="preserve">
+    <value>Valor Borda</value>
+  </data>
 </root>
