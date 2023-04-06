@@ -3,6 +3,9 @@ using System.Configuration;
 
 namespace PizzariaDoZe
 {
+    /// <summary>
+    /// Página Principal da aplicação
+    /// </summary>
     public partial class PaginaPrincipalForm : Form
     {
         CadastroFuncionarioForms cadastroFuncionario;
@@ -11,7 +14,10 @@ namespace PizzariaDoZe
         CadastroSaborForms cadastroSabor;
         CadastroValorForms cadastroValor;
         CadastroProdutoForms cadastroProduto;
-        ConfiguracoesUserControlForm configuracoes;
+
+        /// <summary>
+        /// Página Principal da aplicação
+        /// </summary>
         public PaginaPrincipalForm()
         {
             InitializeComponent();
@@ -31,8 +37,6 @@ namespace PizzariaDoZe
             cadastroValor = new CadastroValorForms();
             cadastroProduto = new CadastroProdutoForms();
 
-            configuracoes = new ConfiguracoesUserControlForm();
-
             //SetEventosBarraLateralInicio();
             SetEventosBarraLateralFuncionarios();
             SetEventosBarraLateralClientes();
@@ -42,10 +46,10 @@ namespace PizzariaDoZe
             SetEventosBarraLateralProdutos();
             SetEventosBarraLateralConfiguracoes();
 
-            configuracoes.comboBoxIdioma.SelectedItem = ConfigurationManager.AppSettings.Get("IdiomaRegiao");
+            configuracoesUserControlForm.comboBoxIdioma.SelectedItem = ConfigurationManager.AppSettings.Get("IdiomaRegiao");
         }
 
-      
+
 
         private void SetEventosBarraLateralInicio()
         {
@@ -211,8 +215,8 @@ namespace PizzariaDoZe
             setTodosCadastrosParaNaoVisiveis();
             setTodasAsCoresDaBarraLateralParaPadrao();
             barraLateralUserControlForm.panelConfiguracoes.BackColor = Color.FromArgb(163, 184, 247);
-            configuracoes.Visible = true;
-            configuracoes.buttonSalvarIdioma.Click += SalvarIdioma;
+            configuracoesUserControlForm.Visible = true;
+            configuracoesUserControlForm.btnSalvar.Click += SalvarIdioma!;
         }
 
         private void setTodasAsCoresDaBarraLateralParaPadrao()
@@ -235,7 +239,7 @@ namespace PizzariaDoZe
             panelCadastroFuncionario.Visible = false;
             panelCadastroProduto.Visible = false;
             panelCadastroValor.Visible = false;
-            configuracoes.Visible = false;
+            configuracoesUserControlForm.Visible = false;
         }
 
         private void SalvarIdioma(object sender, EventArgs e)
@@ -243,12 +247,12 @@ namespace PizzariaDoZe
             //abre o arquivo local como leitura/escrita e salva as alterações em ProjetoPastelariaDoZe_2023.dll.config
             Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
             config.AppSettings.Settings.Remove("IdiomaRegiao");
-            config.AppSettings.Settings.Add("IdiomaRegiao", configuracoes.comboBoxIdioma.Text);
+            config.AppSettings.Settings.Add("IdiomaRegiao", configuracoesUserControlForm.comboBoxIdioma.Text);
             config.Save(ConfigurationSaveMode.Modified);
             ConfigurationManager.RefreshSection("appSettings");
             Close();
-            _ = MessageBox.Show("Idioma/região alterada com sucesso! Reinicie a aplicação para aplicar o novo Idioma/região!");
-            if (configuracoes.checkBoxReniciarAplicacaoConfig.Checked)
+            MessageBox.Show("Idioma/região alterada com sucesso! Reinicie a aplicação para aplicar o novo Idioma/região!");
+            if (configuracoesUserControlForm.checkBoxReniciarAplicacaoConfig.Checked)
             {
                 Application.Restart();
                 Environment.Exit(0);

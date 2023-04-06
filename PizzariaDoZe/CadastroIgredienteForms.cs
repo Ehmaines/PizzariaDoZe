@@ -10,8 +10,14 @@ using System.Windows.Forms;
 
 namespace PizzariaDoZe
 {
+    /// <summary>
+    /// Formulário de Cadastro de Ingredientes
+    /// </summary>
     public partial class CadastroIngredienteForms : Form
     {
+        /// <summary>
+        /// Formulário de Cadastro de Ingredientes
+        /// </summary>
         public CadastroIngredienteForms()
         {
             InitializeComponent();

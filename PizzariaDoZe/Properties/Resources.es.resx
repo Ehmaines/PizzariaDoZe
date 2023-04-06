@@ -123,6 +123,9 @@
   <data name="btnSalvar.Text" xml:space="preserve">
     <value>Ahorrar</value>
   </data>
+  <data name="checkBoxReniciarAplicacaoConfig.Text" xml:space="preserve">
+    <value>Reiniciar la aplicación para aplicar el idioma</value>
+  </data>
   <data name="labalCategoria.Text" xml:space="preserve">
     <value>Categoría</value>
   </data>
@@ -210,6 +213,9 @@
   <data name="labelId.Text" xml:space="preserve">
     <value>Código</value>
   </data>
+  <data name="labelIdiomaRegiao.Text" xml:space="preserve">
+    <value>Idioma / región</value>
+  </data>
   <data name="labelImagem.Text" xml:space="preserve">
     <value>Imagen</value>
   </data>
@@ -267,6 +273,9 @@
   <data name="labelValorBorda.Text" xml:space="preserve">
     <value>Valor fronterizo</value>
   </data>
+  <data name="labelValores.Text" xml:space="preserve">
+    <value>Valores</value>
+  </data>
   <data name="labelVerificarSenha.Text" xml:space="preserve">
     <value>Repita la contraseña</value>
   </data>
@@ -278,5 +287,8 @@
   </data>
   <data name="radioBtnGrupoEntregador.Text" xml:space="preserve">
     <value>Repartidor</value>
+  </data>
+  <data name="tabPageIdiomaRegiao.Text" xml:space="preserve">
+    <value>Idioma / región</value>
   </data>
 </root>

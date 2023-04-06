@@ -272,13 +272,37 @@
         private Label labelNumero;
         private Label labelLogradouro;
         private Label labelCEP;
+        /// <summary>
+        /// 
+        /// </summary>
         public TextBox textBox4;
+        /// <summary>
+        /// 
+        /// </summary>
         public TextBox txtUF;
+        /// <summary>
+        /// 
+        /// </summary>
         public TextBox textBox3;
+        /// <summary>
+        /// 
+        /// </summary>
         public TextBox txtBairro;
+        /// <summary>
+        /// 
+        /// </summary>
         public TextBox textBox2;
+        /// <summary>
+        /// 
+        /// </summary>
         public TextBox txtNumeroCasa;
+        /// <summary>
+        /// 
+        /// </summary>
         public TextBox textBox1;
+        /// <summary>
+        /// 
+        /// </summary>
         public TextBox txtCep;
     }
 }

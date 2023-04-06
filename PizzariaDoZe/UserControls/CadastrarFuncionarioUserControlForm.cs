@@ -10,8 +10,14 @@ using System.Windows.Forms;
 
 namespace PizzariaDoZe.UserControls
 {
+    /// <summary>
+    /// User control do botão de cadastrar usuario
+    /// </summary>
     public partial class CadastrarFuncionarioUserControlForm : UserControl
     {
+        /// <summary>
+        /// User control do botão de cadastrar usuario
+        /// </summary>
         public CadastrarFuncionarioUserControlForm()
         {
             InitializeComponent();

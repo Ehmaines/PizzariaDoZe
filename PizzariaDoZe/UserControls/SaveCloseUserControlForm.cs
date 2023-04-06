@@ -10,8 +10,14 @@ using System.Windows.Forms;
 
 namespace PizzariaDoZe
 {
+    /// <summary>
+    /// User control dos botões Salvar e Cancelar
+    /// </summary>
     public partial class SaveCloseUserControlForm : UserControl
     {
+        /// <summary>
+        /// User control dos botões Salvar e Cancelar
+        /// </summary>
         public SaveCloseUserControlForm()
         {
             InitializeComponent();

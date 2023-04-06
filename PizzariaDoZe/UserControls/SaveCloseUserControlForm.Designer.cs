@@ -82,9 +82,17 @@
         }
 
         #endregion
-
+        /// <summary>
+        /// btnSalvar
+        /// </summary>
         public Button btnSalvar;
+        /// <summary>
+        /// btnCancelar
+        /// </summary>
         public Button btnCancelar;
+        /// <summary>
+        /// panelBtnCancelarSalvar
+        /// </summary>
         public Panel panelBtnCancelarSalvar;
     }
 }

@@ -79,6 +79,15 @@ namespace PizzariaDoZe.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Reiniciar aplicação para aplicar idioma.
+        /// </summary>
+        internal static string checkBoxReniciarAplicacaoConfig_Text {
+            get {
+                return ResourceManager.GetString("checkBoxReniciarAplicacaoConfig.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap funcionarios {
@@ -361,6 +370,15 @@ namespace PizzariaDoZe.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Idioma / Região.
+        /// </summary>
+        internal static string labelIdiomaRegiao_Text {
+            get {
+                return ResourceManager.GetString("labelIdiomaRegiao.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Imagem.
         /// </summary>
         internal static string labelImagem_Text {
@@ -532,6 +550,15 @@ namespace PizzariaDoZe.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Valores.
+        /// </summary>
+        internal static string labelValores_Text {
+            get {
+                return ResourceManager.GetString("labelValores.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Verificar Senha.
         /// </summary>
         internal static string labelVerificarSenha_Text {
@@ -574,6 +601,15 @@ namespace PizzariaDoZe.Properties {
             get {
                 object obj = ResourceManager.GetObject("search", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Idioma / Região.
+        /// </summary>
+        internal static string tabPageIdiomaRegiao_Text {
+            get {
+                return ResourceManager.GetString("tabPageIdiomaRegiao.Text", resourceCulture);
             }
         }
         

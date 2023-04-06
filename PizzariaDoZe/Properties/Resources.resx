@@ -298,4 +298,16 @@
   <data name="labelValorBorda.Text" xml:space="preserve">
     <value>Valor Borda</value>
   </data>
+  <data name="checkBoxReniciarAplicacaoConfig.Text" xml:space="preserve">
+    <value>Reiniciar aplicação para aplicar idioma</value>
+  </data>
+  <data name="labelIdiomaRegiao.Text" xml:space="preserve">
+    <value>Idioma / Região</value>
+  </data>
+  <data name="labelValores.Text" xml:space="preserve">
+    <value>Valores</value>
+  </data>
+  <data name="tabPageIdiomaRegiao.Text" xml:space="preserve">
+    <value>Idioma / Região</value>
+  </data>
 </root>

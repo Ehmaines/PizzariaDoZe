@@ -10,8 +10,14 @@ using System.Windows.Forms;
 
 namespace PizzariaDoZe
 {
+    /// <summary>
+    /// User control do cadastro de endereço
+    /// </summary>
     public partial class EnderecoUserControlForm : UserControl
     {
+        /// <summary>
+        /// User control do cadastro de endereço
+        /// </summary>
         public EnderecoUserControlForm()
         {
             InitializeComponent();

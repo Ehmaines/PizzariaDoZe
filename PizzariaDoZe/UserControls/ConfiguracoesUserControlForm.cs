@@ -10,8 +10,14 @@ using System.Windows.Forms;
 
 namespace PizzariaDoZe.UserControls
 {
+    /// <summary>
+    /// User control da barra lateral
+    /// </summary>
     public partial class ConfiguracoesUserControlForm : UserControl
     {
+        /// <summary>
+        /// User control da barra lateral
+        /// </summary>
         public ConfiguracoesUserControlForm()
         {
             InitializeComponent();

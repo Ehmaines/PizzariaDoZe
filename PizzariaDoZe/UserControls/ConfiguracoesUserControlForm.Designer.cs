@@ -28,55 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            tabControl1 = new TabControl();
+            tabControlConfiguracoes = new TabControl();
             tabPageIdiomaRegiao = new TabPage();
-            buttonSalvarIdioma = new Button();
+            btnSalvar = new Button();
             checkBoxReniciarAplicacaoConfig = new CheckBox();
             comboBoxIdioma = new ComboBox();
             labelIdiomaRegiao = new Label();
-            tabControl1.SuspendLayout();
+            tabControlConfiguracoes.SuspendLayout();
             tabPageIdiomaRegiao.SuspendLayout();
             SuspendLayout();
             // 
-            // tabControl1
+            // tabControlConfiguracoes
             // 
-            tabControl1.Controls.Add(tabPageIdiomaRegiao);
-            tabControl1.Location = new Point(17, 20);
-            tabControl1.Name = "tabControl1";
-            tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(558, 258);
-            tabControl1.TabIndex = 0;
+            tabControlConfiguracoes.Controls.Add(tabPageIdiomaRegiao);
+            tabControlConfiguracoes.Location = new Point(21, 25);
+            tabControlConfiguracoes.Margin = new Padding(4);
+            tabControlConfiguracoes.Name = "tabControlConfiguracoes";
+            tabControlConfiguracoes.SelectedIndex = 0;
+            tabControlConfiguracoes.Size = new Size(698, 322);
+            tabControlConfiguracoes.TabIndex = 0;
             // 
             // tabPageIdiomaRegiao
             // 
             tabPageIdiomaRegiao.BackColor = Color.FromArgb(39, 39, 41);
-            tabPageIdiomaRegiao.Controls.Add(buttonSalvarIdioma);
+            tabPageIdiomaRegiao.Controls.Add(btnSalvar);
             tabPageIdiomaRegiao.Controls.Add(checkBoxReniciarAplicacaoConfig);
             tabPageIdiomaRegiao.Controls.Add(comboBoxIdioma);
             tabPageIdiomaRegiao.Controls.Add(labelIdiomaRegiao);
-            tabPageIdiomaRegiao.Location = new Point(4, 29);
+            tabPageIdiomaRegiao.Location = new Point(4, 34);
+            tabPageIdiomaRegiao.Margin = new Padding(4);
             tabPageIdiomaRegiao.Name = "tabPageIdiomaRegiao";
-            tabPageIdiomaRegiao.Padding = new Padding(3);
-            tabPageIdiomaRegiao.Size = new Size(550, 225);
+            tabPageIdiomaRegiao.Padding = new Padding(4);
+            tabPageIdiomaRegiao.Size = new Size(690, 284);
             tabPageIdiomaRegiao.TabIndex = 0;
             tabPageIdiomaRegiao.Text = "Idioma / Região";
             // 
-            // buttonSalvarIdioma
+            // btnSalvar
             // 
-            buttonSalvarIdioma.Location = new Point(450, 190);
-            buttonSalvarIdioma.Name = "buttonSalvarIdioma";
-            buttonSalvarIdioma.Size = new Size(94, 29);
-            buttonSalvarIdioma.TabIndex = 3;
-            buttonSalvarIdioma.Text = "Salvar";
-            buttonSalvarIdioma.UseVisualStyleBackColor = true;
+            btnSalvar.Location = new Point(562, 238);
+            btnSalvar.Margin = new Padding(4);
+            btnSalvar.Name = "btnSalvar";
+            btnSalvar.Size = new Size(118, 36);
+            btnSalvar.TabIndex = 3;
+            btnSalvar.Text = "Salvar";
+            btnSalvar.UseVisualStyleBackColor = true;
             // 
             // checkBoxReniciarAplicacaoConfig
             // 
             checkBoxReniciarAplicacaoConfig.AutoSize = true;
             checkBoxReniciarAplicacaoConfig.ForeColor = Color.GhostWhite;
-            checkBoxReniciarAplicacaoConfig.Location = new Point(16, 68);
+            checkBoxReniciarAplicacaoConfig.Location = new Point(20, 85);
+            checkBoxReniciarAplicacaoConfig.Margin = new Padding(4);
             checkBoxReniciarAplicacaoConfig.Name = "checkBoxReniciarAplicacaoConfig";
-            checkBoxReniciarAplicacaoConfig.Size = new Size(290, 24);
+            checkBoxReniciarAplicacaoConfig.Size = new Size(336, 29);
             checkBoxReniciarAplicacaoConfig.TabIndex = 2;
             checkBoxReniciarAplicacaoConfig.Text = "Reiniciar aplicação para aplicar idioma";
             checkBoxReniciarAplicacaoConfig.UseVisualStyleBackColor = true;
@@ -85,30 +89,33 @@
             // 
             comboBoxIdioma.FormattingEnabled = true;
             comboBoxIdioma.Items.AddRange(new object[] { "pt-BR", "en-US", "es" });
-            comboBoxIdioma.Location = new Point(16, 34);
+            comboBoxIdioma.Location = new Point(20, 42);
+            comboBoxIdioma.Margin = new Padding(4);
             comboBoxIdioma.Name = "comboBoxIdioma";
-            comboBoxIdioma.Size = new Size(117, 28);
+            comboBoxIdioma.Size = new Size(145, 33);
             comboBoxIdioma.TabIndex = 1;
             // 
             // labelIdiomaRegiao
             // 
             labelIdiomaRegiao.AutoSize = true;
             labelIdiomaRegiao.ForeColor = Color.GhostWhite;
-            labelIdiomaRegiao.Location = new Point(16, 11);
+            labelIdiomaRegiao.Location = new Point(20, 14);
+            labelIdiomaRegiao.Margin = new Padding(4, 0, 4, 0);
             labelIdiomaRegiao.Name = "labelIdiomaRegiao";
-            labelIdiomaRegiao.Size = new Size(117, 20);
+            labelIdiomaRegiao.Size = new Size(139, 25);
             labelIdiomaRegiao.TabIndex = 0;
             labelIdiomaRegiao.Text = "Idioma / Região";
             // 
             // ConfiguracoesUserControlForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(39, 39, 41);
-            Controls.Add(tabControl1);
+            Controls.Add(tabControlConfiguracoes);
+            Margin = new Padding(4);
             Name = "ConfiguracoesUserControlForm";
-            Size = new Size(584, 300);
-            tabControl1.ResumeLayout(false);
+            Size = new Size(730, 375);
+            tabControlConfiguracoes.ResumeLayout(false);
             tabPageIdiomaRegiao.ResumeLayout(false);
             tabPageIdiomaRegiao.PerformLayout();
             ResumeLayout(false);
@@ -117,9 +124,21 @@
         #endregion
         private TabPage tabPageIdiomaRegiao;
         private Label labelIdiomaRegiao;
-        public TabControl tabControl1;
+        /// <summary>
+        /// tabControl1
+        /// </summary>
+        public TabControl tabControlConfiguracoes;
+        /// <summary>
+        /// comboBoxIdioma
+        /// </summary>
         public ComboBox comboBoxIdioma;
+        /// <summary>
+        /// checkBoxReniciarAplicacaoConfig
+        /// </summary>
         public CheckBox checkBoxReniciarAplicacaoConfig;
-        public Button buttonSalvarIdioma;
+        /// <summary>
+        /// buttonSalvarIdioma
+        /// </summary>
+        public Button btnSalvar;
     }
 }
