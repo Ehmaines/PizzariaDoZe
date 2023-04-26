@@ -126,6 +126,21 @@
   <data name="checkBoxReniciarAplicacaoConfig.Text" xml:space="preserve">
     <value>Reiniciar la aplicación para aplicar el idioma</value>
   </data>
+  <data name="clientesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Clientes</value>
+  </data>
+  <data name="configuracoesToolStripMenuItem.Text" xml:space="preserve">
+    <value>ajustes</value>
+  </data>
+  <data name="funcionariosToolStripMenuItem.Text" xml:space="preserve">
+    <value>Empleados</value>
+  </data>
+  <data name="ingredientesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ingredientes</value>
+  </data>
+  <data name="inicioToolStripMenuItem.Text" xml:space="preserve">
+    <value>Comenzar</value>
+  </data>
   <data name="labalCategoria.Text" xml:space="preserve">
     <value>Categoría</value>
   </data>
@@ -279,6 +294,12 @@
   <data name="labelVerificarSenha.Text" xml:space="preserve">
     <value>Repita la contraseña</value>
   </data>
+  <data name="pedidosToolStripMenuItem.Text" xml:space="preserve">
+    <value>Peticiones</value>
+  </data>
+  <data name="produtosToolStripMenuItem.Text" xml:space="preserve">
+    <value>Productos</value>
+  </data>
   <data name="radioBtnGrupoAdministrador.Text" xml:space="preserve">
     <value>Administrador</value>
   </data>
@@ -288,7 +309,16 @@
   <data name="radioBtnGrupoEntregador.Text" xml:space="preserve">
     <value>Repartidor</value>
   </data>
+  <data name="saboresToolStripMenuItem.Text" xml:space="preserve">
+    <value>Sabores</value>
+  </data>
+  <data name="sairToolStripMenuItem.Text" xml:space="preserve">
+    <value>Salir</value>
+  </data>
   <data name="tabPageIdiomaRegiao.Text" xml:space="preserve">
     <value>Idioma / región</value>
+  </data>
+  <data name="valoresToolStripMenuItem.Text" xml:space="preserve">
+    <value>Valores</value>
   </data>
 </root>

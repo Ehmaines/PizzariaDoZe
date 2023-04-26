@@ -35,7 +35,7 @@
             txtNomeIngrediente = new TextBox();
             labelCadastrarProduto = new Label();
             labelValor = new Label();
-            textBox1 = new TextBox();
+            textBoxValor = new TextBox();
             listBox1 = new ListBox();
             labelTipo = new Label();
             labelMl = new Label();
@@ -118,14 +118,14 @@
             labelValor.TabIndex = 42;
             labelValor.Text = "Valor";
             // 
-            // textBox1
+            // textBoxValor
             // 
-            textBox1.BackColor = Color.GhostWhite;
-            textBox1.Location = new Point(59, 306);
-            textBox1.Margin = new Padding(4);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(509, 31);
-            textBox1.TabIndex = 41;
+            textBoxValor.BackColor = Color.GhostWhite;
+            textBoxValor.Location = new Point(59, 306);
+            textBoxValor.Margin = new Padding(4);
+            textBoxValor.Name = "textBoxValor";
+            textBoxValor.Size = new Size(509, 31);
+            textBoxValor.TabIndex = 41;
             // 
             // listBox1
             // 
@@ -184,7 +184,7 @@
             Controls.Add(labelTipo);
             Controls.Add(listBox1);
             Controls.Add(labelValor);
-            Controls.Add(textBox1);
+            Controls.Add(textBoxValor);
             Controls.Add(saveCloseUserControlForm1);
             Controls.Add(labelId);
             Controls.Add(txtIngredienteId);
@@ -209,7 +209,7 @@
         private TextBox txtNomeIngrediente;
         private Label labelCadastrarProduto;
         private Label labelValor;
-        private TextBox textBox1;
+        private TextBox textBoxValor;
         private ListBox listBox1;
         private Label labelTipo;
         private Label labelMl;

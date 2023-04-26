@@ -33,7 +33,7 @@
             panel1 = new Panel();
             labelGrupo = new Label();
             labelObservacao = new Label();
-            textBox1 = new TextBox();
+            txtObservacao = new TextBox();
             dateTimeValidadeCarteira = new DateTimePicker();
             labelValidade = new Label();
             labelCarteiraMotorista = new Label();
@@ -58,7 +58,9 @@
             maskedTxtTelefone = new MaskedTextBox();
             labelEmail = new Label();
             saveCloseUserControlForm1 = new SaveCloseUserControlForm();
+            panel2 = new Panel();
             panel1.SuspendLayout();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // enderecoUserControlForm1
@@ -68,14 +70,14 @@
             enderecoUserControlForm1.Margin = new Padding(1);
             enderecoUserControlForm1.Name = "enderecoUserControlForm1";
             enderecoUserControlForm1.Size = new Size(364, 754);
-            enderecoUserControlForm1.TabIndex = 0;
+            enderecoUserControlForm1.TabIndex = 66;
             // 
             // labelCadastrarFuncionario
             // 
             labelCadastrarFuncionario.AutoSize = true;
             labelCadastrarFuncionario.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point);
             labelCadastrarFuncionario.ForeColor = Color.GhostWhite;
-            labelCadastrarFuncionario.Location = new Point(191, 24);
+            labelCadastrarFuncionario.Location = new Point(202, 20);
             labelCadastrarFuncionario.Margin = new Padding(2, 0, 2, 0);
             labelCadastrarFuncionario.Name = "labelCadastrarFuncionario";
             labelCadastrarFuncionario.Size = new Size(561, 65);
@@ -86,7 +88,7 @@
             // 
             panel1.Controls.Add(labelGrupo);
             panel1.Controls.Add(labelObservacao);
-            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(txtObservacao);
             panel1.Controls.Add(dateTimeValidadeCarteira);
             panel1.Controls.Add(labelValidade);
             panel1.Controls.Add(labelCarteiraMotorista);
@@ -140,15 +142,15 @@
             labelObservacao.TabIndex = 62;
             labelObservacao.Text = "Observação";
             // 
-            // textBox1
+            // txtObservacao
             // 
-            textBox1.ForeColor = Color.FromArgb(39, 39, 41);
-            textBox1.Location = new Point(34, 724);
-            textBox1.Margin = new Padding(4);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(312, 213);
-            textBox1.TabIndex = 63;
+            txtObservacao.ForeColor = Color.FromArgb(39, 39, 41);
+            txtObservacao.Location = new Point(34, 724);
+            txtObservacao.Margin = new Padding(4);
+            txtObservacao.Multiline = true;
+            txtObservacao.Name = "txtObservacao";
+            txtObservacao.Size = new Size(312, 213);
+            txtObservacao.TabIndex = 63;
             // 
             // dateTimeValidadeCarteira
             // 
@@ -300,6 +302,7 @@
             maskedTxtCPF.ForeColor = Color.FromArgb(39, 39, 41);
             maskedTxtCPF.Location = new Point(129, 64);
             maskedTxtCPF.Margin = new Padding(2, 4, 2, 4);
+            maskedTxtCPF.Mask = "000-000-000-00";
             maskedTxtCPF.Name = "maskedTxtCPF";
             maskedTxtCPF.Size = new Size(215, 31);
             maskedTxtCPF.TabIndex = 44;
@@ -378,7 +381,7 @@
             txtEmail.Margin = new Padding(4);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(312, 31);
-            txtEmail.TabIndex = 24;
+            txtEmail.TabIndex = 65;
             // 
             // maskedTxtTelefone
             // 
@@ -387,7 +390,7 @@
             maskedTxtTelefone.Margin = new Padding(2, 4, 2, 4);
             maskedTxtTelefone.Name = "maskedTxtTelefone";
             maskedTxtTelefone.Size = new Size(312, 31);
-            maskedTxtTelefone.TabIndex = 23;
+            maskedTxtTelefone.TabIndex = 64;
             // 
             // labelEmail
             // 
@@ -408,7 +411,15 @@
             saveCloseUserControlForm1.Margin = new Padding(4, 6, 4, 6);
             saveCloseUserControlForm1.Name = "saveCloseUserControlForm1";
             saveCloseUserControlForm1.Size = new Size(324, 71);
-            saveCloseUserControlForm1.TabIndex = 11;
+            saveCloseUserControlForm1.TabIndex = 67;
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(labelCadastrarFuncionario);
+            panel2.Location = new Point(-11, -11);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(908, 100);
+            panel2.TabIndex = 68;
             // 
             // CadastroFuncionarioForms
             // 
@@ -416,20 +427,22 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(39, 39, 41);
             ClientSize = new Size(896, 1240);
+            Controls.Add(panel2);
             Controls.Add(saveCloseUserControlForm1);
             Controls.Add(panel1);
-            Controls.Add(labelCadastrarFuncionario);
             Controls.Add(enderecoUserControlForm1);
             ForeColor = SystemColors.ControlText;
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            KeyPreview = true;
             Margin = new Padding(2, 4, 2, 4);
             Name = "CadastroFuncionarioForms";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CadastroFuncionarioForms";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -459,10 +472,11 @@
         private RadioButton radioBtnGrupoAtendente;
         private RadioButton radioBtnGrupoAdministrador;
         private Label labelObservacao;
-        private TextBox textBox1;
+        private TextBox txtObservacao;
         private DateTimePicker dateTimeValidadeCarteira;
         private Label labelValidade;
         private Label labelGrupo;
         private SaveCloseUserControlForm saveCloseUserControlForm1;
+        private Panel panel2;
     }
 }

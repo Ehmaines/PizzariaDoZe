@@ -28,6 +28,8 @@ namespace PizzariaDoZe
             //ajuste manual de campos ou mensagens para o usuário que não puderam ser automatizadas acima
             this.Text = Properties.Resources.ResourceManager.GetString("txtTituloPrincipal");
             #endregion
+
+            Funcoes.AplicaMascaraMoeda(textBoxValor);
         }
     }
 }

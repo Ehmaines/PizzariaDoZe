@@ -88,12 +88,48 @@ namespace PizzariaDoZe.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Clientes.
+        /// </summary>
+        internal static string clientesToolStripMenuItem_Text {
+            get {
+                return ResourceManager.GetString("clientesToolStripMenuItem.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Configurações.
+        /// </summary>
+        internal static string configuracoesToolStripMenuItem_Text {
+            get {
+                return ResourceManager.GetString("configuracoesToolStripMenuItem.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Deseja fechar a aplicação ou minimizá-la para a bandeja do sistema?.
+        /// </summary>
+        internal static string confirmacaoFecharJanela {
+            get {
+                return ResourceManager.GetString("confirmacaoFecharJanela", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap funcionarios {
             get {
                 object obj = ResourceManager.GetObject("funcionarios", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Funcionários.
+        /// </summary>
+        internal static string funcionariosToolStripMenuItem_Text {
+            get {
+                return ResourceManager.GetString("funcionariosToolStripMenuItem.Text", resourceCulture);
             }
         }
         
@@ -114,6 +150,24 @@ namespace PizzariaDoZe.Properties {
             get {
                 object obj = ResourceManager.GetObject("home1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ingredientes.
+        /// </summary>
+        internal static string ingredientesToolStripMenuItem_Text {
+            get {
+                return ResourceManager.GetString("ingredientesToolStripMenuItem.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Inicio.
+        /// </summary>
+        internal static string inicioToolStripMenuItem_Text {
+            get {
+                return ResourceManager.GetString("inicioToolStripMenuItem.Text", resourceCulture);
             }
         }
         
@@ -568,6 +622,24 @@ namespace PizzariaDoZe.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Pedidos.
+        /// </summary>
+        internal static string pedidosToolStripMenuItem_Text {
+            get {
+                return ResourceManager.GetString("pedidosToolStripMenuItem.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Produtos.
+        /// </summary>
+        internal static string produtosToolStripMenuItem_Text {
+            get {
+                return ResourceManager.GetString("produtosToolStripMenuItem.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Administrador.
         /// </summary>
         internal static string radioBtnGrupoAdministrador_Text {
@@ -591,6 +663,24 @@ namespace PizzariaDoZe.Properties {
         internal static string radioBtnGrupoEntregador_Text {
             get {
                 return ResourceManager.GetString("radioBtnGrupoEntregador.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sabores.
+        /// </summary>
+        internal static string saboresToolStripMenuItem_Text {
+            get {
+                return ResourceManager.GetString("saboresToolStripMenuItem.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sair.
+        /// </summary>
+        internal static string sairToolStripMenuItem_Text {
+            get {
+                return ResourceManager.GetString("sairToolStripMenuItem.Text", resourceCulture);
             }
         }
         
@@ -640,6 +730,15 @@ namespace PizzariaDoZe.Properties {
             get {
                 object obj = ResourceManager.GetObject("users-solid", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Valores.
+        /// </summary>
+        internal static string valoresToolStripMenuItem_Text {
+            get {
+                return ResourceManager.GetString("valoresToolStripMenuItem.Text", resourceCulture);
             }
         }
     }

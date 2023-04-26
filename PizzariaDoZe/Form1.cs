@@ -37,7 +37,7 @@ namespace PizzariaDoZe
             cadastroValor = new CadastroValorForms();
             cadastroProduto = new CadastroProdutoForms();
 
-            //SetEventosBarraLateralInicio();
+            SetEventosBarraLateralInicio();
             SetEventosBarraLateralFuncionarios();
             SetEventosBarraLateralClientes();
             SetEventosBarraLateralIngredientes();
@@ -45,17 +45,44 @@ namespace PizzariaDoZe
             SetEventosBarraLateralValores();
             SetEventosBarraLateralProdutos();
             SetEventosBarraLateralConfiguracoes();
-
+            SetEventosContextMenu();
+            SetAtalhosParaContextMenu();
             configuracoesUserControlForm.comboBoxIdioma.SelectedItem = ConfigurationManager.AppSettings.Get("IdiomaRegiao");
+            Funcoes.AjustaResourcesItem(contextMenuStripGeral);
+            Funcoes.AplicaFormClosing(this);
         }
 
+        private void SetAtalhosParaContextMenu()
+        {
+            inicioToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.F1;
+            funcionariosToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.F2;
+            clientesToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.F3;
+            ingredientesToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.F4;
+            saboresToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.F5;
+            valoresToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.F6;
+            produtosToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.F7;
+            configuracoesToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.F8;
+        }
 
+        private void SetEventosContextMenu()
+        {
+            inicioToolStripMenuItem.Click += new EventHandler(IrParaInicio!);
+            funcionariosToolStripMenuItem.Click += new EventHandler(IrParaFuncionarios!);
+            clientesToolStripMenuItem.Click += new EventHandler(IrParaClientes!);
+            ingredientesToolStripMenuItem.Click += new EventHandler(IrParaIngredientes!);
+            saboresToolStripMenuItem.Click += new EventHandler(IrParaSabores!);
+            valoresToolStripMenuItem.Click += new EventHandler(IrParaValores!);
+            produtosToolStripMenuItem.Click += new EventHandler(IrParaProdutos!);
+            configuracoesToolStripMenuItem.Click += new EventHandler(IrParaConfiguracoes!);
+            //pedidosToolStripMenuItem.Click += new EventHandler(IrPara!);
+            //sairToolStripMenuItem.Click += new EventHandler(ButtonSair_Click!);
+        }
 
         private void SetEventosBarraLateralInicio()
         {
-            //barraLateralUserControlForm.panelInicio.Click += IrParaInicio;
-            //barraLateralUserControlForm.labelInicio.Click += IrParaInicio;
-            //barraLateralUserControlForm.pictureBoxInicio.Click += IrParaInicio;
+            barraLateralUserControlForm.panelInicio.Click += IrParaInicio;
+            barraLateralUserControlForm.labelInicio.Click += IrParaInicio;
+            barraLateralUserControlForm.pictureBoxInicio.Click += IrParaInicio;
         }
 
         private void SetEventosBarraLateralFuncionarios()
@@ -143,7 +170,22 @@ namespace PizzariaDoZe
 
         private void PaginaPrincipalForm_Resize(object sender, EventArgs e)
         {
-            //tabControl1.Width = this.Width - 300;
+            if (this.WindowState == FormWindowState.Minimized)
+            {
+                this.Hide();
+                notifyIconSystemTray.Visible = true;
+            }
+            else if (FormWindowState.Normal == this.WindowState)
+            {
+                notifyIconSystemTray.Visible = false;
+            }
+        }
+
+        private void NotifyIconSystemTray_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            Show();
+            WindowState = FormWindowState.Normal;
+            notifyIconSystemTray.Visible = false;
         }
 
         private void PaginaPrincipalForm_Load(object sender, EventArgs e)
@@ -257,6 +299,13 @@ namespace PizzariaDoZe
                 Application.Restart();
                 Environment.Exit(0);
             }
+        }
+
+        private void notifyIconSystemTray_MouseDoubleClick_1(object sender, MouseEventArgs e)
+        {
+            Show();
+            WindowState = FormWindowState.Normal;
+            notifyIconSystemTray.Visible = false;
         }
     }
 }
