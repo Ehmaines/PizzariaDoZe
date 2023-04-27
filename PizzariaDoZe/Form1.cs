@@ -49,7 +49,6 @@ namespace PizzariaDoZe
             SetAtalhosParaContextMenu();
             configuracoesUserControlForm.comboBoxIdioma.SelectedItem = ConfigurationManager.AppSettings.Get("IdiomaRegiao");
             Funcoes.AjustaResourcesItem(contextMenuStripGeral);
-            Funcoes.AplicaFormClosing(this);
         }
 
         private void SetAtalhosParaContextMenu()
@@ -306,6 +305,30 @@ namespace PizzariaDoZe
             Show();
             WindowState = FormWindowState.Normal;
             notifyIconSystemTray.Visible = false;
+        }
+
+        private void PaginaPrincipalForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                ConfirmarFecharAplicacaoForms confirmarFecharForm = new ConfirmarFecharAplicacaoForms(this);
+                var result = confirmarFecharForm.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    Application.Exit();
+                }
+                if (result == DialogResult.Yes)
+                {
+                    notifyIconSystemTray.Visible = true;
+                    this.WindowState = FormWindowState.Minimized;
+                    return;
+                }
+
+                if (result == DialogResult.Cancel)
+                {
+                    e.Cancel = true;
+                }
+            }
         }
     }
 }

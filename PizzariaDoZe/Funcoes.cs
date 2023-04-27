@@ -209,33 +209,5 @@ namespace PizzariaDoZe
             txt.Leave += RetornarMascaraMoeda!;
             txt.KeyPress += ApenasValorNumericoMoeda!;
         }
-
-        private static void VerificaFormClosing(object sender, FormClosingEventArgs e)
-        {
-            Control x = (Control)sender;
-            Form form = x.FindForm()!;
-
-            ConfirmarFecharAplicacaoForms confirmarFecharForm = new ConfirmarFecharAplicacaoForms(form);
-
-            confirmarFecharForm.ShowDialog();
-
-            if (confirmarFecharForm.EscolhaDoUsuario == ConfirmarFecharAplicacaoForms.OpcaoConfirmacao.Fechar)
-            {
-                Application.Exit();
-            }
-            else if (confirmarFecharForm.EscolhaDoUsuario == ConfirmarFecharAplicacaoForms.OpcaoConfirmacao.Minimizar)
-            {
-                form.WindowState = FormWindowState.Minimized;
-            }
-            else
-            {
-                e.Cancel = true;
-            }
-        }
-
-        public static void AplicaFormClosing(Form form)
-        {
-            form.FormClosing += VerificaFormClosing!;
-        }
     }
 }

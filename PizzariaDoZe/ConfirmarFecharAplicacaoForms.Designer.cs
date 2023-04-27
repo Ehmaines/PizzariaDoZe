@@ -55,6 +55,7 @@
             buttonCancelar.TabIndex = 38;
             buttonCancelar.Text = "Cancelar";
             buttonCancelar.UseVisualStyleBackColor = false;
+            buttonCancelar.Click += buttonCancelar_Click;
             // 
             // buttonEnviarBandeja
             // 
@@ -65,6 +66,7 @@
             buttonEnviarBandeja.TabIndex = 39;
             buttonEnviarBandeja.Text = "Enviar para bandeja";
             buttonEnviarBandeja.UseVisualStyleBackColor = false;
+            buttonEnviarBandeja.Click += buttonMinimizar_Click;
             // 
             // buttonFechar
             // 

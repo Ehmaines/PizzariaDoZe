@@ -12,17 +12,9 @@ namespace PizzariaDoZe
 {
     public partial class ConfirmarFecharAplicacaoForms : Form
     {
-        public enum OpcaoConfirmacao
-        {
-            Fechar,
-            Minimizar,
-            Cancelar
-        }
+        PaginaPrincipalForm form;
 
-        Form form;
-
-        public OpcaoConfirmacao EscolhaDoUsuario { get; private set; }
-        public ConfirmarFecharAplicacaoForms(Form form)
+        public ConfirmarFecharAplicacaoForms(PaginaPrincipalForm form)
         {
             InitializeComponent();
             this.form = form;
@@ -30,19 +22,16 @@ namespace PizzariaDoZe
 
         private void buttonFechar_Click(object sender, EventArgs e)
         {
-            this.EscolhaDoUsuario = OpcaoConfirmacao.Fechar;
-            this.form.Close();
+            Application.Exit();
         }
 
         private void buttonMinimizar_Click(object sender, EventArgs e)
         {
-            this.EscolhaDoUsuario = OpcaoConfirmacao.Minimizar;
-            this.form.WindowState = FormWindowState.Minimized;
+            this.DialogResult = DialogResult.Yes;
         }
 
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
-            this.EscolhaDoUsuario = OpcaoConfirmacao.Cancelar;
             this.DialogResult = DialogResult.Cancel;
         }
     }

@@ -447,24 +447,24 @@
             contextMenuStripSystemStray.ImageScalingSize = new Size(24, 24);
             contextMenuStripSystemStray.Items.AddRange(new ToolStripItem[] { abrirAplicaçãoToolStripMenuItem, encerrarToolStripMenuItem, sobreToolStripMenuItem });
             contextMenuStripSystemStray.Name = "contextMenuStripSystemStray";
-            contextMenuStripSystemStray.Size = new Size(205, 100);
+            contextMenuStripSystemStray.Size = new Size(241, 133);
             // 
             // abrirAplicaçãoToolStripMenuItem
             // 
             abrirAplicaçãoToolStripMenuItem.Name = "abrirAplicaçãoToolStripMenuItem";
-            abrirAplicaçãoToolStripMenuItem.Size = new Size(204, 32);
+            abrirAplicaçãoToolStripMenuItem.Size = new Size(240, 32);
             abrirAplicaçãoToolStripMenuItem.Text = "Abrir Aplicação";
             // 
             // encerrarToolStripMenuItem
             // 
             encerrarToolStripMenuItem.Name = "encerrarToolStripMenuItem";
-            encerrarToolStripMenuItem.Size = new Size(204, 32);
+            encerrarToolStripMenuItem.Size = new Size(240, 32);
             encerrarToolStripMenuItem.Text = "Encerrar";
             // 
             // sobreToolStripMenuItem
             // 
             sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            sobreToolStripMenuItem.Size = new Size(204, 32);
+            sobreToolStripMenuItem.Size = new Size(240, 32);
             sobreToolStripMenuItem.Text = "Sobre";
             // 
             // PaginaPrincipalForm
@@ -483,6 +483,7 @@
             Name = "PaginaPrincipalForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Pizzaria do Zé";
+            FormClosing += PaginaPrincipalForm_FormClosing;
             Load += PaginaPrincipalForm_Load;
             Resize += PaginaPrincipalForm_Resize;
             panel1.ResumeLayout(false);
@@ -550,10 +551,10 @@
         private ToolStripMenuItem produtosToolStripMenuItem;
         private ToolStripMenuItem configuracoesToolStripMenuItem;
         private ToolStripMenuItem sairToolStripMenuItem;
-        private NotifyIcon notifyIconSystemTray;
-        private ContextMenuStrip contextMenuStripSystemStray;
         private ToolStripMenuItem abrirAplicaçãoToolStripMenuItem;
         private ToolStripMenuItem encerrarToolStripMenuItem;
         private ToolStripMenuItem sobreToolStripMenuItem;
+        public NotifyIcon notifyIconSystemTray;
+        public ContextMenuStrip contextMenuStripSystemStray;
     }
 }
