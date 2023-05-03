@@ -61,6 +61,7 @@ namespace PizzariaDoZe
             valoresToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.F6;
             produtosToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.F7;
             configuracoesToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.F8;
+            //Colocar o sair
         }
 
         private void SetEventosContextMenu()
@@ -177,6 +178,7 @@ namespace PizzariaDoZe
             else if (FormWindowState.Normal == this.WindowState)
             {
                 notifyIconSystemTray.Visible = false;
+                notifyIconSystemTray.ShowBalloonTip(1000);
             }
         }
 
@@ -319,9 +321,9 @@ namespace PizzariaDoZe
                 }
                 if (result == DialogResult.Yes)
                 {
-                    notifyIconSystemTray.Visible = true;
+                    e.Cancel = true;
                     this.WindowState = FormWindowState.Minimized;
-                    return;
+                    notifyIconSystemTray.ShowBalloonTip(1000);
                 }
 
                 if (result == DialogResult.Cancel)
@@ -329,6 +331,18 @@ namespace PizzariaDoZe
                     e.Cancel = true;
                 }
             }
+        }
+
+        private void abrirAplicaçãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Show();
+            WindowState = FormWindowState.Normal;
+            notifyIconSystemTray.Visible = false;
+        }
+
+        private void encerrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
