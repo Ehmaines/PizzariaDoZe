@@ -61,7 +61,7 @@ namespace PizzariaDoZe
             valoresToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.F6;
             produtosToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.F7;
             configuracoesToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.F8;
-            //Colocar o sair
+            sairToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.Delete;
         }
 
         private void SetEventosContextMenu()
@@ -75,7 +75,6 @@ namespace PizzariaDoZe
             produtosToolStripMenuItem.Click += new EventHandler(IrParaProdutos!);
             configuracoesToolStripMenuItem.Click += new EventHandler(IrParaConfiguracoes!);
             //pedidosToolStripMenuItem.Click += new EventHandler(IrPara!);
-            //sairToolStripMenuItem.Click += new EventHandler(ButtonSair_Click!);
         }
 
         private void SetEventosBarraLateralInicio()
@@ -341,6 +340,11 @@ namespace PizzariaDoZe
         }
 
         private void encerrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

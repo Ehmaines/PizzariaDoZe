@@ -343,4 +343,40 @@
   <data name="confirmacaoFecharJanela" xml:space="preserve">
     <value>Deseja fechar a aplicação ou minimizá-la para a bandeja do sistema?</value>
   </data>
+  <data name="abrirAplicaçãoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Aplicativo abrir</value>
+  </data>
+  <data name="clientesToolStripMenuItem.Text1" xml:space="preserve">
+    <value>Clientes</value>
+  </data>
+  <data name="configuracoesToolStripMenuItem.Text1" xml:space="preserve">
+    <value>Configurações</value>
+  </data>
+  <data name="encerrarToolStripMenuItem.Text" xml:space="preserve">
+    <value>Encerrar</value>
+  </data>
+  <data name="funcionariosToolStripMenuItem.Text1" xml:space="preserve">
+    <value>Funcionários</value>
+  </data>
+  <data name="ingredientesToolStripMenuItem.Text1" xml:space="preserve">
+    <value>ingredientes</value>
+  </data>
+  <data name="inicioToolStripMenuItem.Text1" xml:space="preserve">
+    <value>Inicio</value>
+  </data>
+  <data name="produtosToolStripMenuItem.Text1" xml:space="preserve">
+    <value>Produtos</value>
+  </data>
+  <data name="saboresToolStripMenuItem.Text1" xml:space="preserve">
+    <value>Sabores</value>
+  </data>
+  <data name="sairToolStripMenuItem.Text1" xml:space="preserve">
+    <value>Sair</value>
+  </data>
+  <data name="sobreToolStripMenuItem.Text" xml:space="preserve">
+    <value>Sobre</value>
+  </data>
+  <data name="valoresToolStripMenuItem.Text1" xml:space="preserve">
+    <value>Valores</value>
+  </data>
 </root>
