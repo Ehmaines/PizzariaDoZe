@@ -34,18 +34,25 @@
             checkBoxReniciarAplicacaoConfig = new CheckBox();
             comboBoxIdioma = new ComboBox();
             labelIdiomaRegiao = new Label();
+            tabPageDataBase = new TabPage();
+            buttonSalvarBanco = new Button();
+            textBoxStringConnection = new TextBox();
+            labelStringConnection = new Label();
+            comboBoxProvider = new ComboBox();
+            labelProvider = new Label();
             tabControlConfiguracoes.SuspendLayout();
             tabPageIdiomaRegiao.SuspendLayout();
+            tabPageDataBase.SuspendLayout();
             SuspendLayout();
             // 
             // tabControlConfiguracoes
             // 
             tabControlConfiguracoes.Controls.Add(tabPageIdiomaRegiao);
-            tabControlConfiguracoes.Location = new Point(21, 25);
-            tabControlConfiguracoes.Margin = new Padding(4);
+            tabControlConfiguracoes.Controls.Add(tabPageDataBase);
+            tabControlConfiguracoes.Location = new Point(17, 20);
             tabControlConfiguracoes.Name = "tabControlConfiguracoes";
             tabControlConfiguracoes.SelectedIndex = 0;
-            tabControlConfiguracoes.Size = new Size(698, 322);
+            tabControlConfiguracoes.Size = new Size(564, 232);
             tabControlConfiguracoes.TabIndex = 0;
             // 
             // tabPageIdiomaRegiao
@@ -55,20 +62,18 @@
             tabPageIdiomaRegiao.Controls.Add(checkBoxReniciarAplicacaoConfig);
             tabPageIdiomaRegiao.Controls.Add(comboBoxIdioma);
             tabPageIdiomaRegiao.Controls.Add(labelIdiomaRegiao);
-            tabPageIdiomaRegiao.Location = new Point(4, 34);
-            tabPageIdiomaRegiao.Margin = new Padding(4);
+            tabPageIdiomaRegiao.Location = new Point(4, 29);
             tabPageIdiomaRegiao.Name = "tabPageIdiomaRegiao";
-            tabPageIdiomaRegiao.Padding = new Padding(4);
-            tabPageIdiomaRegiao.Size = new Size(690, 284);
+            tabPageIdiomaRegiao.Padding = new Padding(3);
+            tabPageIdiomaRegiao.Size = new Size(556, 199);
             tabPageIdiomaRegiao.TabIndex = 0;
             tabPageIdiomaRegiao.Text = "Idioma / Região";
             // 
             // btnSalvar
             // 
-            btnSalvar.Location = new Point(562, 238);
-            btnSalvar.Margin = new Padding(4);
+            btnSalvar.Location = new Point(440, 164);
             btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(118, 36);
+            btnSalvar.Size = new Size(94, 29);
             btnSalvar.TabIndex = 3;
             btnSalvar.Text = "Salvar";
             btnSalvar.UseVisualStyleBackColor = true;
@@ -77,10 +82,9 @@
             // 
             checkBoxReniciarAplicacaoConfig.AutoSize = true;
             checkBoxReniciarAplicacaoConfig.ForeColor = Color.GhostWhite;
-            checkBoxReniciarAplicacaoConfig.Location = new Point(20, 85);
-            checkBoxReniciarAplicacaoConfig.Margin = new Padding(4);
+            checkBoxReniciarAplicacaoConfig.Location = new Point(16, 68);
             checkBoxReniciarAplicacaoConfig.Name = "checkBoxReniciarAplicacaoConfig";
-            checkBoxReniciarAplicacaoConfig.Size = new Size(336, 29);
+            checkBoxReniciarAplicacaoConfig.Size = new Size(290, 24);
             checkBoxReniciarAplicacaoConfig.TabIndex = 2;
             checkBoxReniciarAplicacaoConfig.Text = "Reiniciar aplicação para aplicar idioma";
             checkBoxReniciarAplicacaoConfig.UseVisualStyleBackColor = true;
@@ -89,35 +93,93 @@
             // 
             comboBoxIdioma.FormattingEnabled = true;
             comboBoxIdioma.Items.AddRange(new object[] { "pt-BR", "en-US", "es" });
-            comboBoxIdioma.Location = new Point(20, 42);
-            comboBoxIdioma.Margin = new Padding(4);
+            comboBoxIdioma.Location = new Point(16, 34);
             comboBoxIdioma.Name = "comboBoxIdioma";
-            comboBoxIdioma.Size = new Size(145, 33);
+            comboBoxIdioma.Size = new Size(117, 28);
             comboBoxIdioma.TabIndex = 1;
             // 
             // labelIdiomaRegiao
             // 
             labelIdiomaRegiao.AutoSize = true;
             labelIdiomaRegiao.ForeColor = Color.GhostWhite;
-            labelIdiomaRegiao.Location = new Point(20, 14);
-            labelIdiomaRegiao.Margin = new Padding(4, 0, 4, 0);
+            labelIdiomaRegiao.Location = new Point(16, 11);
             labelIdiomaRegiao.Name = "labelIdiomaRegiao";
-            labelIdiomaRegiao.Size = new Size(139, 25);
+            labelIdiomaRegiao.Size = new Size(117, 20);
             labelIdiomaRegiao.TabIndex = 0;
             labelIdiomaRegiao.Text = "Idioma / Região";
             // 
+            // tabPageDataBase
+            // 
+            tabPageDataBase.BackColor = Color.FromArgb(39, 39, 41);
+            tabPageDataBase.Controls.Add(buttonSalvarBanco);
+            tabPageDataBase.Controls.Add(textBoxStringConnection);
+            tabPageDataBase.Controls.Add(labelStringConnection);
+            tabPageDataBase.Controls.Add(comboBoxProvider);
+            tabPageDataBase.Controls.Add(labelProvider);
+            tabPageDataBase.Location = new Point(4, 29);
+            tabPageDataBase.Name = "tabPageDataBase";
+            tabPageDataBase.Size = new Size(556, 199);
+            tabPageDataBase.TabIndex = 1;
+            tabPageDataBase.Text = "Banco de dados";
+            // 
+            // buttonSalvarBanco
+            // 
+            buttonSalvarBanco.Location = new Point(429, 157);
+            buttonSalvarBanco.Name = "buttonSalvarBanco";
+            buttonSalvarBanco.Size = new Size(94, 29);
+            buttonSalvarBanco.TabIndex = 6;
+            buttonSalvarBanco.Text = "Salvar";
+            buttonSalvarBanco.UseVisualStyleBackColor = true;
+            // 
+            // textBoxStringConnection
+            // 
+            textBoxStringConnection.Location = new Point(15, 115);
+            textBoxStringConnection.Name = "textBoxStringConnection";
+            textBoxStringConnection.Size = new Size(508, 27);
+            textBoxStringConnection.TabIndex = 5;
+            // 
+            // labelStringConnection
+            // 
+            labelStringConnection.AutoSize = true;
+            labelStringConnection.ForeColor = Color.GhostWhite;
+            labelStringConnection.Location = new Point(15, 92);
+            labelStringConnection.Name = "labelStringConnection";
+            labelStringConnection.Size = new Size(129, 20);
+            labelStringConnection.TabIndex = 4;
+            labelStringConnection.Text = "String de conexão";
+            // 
+            // comboBoxProvider
+            // 
+            comboBoxProvider.FormattingEnabled = true;
+            comboBoxProvider.Items.AddRange(new object[] { "System.Data.SqlClient", "MySql.Data.MySqlClient" });
+            comboBoxProvider.Location = new Point(15, 38);
+            comboBoxProvider.Name = "comboBoxProvider";
+            comboBoxProvider.Size = new Size(174, 28);
+            comboBoxProvider.TabIndex = 3;
+            // 
+            // labelProvider
+            // 
+            labelProvider.AutoSize = true;
+            labelProvider.ForeColor = Color.GhostWhite;
+            labelProvider.Location = new Point(15, 15);
+            labelProvider.Name = "labelProvider";
+            labelProvider.Size = new Size(64, 20);
+            labelProvider.TabIndex = 2;
+            labelProvider.Text = "Provider";
+            // 
             // ConfiguracoesUserControlForm
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(39, 39, 41);
             Controls.Add(tabControlConfiguracoes);
-            Margin = new Padding(4);
             Name = "ConfiguracoesUserControlForm";
-            Size = new Size(730, 375);
+            Size = new Size(584, 300);
             tabControlConfiguracoes.ResumeLayout(false);
             tabPageIdiomaRegiao.ResumeLayout(false);
             tabPageIdiomaRegiao.PerformLayout();
+            tabPageDataBase.ResumeLayout(false);
+            tabPageDataBase.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -140,5 +202,11 @@
         /// buttonSalvarIdioma
         /// </summary>
         public Button btnSalvar;
+        private TabPage tabPageDataBase;
+        public ComboBox comboBoxProvider;
+        private Label labelProvider;
+        private Label labelStringConnection;
+        public TextBox textBoxStringConnection;
+        public Button buttonSalvarBanco;
     }
 }

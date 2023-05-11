@@ -1,5 +1,7 @@
 using PizzariaDoZe.UserControls;
+using PizzariaDoZe_DAO;
 using System.Configuration;
+using System.Data;
 
 namespace PizzariaDoZe
 {
@@ -14,6 +16,7 @@ namespace PizzariaDoZe
         CadastroSaborForms cadastroSabor;
         CadastroValorForms cadastroValor;
         CadastroProdutoForms cadastroProduto;
+        IngredienteDAO ingredienteDAO;
 
         /// <summary>
         /// Página Principal da aplicação
@@ -21,7 +24,10 @@ namespace PizzariaDoZe
         public PaginaPrincipalForm()
         {
             InitializeComponent();
-
+            string provider = ConfigurationManager.ConnectionStrings["BD"].ProviderName;
+            string strConnection = ConfigurationManager.ConnectionStrings["BD"].ConnectionString;
+            ingredienteDAO = new IngredienteDAO(provider, strConnection);
+            AtualizarTela();
             #region idioma/região interface - satellite assembly
             // com base no idioma/região escolhido pelo usuário,
             // ajusta as propriedades dos componentes da tela com base no conteúdo do arquivo resources
@@ -223,6 +229,7 @@ namespace PizzariaDoZe
             setTodosCadastrosParaNaoVisiveis();
             setTodasAsCoresDaBarraLateralParaPadrao();
             panelCadastroIngrediente.Visible = true;
+            dataGridViewDados.Visible = true;
             barraLateralUserControlForm.panelIngredientes.BackColor = Color.FromArgb(163, 184, 247);
         }
 
@@ -259,6 +266,7 @@ namespace PizzariaDoZe
             barraLateralUserControlForm.panelConfiguracoes.BackColor = Color.FromArgb(163, 184, 247);
             configuracoesUserControlForm.Visible = true;
             configuracoesUserControlForm.btnSalvar.Click += SalvarIdioma!;
+            configuracoesUserControlForm.buttonSalvarBanco.Click += ButtonSalvarBD_Click!;
         }
 
         private void setTodasAsCoresDaBarraLateralParaPadrao()
@@ -282,6 +290,7 @@ namespace PizzariaDoZe
             panelCadastroProduto.Visible = false;
             panelCadastroValor.Visible = false;
             configuracoesUserControlForm.Visible = false;
+            dataGridViewDados.Visible = false;
         }
 
         private void SalvarIdioma(object sender, EventArgs e)
@@ -299,6 +308,14 @@ namespace PizzariaDoZe
                 Application.Restart();
                 Environment.Exit(0);
             }
+
+            // busca os dados com nome BD
+            ConnectionStringSettings connectionStringSettings =
+            ConfigurationManager.ConnectionStrings["BD"];
+            // obtém o providerName e atualiza em tela
+            configuracoesUserControlForm.comboBoxProvider.Text = connectionStringSettings.ProviderName;
+            // obtém a connectionString e atualiza em tela
+            configuracoesUserControlForm.textBoxStringConnection.Text = connectionStringSettings.ConnectionString;
         }
 
         private void notifyIconSystemTray_MouseDoubleClick_1(object sender, MouseEventArgs e)
@@ -347,6 +364,41 @@ namespace PizzariaDoZe
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void AtualizarTela()
+        {
+            //Instância e Preenche o objeto com os dados da view
+            var ingrediente = new Ingrediente();
+            try
+            {
+                //chama o método para buscar todos os dados da nossa camada model
+                DataTable linhas = ingredienteDAO.Buscar(ingrediente);
+                // seta o datasouce do dataGridView com os dados retornados
+                dataGridViewDados.Columns.Clear();
+                dataGridViewDados.AutoGenerateColumns = true;
+                dataGridViewDados.DataSource = linhas;
+                dataGridViewDados.Refresh();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void ButtonSalvarBD_Click(object sender, EventArgs e)
+        {
+            Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+
+            config.ConnectionStrings.ConnectionStrings["BD"].ProviderName = configuracoesUserControlForm.comboBoxProvider.Text;
+            config.ConnectionStrings.ConnectionStrings["BD"].ConnectionString = configuracoesUserControlForm.textBoxStringConnection.Text;
+            
+            config.Save(ConfigurationSaveMode.Modified, true);
+            
+            ConfigurationManager.RefreshSection("connectionStrings");
+            
+            //TODO: fazer algo para não deixar trocar das configurações
+            _ = MessageBox.Show("Dados alterados com sucesso!");
         }
     }
 }
