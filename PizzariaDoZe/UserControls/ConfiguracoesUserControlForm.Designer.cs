@@ -35,11 +35,7 @@
             comboBoxIdioma = new ComboBox();
             labelIdiomaRegiao = new Label();
             tabPageDataBase = new TabPage();
-            buttonSalvarBanco = new Button();
-            textBoxStringConnection = new TextBox();
-            labelStringConnection = new Label();
-            comboBoxProvider = new ComboBox();
-            labelProvider = new Label();
+            buttonConfigurarBanco = new Button();
             tabControlConfiguracoes.SuspendLayout();
             tabPageIdiomaRegiao.SuspendLayout();
             tabPageDataBase.SuspendLayout();
@@ -111,61 +107,21 @@
             // tabPageDataBase
             // 
             tabPageDataBase.BackColor = Color.FromArgb(39, 39, 41);
-            tabPageDataBase.Controls.Add(buttonSalvarBanco);
-            tabPageDataBase.Controls.Add(textBoxStringConnection);
-            tabPageDataBase.Controls.Add(labelStringConnection);
-            tabPageDataBase.Controls.Add(comboBoxProvider);
-            tabPageDataBase.Controls.Add(labelProvider);
+            tabPageDataBase.Controls.Add(buttonConfigurarBanco);
             tabPageDataBase.Location = new Point(4, 29);
             tabPageDataBase.Name = "tabPageDataBase";
             tabPageDataBase.Size = new Size(556, 199);
             tabPageDataBase.TabIndex = 1;
             tabPageDataBase.Text = "Banco de dados";
             // 
-            // buttonSalvarBanco
+            // buttonConfigurarBanco
             // 
-            buttonSalvarBanco.Location = new Point(429, 157);
-            buttonSalvarBanco.Name = "buttonSalvarBanco";
-            buttonSalvarBanco.Size = new Size(94, 29);
-            buttonSalvarBanco.TabIndex = 6;
-            buttonSalvarBanco.Text = "Salvar";
-            buttonSalvarBanco.UseVisualStyleBackColor = true;
-            // 
-            // textBoxStringConnection
-            // 
-            textBoxStringConnection.Location = new Point(15, 115);
-            textBoxStringConnection.Name = "textBoxStringConnection";
-            textBoxStringConnection.Size = new Size(508, 27);
-            textBoxStringConnection.TabIndex = 5;
-            // 
-            // labelStringConnection
-            // 
-            labelStringConnection.AutoSize = true;
-            labelStringConnection.ForeColor = Color.GhostWhite;
-            labelStringConnection.Location = new Point(15, 92);
-            labelStringConnection.Name = "labelStringConnection";
-            labelStringConnection.Size = new Size(129, 20);
-            labelStringConnection.TabIndex = 4;
-            labelStringConnection.Text = "String de conexão";
-            // 
-            // comboBoxProvider
-            // 
-            comboBoxProvider.FormattingEnabled = true;
-            comboBoxProvider.Items.AddRange(new object[] { "System.Data.SqlClient", "MySql.Data.MySqlClient" });
-            comboBoxProvider.Location = new Point(15, 38);
-            comboBoxProvider.Name = "comboBoxProvider";
-            comboBoxProvider.Size = new Size(174, 28);
-            comboBoxProvider.TabIndex = 3;
-            // 
-            // labelProvider
-            // 
-            labelProvider.AutoSize = true;
-            labelProvider.ForeColor = Color.GhostWhite;
-            labelProvider.Location = new Point(15, 15);
-            labelProvider.Name = "labelProvider";
-            labelProvider.Size = new Size(64, 20);
-            labelProvider.TabIndex = 2;
-            labelProvider.Text = "Provider";
+            buttonConfigurarBanco.Location = new Point(128, 60);
+            buttonConfigurarBanco.Name = "buttonConfigurarBanco";
+            buttonConfigurarBanco.Size = new Size(239, 67);
+            buttonConfigurarBanco.TabIndex = 6;
+            buttonConfigurarBanco.Text = "Configurar Banco de dados";
+            buttonConfigurarBanco.UseVisualStyleBackColor = true;
             // 
             // ConfiguracoesUserControlForm
             // 
@@ -179,7 +135,6 @@
             tabPageIdiomaRegiao.ResumeLayout(false);
             tabPageIdiomaRegiao.PerformLayout();
             tabPageDataBase.ResumeLayout(false);
-            tabPageDataBase.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -207,6 +162,6 @@
         private Label labelProvider;
         private Label labelStringConnection;
         public TextBox textBoxStringConnection;
-        public Button buttonSalvarBanco;
+        public Button buttonConfigurarBanco;
     }
 }

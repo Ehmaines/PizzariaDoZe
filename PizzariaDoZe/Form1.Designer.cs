@@ -367,10 +367,10 @@
             // configuracoesUserControlForm
             // 
             configuracoesUserControlForm.BackColor = Color.FromArgb(39, 39, 41);
-            configuracoesUserControlForm.Location = new Point(266, 142);
+            configuracoesUserControlForm.Location = new Point(259, 143);
             configuracoesUserControlForm.Margin = new Padding(4);
             configuracoesUserControlForm.Name = "configuracoesUserControlForm";
-            configuracoesUserControlForm.Size = new Size(1228, 660);
+            configuracoesUserControlForm.Size = new Size(1235, 659);
             configuracoesUserControlForm.TabIndex = 3;
             // 
             // contextMenuStripGeral

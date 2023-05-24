@@ -2,6 +2,7 @@ using PizzariaDoZe.UserControls;
 using PizzariaDoZe_DAO;
 using System.Configuration;
 using System.Data;
+using System.Data.Common;
 
 namespace PizzariaDoZe
 {
@@ -24,6 +25,7 @@ namespace PizzariaDoZe
         public PaginaPrincipalForm()
         {
             InitializeComponent();
+            ValidaConexaoDB();
             string provider = ConfigurationManager.ConnectionStrings["BD"].ProviderName;
             string strConnection = ConfigurationManager.ConnectionStrings["BD"].ConnectionString;
             ingredienteDAO = new IngredienteDAO(provider, strConnection);
@@ -266,7 +268,7 @@ namespace PizzariaDoZe
             barraLateralUserControlForm.panelConfiguracoes.BackColor = Color.FromArgb(163, 184, 247);
             configuracoesUserControlForm.Visible = true;
             configuracoesUserControlForm.btnSalvar.Click += SalvarIdioma!;
-            configuracoesUserControlForm.buttonSalvarBanco.Click += ButtonSalvarBD_Click!;
+            configuracoesUserControlForm.buttonConfigurarBanco.Click += ConfiguraDB!;
         }
 
         private void setTodasAsCoresDaBarraLateralParaPadrao()
@@ -317,6 +319,12 @@ namespace PizzariaDoZe
             // obtém a connectionString e atualiza em tela
             configuracoesUserControlForm.textBoxStringConnection.Text = connectionStringSettings.ConnectionString;
         }
+
+        private void ConfiguraDB(object sender, EventArgs e)
+        {
+            new ConfigurarBancoDeDadosForm().ShowDialog();
+        }
+
 
         private void notifyIconSystemTray_MouseDoubleClick_1(object sender, MouseEventArgs e)
         {
@@ -386,19 +394,24 @@ namespace PizzariaDoZe
             }
         }
 
-        private void ButtonSalvarBD_Click(object sender, EventArgs e)
+        public static void ValidaConexaoDB()
         {
-            Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-
-            config.ConnectionStrings.ConnectionStrings["BD"].ProviderName = configuracoesUserControlForm.comboBoxProvider.Text;
-            config.ConnectionStrings.ConnectionStrings["BD"].ConnectionString = configuracoesUserControlForm.textBoxStringConnection.Text;
-            
-            config.Save(ConfigurationSaveMode.Modified, true);
-            
-            ConfigurationManager.RefreshSection("connectionStrings");
-            
-            //TODO: fazer algo para não deixar trocar das configurações
-            _ = MessageBox.Show("Dados alterados com sucesso!");
+            DbProviderFactory factory;
+            try
+            {
+                factory = DbProviderFactories.GetFactory(ConfigurationManager.ConnectionStrings["BD"].ProviderName);
+                using var conexao = factory.CreateConnection();
+                conexao!.ConnectionString = ConfigurationManager.ConnectionStrings["BD"].ConnectionString;
+                using var comando = factory.CreateCommand();
+                comando!.Connection = conexao;
+                conexao.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                new ConfigurarBancoDeDadosForm().ShowDialog();
+                ValidaConexaoDB();
+            }
         }
     }
 }
