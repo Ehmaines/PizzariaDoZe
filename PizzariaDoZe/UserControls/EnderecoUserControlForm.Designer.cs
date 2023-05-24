@@ -29,44 +29,44 @@
         private void InitializeComponent()
         {
             panelCadastroFuncionarioGeral = new Panel();
-            maskedTextBox1 = new MaskedTextBox();
+            maskedTextBoxCEP = new MaskedTextBox();
             labelEndereco = new Label();
             labelPais = new Label();
-            textBox4 = new TextBox();
+            textBoxPais = new TextBox();
             labelEstado = new Label();
-            txtUF = new TextBox();
+            textBoxEstado = new TextBox();
             labelCidade = new Label();
-            textBox3 = new TextBox();
+            textBoxCidade = new TextBox();
             labelBairro = new Label();
-            txtBairro = new TextBox();
+            textBoxBairro = new TextBox();
             labelComplemento = new Label();
-            textBox2 = new TextBox();
+            textBoxComplemento = new TextBox();
             labelNumero = new Label();
-            txtNumeroCasa = new TextBox();
+            textBoxNumeroCasa = new TextBox();
             labelLogradouro = new Label();
-            textBox1 = new TextBox();
+            textBoxRua = new TextBox();
             labelCEP = new Label();
             panelCadastroFuncionarioGeral.SuspendLayout();
             SuspendLayout();
             // 
             // panelCadastroFuncionarioGeral
             // 
-            panelCadastroFuncionarioGeral.Controls.Add(maskedTextBox1);
+            panelCadastroFuncionarioGeral.Controls.Add(maskedTextBoxCEP);
             panelCadastroFuncionarioGeral.Controls.Add(labelEndereco);
             panelCadastroFuncionarioGeral.Controls.Add(labelPais);
-            panelCadastroFuncionarioGeral.Controls.Add(textBox4);
+            panelCadastroFuncionarioGeral.Controls.Add(textBoxPais);
             panelCadastroFuncionarioGeral.Controls.Add(labelEstado);
-            panelCadastroFuncionarioGeral.Controls.Add(txtUF);
+            panelCadastroFuncionarioGeral.Controls.Add(textBoxEstado);
             panelCadastroFuncionarioGeral.Controls.Add(labelCidade);
-            panelCadastroFuncionarioGeral.Controls.Add(textBox3);
+            panelCadastroFuncionarioGeral.Controls.Add(textBoxCidade);
             panelCadastroFuncionarioGeral.Controls.Add(labelBairro);
-            panelCadastroFuncionarioGeral.Controls.Add(txtBairro);
+            panelCadastroFuncionarioGeral.Controls.Add(textBoxBairro);
             panelCadastroFuncionarioGeral.Controls.Add(labelComplemento);
-            panelCadastroFuncionarioGeral.Controls.Add(textBox2);
+            panelCadastroFuncionarioGeral.Controls.Add(textBoxComplemento);
             panelCadastroFuncionarioGeral.Controls.Add(labelNumero);
-            panelCadastroFuncionarioGeral.Controls.Add(txtNumeroCasa);
+            panelCadastroFuncionarioGeral.Controls.Add(textBoxNumeroCasa);
             panelCadastroFuncionarioGeral.Controls.Add(labelLogradouro);
-            panelCadastroFuncionarioGeral.Controls.Add(textBox1);
+            panelCadastroFuncionarioGeral.Controls.Add(textBoxRua);
             panelCadastroFuncionarioGeral.Controls.Add(labelCEP);
             panelCadastroFuncionarioGeral.Location = new Point(2, 2);
             panelCadastroFuncionarioGeral.Margin = new Padding(2);
@@ -74,13 +74,13 @@
             panelCadastroFuncionarioGeral.Size = new Size(366, 758);
             panelCadastroFuncionarioGeral.TabIndex = 9;
             // 
-            // maskedTextBox1
+            // maskedTextBoxCEP
             // 
-            maskedTextBox1.Location = new Point(28, 107);
-            maskedTextBox1.Mask = "00000-000";
-            maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.Size = new Size(312, 31);
-            maskedTextBox1.TabIndex = 26;
+            maskedTextBoxCEP.Location = new Point(28, 107);
+            maskedTextBoxCEP.Mask = "00000\\-000";
+            maskedTextBoxCEP.Name = "maskedTextBoxCEP";
+            maskedTextBoxCEP.Size = new Size(312, 31);
+            maskedTextBoxCEP.TabIndex = 26;
             // 
             // labelEndereco
             // 
@@ -106,14 +106,15 @@
             labelPais.TabIndex = 40;
             labelPais.Text = "País";
             // 
-            // textBox4
+            // textBoxPais
             // 
-            textBox4.ForeColor = Color.FromArgb(39, 39, 41);
-            textBox4.Location = new Point(28, 694);
-            textBox4.Margin = new Padding(4);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(312, 31);
-            textBox4.TabIndex = 39;
+            textBoxPais.ForeColor = Color.FromArgb(39, 39, 41);
+            textBoxPais.Location = new Point(28, 694);
+            textBoxPais.Margin = new Padding(4);
+            textBoxPais.MaxLength = 20;
+            textBoxPais.Name = "textBoxPais";
+            textBoxPais.Size = new Size(312, 31);
+            textBoxPais.TabIndex = 39;
             // 
             // labelEstado
             // 
@@ -127,14 +128,15 @@
             labelEstado.TabIndex = 38;
             labelEstado.Text = "Estado";
             // 
-            // txtUF
+            // textBoxEstado
             // 
-            txtUF.ForeColor = Color.FromArgb(39, 39, 41);
-            txtUF.Location = new Point(28, 612);
-            txtUF.Margin = new Padding(4);
-            txtUF.Name = "txtUF";
-            txtUF.Size = new Size(312, 31);
-            txtUF.TabIndex = 37;
+            textBoxEstado.ForeColor = Color.FromArgb(39, 39, 41);
+            textBoxEstado.Location = new Point(28, 612);
+            textBoxEstado.Margin = new Padding(4);
+            textBoxEstado.MaxLength = 20;
+            textBoxEstado.Name = "textBoxEstado";
+            textBoxEstado.Size = new Size(312, 31);
+            textBoxEstado.TabIndex = 37;
             // 
             // labelCidade
             // 
@@ -148,14 +150,14 @@
             labelCidade.TabIndex = 36;
             labelCidade.Text = "Cidade";
             // 
-            // textBox3
+            // textBoxCidade
             // 
-            textBox3.ForeColor = Color.FromArgb(39, 39, 41);
-            textBox3.Location = new Point(28, 526);
-            textBox3.Margin = new Padding(4);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(312, 31);
-            textBox3.TabIndex = 35;
+            textBoxCidade.ForeColor = Color.FromArgb(39, 39, 41);
+            textBoxCidade.Location = new Point(28, 526);
+            textBoxCidade.Margin = new Padding(4);
+            textBoxCidade.Name = "textBoxCidade";
+            textBoxCidade.Size = new Size(312, 31);
+            textBoxCidade.TabIndex = 35;
             // 
             // labelBairro
             // 
@@ -169,14 +171,14 @@
             labelBairro.TabIndex = 34;
             labelBairro.Text = "Bairro";
             // 
-            // txtBairro
+            // textBoxBairro
             // 
-            txtBairro.ForeColor = Color.FromArgb(39, 39, 41);
-            txtBairro.Location = new Point(28, 448);
-            txtBairro.Margin = new Padding(4);
-            txtBairro.Name = "txtBairro";
-            txtBairro.Size = new Size(312, 31);
-            txtBairro.TabIndex = 33;
+            textBoxBairro.ForeColor = Color.FromArgb(39, 39, 41);
+            textBoxBairro.Location = new Point(28, 448);
+            textBoxBairro.Margin = new Padding(4);
+            textBoxBairro.Name = "textBoxBairro";
+            textBoxBairro.Size = new Size(312, 31);
+            textBoxBairro.TabIndex = 33;
             // 
             // labelComplemento
             // 
@@ -190,14 +192,14 @@
             labelComplemento.TabIndex = 32;
             labelComplemento.Text = "Complemento";
             // 
-            // textBox2
+            // textBoxComplemento
             // 
-            textBox2.ForeColor = Color.FromArgb(39, 39, 41);
-            textBox2.Location = new Point(28, 362);
-            textBox2.Margin = new Padding(4);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(312, 31);
-            textBox2.TabIndex = 31;
+            textBoxComplemento.ForeColor = Color.FromArgb(39, 39, 41);
+            textBoxComplemento.Location = new Point(28, 362);
+            textBoxComplemento.Margin = new Padding(4);
+            textBoxComplemento.Name = "textBoxComplemento";
+            textBoxComplemento.Size = new Size(312, 31);
+            textBoxComplemento.TabIndex = 31;
             // 
             // labelNumero
             // 
@@ -211,14 +213,14 @@
             labelNumero.TabIndex = 30;
             labelNumero.Text = "Número";
             // 
-            // txtNumeroCasa
+            // textBoxNumeroCasa
             // 
-            txtNumeroCasa.ForeColor = Color.FromArgb(39, 39, 41);
-            txtNumeroCasa.Location = new Point(28, 270);
-            txtNumeroCasa.Margin = new Padding(4);
-            txtNumeroCasa.Name = "txtNumeroCasa";
-            txtNumeroCasa.Size = new Size(312, 31);
-            txtNumeroCasa.TabIndex = 29;
+            textBoxNumeroCasa.ForeColor = Color.FromArgb(39, 39, 41);
+            textBoxNumeroCasa.Location = new Point(28, 270);
+            textBoxNumeroCasa.Margin = new Padding(4);
+            textBoxNumeroCasa.Name = "textBoxNumeroCasa";
+            textBoxNumeroCasa.Size = new Size(312, 31);
+            textBoxNumeroCasa.TabIndex = 29;
             // 
             // labelLogradouro
             // 
@@ -232,14 +234,14 @@
             labelLogradouro.TabIndex = 28;
             labelLogradouro.Text = "Logradouro";
             // 
-            // textBox1
+            // textBoxRua
             // 
-            textBox1.ForeColor = Color.FromArgb(39, 39, 41);
-            textBox1.Location = new Point(28, 190);
-            textBox1.Margin = new Padding(4);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(312, 31);
-            textBox1.TabIndex = 27;
+            textBoxRua.ForeColor = Color.FromArgb(39, 39, 41);
+            textBoxRua.Location = new Point(28, 190);
+            textBoxRua.Margin = new Padding(4);
+            textBoxRua.Name = "textBoxRua";
+            textBoxRua.Size = new Size(312, 31);
+            textBoxRua.TabIndex = 27;
             // 
             // labelCEP
             // 
@@ -268,8 +270,6 @@
         }
 
         #endregion
-
-        private Panel panelCadastroFuncionarioGeral;
         private Label labelEndereco;
         private Label labelPais;
         private Label labelEstado;
@@ -282,31 +282,32 @@
         /// <summary>
         /// 
         /// </summary>
-        public TextBox textBox4;
+        public TextBox textBoxPais;
         /// <summary>
         /// 
         /// </summary>
-        public TextBox txtUF;
+        public TextBox textBoxEstado;
         /// <summary>
         /// 
         /// </summary>
-        public TextBox textBox3;
+        public TextBox textBoxCidade;
         /// <summary>
         /// 
         /// </summary>
-        public TextBox txtBairro;
+        public TextBox textBoxBairro;
         /// <summary>
         /// 
         /// </summary>
-        public TextBox textBox2;
+        public TextBox textBoxComplemento;
         /// <summary>
         /// 
         /// </summary>
-        public TextBox txtNumeroCasa;
+        public TextBox textBoxNumeroCasa;
         /// <summary>
         /// 
         /// </summary>
-        public TextBox textBox1;
-        private MaskedTextBox maskedTextBox1;
+        public TextBox textBoxRua;
+        public Panel panelCadastroFuncionarioGeral;
+        public MaskedTextBox maskedTextBoxCEP;
     }
 }

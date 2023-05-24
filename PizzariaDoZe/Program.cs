@@ -22,8 +22,29 @@ namespace PizzariaDoZe
             DbProviderFactories.RegisterFactory("MySql.Data.MySqlClient", MySql.Data.MySqlClient.MySqlClientFactory.Instance);
 
             ApplicationConfiguration.Initialize();
+            ValidaConexaoDB();
             Application.Run(new PaginaPrincipalForm());
 
+        }
+
+        public static void ValidaConexaoDB()
+        {
+            DbProviderFactory factory;
+            try
+            {
+                factory = DbProviderFactories.GetFactory(ConfigurationManager.ConnectionStrings["BD"].ProviderName);
+                using var conexao = factory.CreateConnection();
+                conexao!.ConnectionString = ConfigurationManager.ConnectionStrings["BD"].ConnectionString;
+                using var comando = factory.CreateCommand();
+                comando!.Connection = conexao;
+                conexao.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                new ConfigurarBancoDeDadosForm().ShowDialog();
+                ValidaConexaoDB();
+            }
         }
     }
 }

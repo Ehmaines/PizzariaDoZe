@@ -39,10 +39,9 @@
             btnSalvar.BackColor = Color.FromArgb(114, 138, 244);
             btnSalvar.DialogResult = DialogResult.OK;
             btnSalvar.FlatAppearance.BorderColor = Color.GhostWhite;
-            btnSalvar.Location = new Point(113, 5);
-            btnSalvar.Margin = new Padding(2);
+            btnSalvar.Location = new Point(161, 8);
             btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(102, 25);
+            btnSalvar.Size = new Size(146, 42);
             btnSalvar.TabIndex = 32;
             btnSalvar.Text = "Salvar";
             btnSalvar.UseVisualStyleBackColor = false;
@@ -52,10 +51,9 @@
             btnCancelar.BackColor = Color.FromArgb(114, 138, 244);
             btnCancelar.DialogResult = DialogResult.Cancel;
             btnCancelar.FlatAppearance.BorderColor = Color.GhostWhite;
-            btnCancelar.Location = new Point(7, 4);
-            btnCancelar.Margin = new Padding(2);
+            btnCancelar.Location = new Point(10, 7);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(102, 25);
+            btnCancelar.Size = new Size(146, 42);
             btnCancelar.TabIndex = 33;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
@@ -64,19 +62,21 @@
             // 
             panelBtnCancelarSalvar.Controls.Add(btnCancelar);
             panelBtnCancelarSalvar.Controls.Add(btnSalvar);
-            panelBtnCancelarSalvar.Location = new Point(3, 3);
+            panelBtnCancelarSalvar.Location = new Point(4, 5);
+            panelBtnCancelarSalvar.Margin = new Padding(4, 5, 4, 5);
             panelBtnCancelarSalvar.Name = "panelBtnCancelarSalvar";
-            panelBtnCancelarSalvar.Size = new Size(218, 32);
+            panelBtnCancelarSalvar.Size = new Size(311, 53);
             panelBtnCancelarSalvar.TabIndex = 34;
             // 
             // SaveCloseUserControlForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(39, 39, 41);
             Controls.Add(panelBtnCancelarSalvar);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "SaveCloseUserControlForm";
-            Size = new Size(227, 43);
+            Size = new Size(324, 72);
             panelBtnCancelarSalvar.ResumeLayout(false);
             ResumeLayout(false);
         }

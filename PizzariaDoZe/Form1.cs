@@ -153,6 +153,7 @@ namespace PizzariaDoZe
         private void btnCadastroIngredientes_Click(object sender, EventArgs e)
         {
             cadastroIgrediente.ShowDialog();
+            AtualizarTela();
         }
 
         private void btnCadastroSabores_Click(object sender, EventArgs e)
@@ -323,6 +324,7 @@ namespace PizzariaDoZe
         private void ConfiguraDB(object sender, EventArgs e)
         {
             new ConfigurarBancoDeDadosForm().ShowDialog();
+            ValidaConexaoDB();
         }
 
 
@@ -393,7 +395,9 @@ namespace PizzariaDoZe
                 MessageBox.Show(ex.Message);
             }
         }
-
+        /// <summary>
+        /// Valida conexão com database
+        /// </summary>
         public static void ValidaConexaoDB()
         {
             DbProviderFactory factory;

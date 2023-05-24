@@ -30,7 +30,7 @@
         {
             labelEmail = new Label();
             maskedTxtTelefone = new MaskedTextBox();
-            txtEmail = new TextBox();
+            textBoxEmail = new TextBox();
             labelTelefone = new Label();
             panel1 = new Panel();
             maskedTxtCPF = new MaskedTextBox();
@@ -38,7 +38,7 @@
             labelId = new Label();
             txtFuncionarioID = new TextBox();
             labelNome = new Label();
-            txtNome = new TextBox();
+            textBoxNome = new TextBox();
             labelCadastrarCliente = new Label();
             enderecoUserControlForm1 = new EnderecoUserControlForm();
             saveCloseUserControlForm1 = new SaveCloseUserControlForm();
@@ -62,18 +62,19 @@
             maskedTxtTelefone.ForeColor = Color.FromArgb(39, 39, 41);
             maskedTxtTelefone.Location = new Point(30, 230);
             maskedTxtTelefone.Margin = new Padding(2, 4, 2, 4);
+            maskedTxtTelefone.Mask = "\\(00\\) 90000\\-0000";
             maskedTxtTelefone.Name = "maskedTxtTelefone";
             maskedTxtTelefone.Size = new Size(312, 31);
             maskedTxtTelefone.TabIndex = 23;
             // 
-            // txtEmail
+            // textBoxEmail
             // 
-            txtEmail.ForeColor = Color.FromArgb(39, 39, 41);
-            txtEmail.Location = new Point(30, 315);
-            txtEmail.Margin = new Padding(4, 4, 4, 4);
-            txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(312, 31);
-            txtEmail.TabIndex = 24;
+            textBoxEmail.ForeColor = Color.FromArgb(39, 39, 41);
+            textBoxEmail.Location = new Point(30, 315);
+            textBoxEmail.Margin = new Padding(4);
+            textBoxEmail.Name = "textBoxEmail";
+            textBoxEmail.Size = new Size(312, 31);
+            textBoxEmail.TabIndex = 24;
             // 
             // labelTelefone
             // 
@@ -94,9 +95,9 @@
             panel1.Controls.Add(labelId);
             panel1.Controls.Add(txtFuncionarioID);
             panel1.Controls.Add(labelNome);
-            panel1.Controls.Add(txtNome);
+            panel1.Controls.Add(textBoxNome);
             panel1.Controls.Add(labelTelefone);
-            panel1.Controls.Add(txtEmail);
+            panel1.Controls.Add(textBoxEmail);
             panel1.Controls.Add(maskedTxtTelefone);
             panel1.Controls.Add(labelEmail);
             panel1.Location = new Point(11, 259);
@@ -110,6 +111,7 @@
             maskedTxtCPF.ForeColor = Color.FromArgb(39, 39, 41);
             maskedTxtCPF.Location = new Point(129, 64);
             maskedTxtCPF.Margin = new Padding(2, 4, 2, 4);
+            maskedTxtCPF.Mask = "000\\.000\\.000\\-00";
             maskedTxtCPF.Name = "maskedTxtCPF";
             maskedTxtCPF.Size = new Size(215, 31);
             maskedTxtCPF.TabIndex = 44;
@@ -143,7 +145,7 @@
             txtFuncionarioID.Enabled = false;
             txtFuncionarioID.ForeColor = Color.FromArgb(39, 39, 41);
             txtFuncionarioID.Location = new Point(36, 64);
-            txtFuncionarioID.Margin = new Padding(4, 4, 4, 4);
+            txtFuncionarioID.Margin = new Padding(4);
             txtFuncionarioID.Name = "txtFuncionarioID";
             txtFuncionarioID.Size = new Size(85, 31);
             txtFuncionarioID.TabIndex = 43;
@@ -160,14 +162,14 @@
             labelNome.TabIndex = 45;
             labelNome.Text = "Nome";
             // 
-            // txtNome
+            // textBoxNome
             // 
-            txtNome.ForeColor = Color.FromArgb(39, 39, 41);
-            txtNome.Location = new Point(34, 149);
-            txtNome.Margin = new Padding(4, 4, 4, 4);
-            txtNome.Name = "txtNome";
-            txtNome.Size = new Size(312, 31);
-            txtNome.TabIndex = 46;
+            textBoxNome.ForeColor = Color.FromArgb(39, 39, 41);
+            textBoxNome.Location = new Point(30, 150);
+            textBoxNome.Margin = new Padding(4);
+            textBoxNome.Name = "textBoxNome";
+            textBoxNome.Size = new Size(312, 31);
+            textBoxNome.TabIndex = 46;
             // 
             // labelCadastrarCliente
             // 
@@ -223,7 +225,7 @@
         #endregion
         private Label labelEmail;
         private MaskedTextBox maskedTxtTelefone;
-        private TextBox txtEmail;
+        private TextBox textBoxEmail;
         private Label labelTelefone;
         private Panel panel1;
         private MaskedTextBox maskedTxtCPF;
@@ -231,7 +233,7 @@
         private Label labelId;
         private TextBox txtFuncionarioID;
         private Label labelNome;
-        private TextBox txtNome;
+        private TextBox textBoxNome;
         private Label labelCadastrarCliente;
         private EnderecoUserControlForm enderecoUserControlForm1;
         private SaveCloseUserControlForm saveCloseUserControlForm1;
