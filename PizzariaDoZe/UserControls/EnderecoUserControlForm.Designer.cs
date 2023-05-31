@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             panelCadastroFuncionarioGeral = new Panel();
+            textBoxId = new TextBox();
+            labelId = new Label();
             maskedTextBoxCEP = new MaskedTextBox();
             labelEndereco = new Label();
             labelPais = new Label();
@@ -51,6 +53,8 @@
             // 
             // panelCadastroFuncionarioGeral
             // 
+            panelCadastroFuncionarioGeral.Controls.Add(textBoxId);
+            panelCadastroFuncionarioGeral.Controls.Add(labelId);
             panelCadastroFuncionarioGeral.Controls.Add(maskedTextBoxCEP);
             panelCadastroFuncionarioGeral.Controls.Add(labelEndereco);
             panelCadastroFuncionarioGeral.Controls.Add(labelPais);
@@ -68,19 +72,41 @@
             panelCadastroFuncionarioGeral.Controls.Add(labelLogradouro);
             panelCadastroFuncionarioGeral.Controls.Add(textBoxRua);
             panelCadastroFuncionarioGeral.Controls.Add(labelCEP);
-            panelCadastroFuncionarioGeral.Location = new Point(2, 2);
+            panelCadastroFuncionarioGeral.Location = new Point(6, 2);
             panelCadastroFuncionarioGeral.Margin = new Padding(2);
             panelCadastroFuncionarioGeral.Name = "panelCadastroFuncionarioGeral";
-            panelCadastroFuncionarioGeral.Size = new Size(366, 758);
+            panelCadastroFuncionarioGeral.Size = new Size(366, 818);
             panelCadastroFuncionarioGeral.TabIndex = 9;
+            // 
+            // textBoxId
+            // 
+            textBoxId.ForeColor = Color.FromArgb(39, 39, 41);
+            textBoxId.Location = new Point(31, 95);
+            textBoxId.Margin = new Padding(4);
+            textBoxId.Name = "textBoxId";
+            textBoxId.Size = new Size(87, 31);
+            textBoxId.TabIndex = 44;
+            // 
+            // labelId
+            // 
+            labelId.AutoSize = true;
+            labelId.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelId.ForeColor = Color.GhostWhite;
+            labelId.Location = new Point(34, 59);
+            labelId.Margin = new Padding(2, 0, 2, 0);
+            labelId.Name = "labelId";
+            labelId.Size = new Size(54, 32);
+            labelId.TabIndex = 43;
+            labelId.Text = "CEP";
             // 
             // maskedTextBoxCEP
             // 
-            maskedTextBoxCEP.Location = new Point(28, 107);
+            maskedTextBoxCEP.Location = new Point(31, 165);
             maskedTextBoxCEP.Mask = "00000\\-000";
             maskedTextBoxCEP.Name = "maskedTextBoxCEP";
             maskedTextBoxCEP.Size = new Size(312, 31);
             maskedTextBoxCEP.TabIndex = 26;
+            maskedTextBoxCEP.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             // 
             // labelEndereco
             // 
@@ -99,7 +125,7 @@
             labelPais.AutoSize = true;
             labelPais.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelPais.ForeColor = Color.GhostWhite;
-            labelPais.Location = new Point(31, 658);
+            labelPais.Location = new Point(34, 716);
             labelPais.Margin = new Padding(2, 0, 2, 0);
             labelPais.Name = "labelPais";
             labelPais.Size = new Size(54, 32);
@@ -109,7 +135,7 @@
             // textBoxPais
             // 
             textBoxPais.ForeColor = Color.FromArgb(39, 39, 41);
-            textBoxPais.Location = new Point(28, 694);
+            textBoxPais.Location = new Point(31, 752);
             textBoxPais.Margin = new Padding(4);
             textBoxPais.MaxLength = 20;
             textBoxPais.Name = "textBoxPais";
@@ -121,7 +147,7 @@
             labelEstado.AutoSize = true;
             labelEstado.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelEstado.ForeColor = Color.GhostWhite;
-            labelEstado.Location = new Point(31, 576);
+            labelEstado.Location = new Point(34, 634);
             labelEstado.Margin = new Padding(2, 0, 2, 0);
             labelEstado.Name = "labelEstado";
             labelEstado.Size = new Size(84, 32);
@@ -131,7 +157,7 @@
             // textBoxEstado
             // 
             textBoxEstado.ForeColor = Color.FromArgb(39, 39, 41);
-            textBoxEstado.Location = new Point(28, 612);
+            textBoxEstado.Location = new Point(31, 670);
             textBoxEstado.Margin = new Padding(4);
             textBoxEstado.MaxLength = 20;
             textBoxEstado.Name = "textBoxEstado";
@@ -143,7 +169,7 @@
             labelCidade.AutoSize = true;
             labelCidade.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelCidade.ForeColor = Color.GhostWhite;
-            labelCidade.Location = new Point(31, 490);
+            labelCidade.Location = new Point(34, 548);
             labelCidade.Margin = new Padding(2, 0, 2, 0);
             labelCidade.Name = "labelCidade";
             labelCidade.Size = new Size(88, 32);
@@ -153,7 +179,7 @@
             // textBoxCidade
             // 
             textBoxCidade.ForeColor = Color.FromArgb(39, 39, 41);
-            textBoxCidade.Location = new Point(28, 526);
+            textBoxCidade.Location = new Point(31, 584);
             textBoxCidade.Margin = new Padding(4);
             textBoxCidade.Name = "textBoxCidade";
             textBoxCidade.Size = new Size(312, 31);
@@ -164,7 +190,7 @@
             labelBairro.AutoSize = true;
             labelBairro.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelBairro.ForeColor = Color.GhostWhite;
-            labelBairro.Location = new Point(31, 411);
+            labelBairro.Location = new Point(34, 469);
             labelBairro.Margin = new Padding(2, 0, 2, 0);
             labelBairro.Name = "labelBairro";
             labelBairro.Size = new Size(76, 32);
@@ -174,7 +200,7 @@
             // textBoxBairro
             // 
             textBoxBairro.ForeColor = Color.FromArgb(39, 39, 41);
-            textBoxBairro.Location = new Point(28, 448);
+            textBoxBairro.Location = new Point(31, 506);
             textBoxBairro.Margin = new Padding(4);
             textBoxBairro.Name = "textBoxBairro";
             textBoxBairro.Size = new Size(312, 31);
@@ -185,7 +211,7 @@
             labelComplemento.AutoSize = true;
             labelComplemento.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelComplemento.ForeColor = Color.GhostWhite;
-            labelComplemento.Location = new Point(31, 328);
+            labelComplemento.Location = new Point(34, 386);
             labelComplemento.Margin = new Padding(2, 0, 2, 0);
             labelComplemento.Name = "labelComplemento";
             labelComplemento.Size = new Size(167, 32);
@@ -195,7 +221,7 @@
             // textBoxComplemento
             // 
             textBoxComplemento.ForeColor = Color.FromArgb(39, 39, 41);
-            textBoxComplemento.Location = new Point(28, 362);
+            textBoxComplemento.Location = new Point(31, 420);
             textBoxComplemento.Margin = new Padding(4);
             textBoxComplemento.Name = "textBoxComplemento";
             textBoxComplemento.Size = new Size(312, 31);
@@ -206,7 +232,7 @@
             labelNumero.AutoSize = true;
             labelNumero.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelNumero.ForeColor = Color.GhostWhite;
-            labelNumero.Location = new Point(31, 234);
+            labelNumero.Location = new Point(34, 292);
             labelNumero.Margin = new Padding(2, 0, 2, 0);
             labelNumero.Name = "labelNumero";
             labelNumero.Size = new Size(102, 32);
@@ -216,7 +242,7 @@
             // textBoxNumeroCasa
             // 
             textBoxNumeroCasa.ForeColor = Color.FromArgb(39, 39, 41);
-            textBoxNumeroCasa.Location = new Point(28, 270);
+            textBoxNumeroCasa.Location = new Point(31, 328);
             textBoxNumeroCasa.Margin = new Padding(4);
             textBoxNumeroCasa.Name = "textBoxNumeroCasa";
             textBoxNumeroCasa.Size = new Size(312, 31);
@@ -227,7 +253,7 @@
             labelLogradouro.AutoSize = true;
             labelLogradouro.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelLogradouro.ForeColor = Color.GhostWhite;
-            labelLogradouro.Location = new Point(31, 154);
+            labelLogradouro.Location = new Point(34, 212);
             labelLogradouro.Margin = new Padding(2, 0, 2, 0);
             labelLogradouro.Name = "labelLogradouro";
             labelLogradouro.Size = new Size(137, 32);
@@ -237,7 +263,7 @@
             // textBoxRua
             // 
             textBoxRua.ForeColor = Color.FromArgb(39, 39, 41);
-            textBoxRua.Location = new Point(28, 190);
+            textBoxRua.Location = new Point(31, 248);
             textBoxRua.Margin = new Padding(4);
             textBoxRua.Name = "textBoxRua";
             textBoxRua.Size = new Size(312, 31);
@@ -248,7 +274,7 @@
             labelCEP.AutoSize = true;
             labelCEP.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelCEP.ForeColor = Color.GhostWhite;
-            labelCEP.Location = new Point(31, 72);
+            labelCEP.Location = new Point(34, 130);
             labelCEP.Margin = new Padding(2, 0, 2, 0);
             labelCEP.Name = "labelCEP";
             labelCEP.Size = new Size(54, 32);
@@ -263,7 +289,7 @@
             Controls.Add(panelCadastroFuncionarioGeral);
             Margin = new Padding(2);
             Name = "EnderecoUserControlForm";
-            Size = new Size(372, 766);
+            Size = new Size(372, 828);
             panelCadastroFuncionarioGeral.ResumeLayout(false);
             panelCadastroFuncionarioGeral.PerformLayout();
             ResumeLayout(false);
@@ -308,6 +334,8 @@
         /// </summary>
         public TextBox textBoxRua;
         public Panel panelCadastroFuncionarioGeral;
+        public TextBox textBoxId;
+        private Label labelId;
         public MaskedTextBox maskedTextBoxCEP;
     }
 }

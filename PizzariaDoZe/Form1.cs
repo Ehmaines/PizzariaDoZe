@@ -18,6 +18,9 @@ namespace PizzariaDoZe
         CadastroValorForms cadastroValor;
         CadastroProdutoForms cadastroProduto;
         IngredienteDAO ingredienteDAO;
+        EnderecoDAO enderecoDAO;
+        ClienteDAO clienteDAO;
+        FuncionarioDAO funcionarioDAO;
 
         /// <summary>
         /// Página Principal da aplicação
@@ -29,7 +32,10 @@ namespace PizzariaDoZe
             string provider = ConfigurationManager.ConnectionStrings["BD"].ProviderName;
             string strConnection = ConfigurationManager.ConnectionStrings["BD"].ConnectionString;
             ingredienteDAO = new IngredienteDAO(provider, strConnection);
-            AtualizarTela();
+            enderecoDAO = new EnderecoDAO(provider, strConnection);
+            clienteDAO = new ClienteDAO(provider, strConnection);
+            funcionarioDAO = new FuncionarioDAO(provider, strConnection);
+
             #region idioma/região interface - satellite assembly
             // com base no idioma/região escolhido pelo usuário,
             // ajusta as propriedades dos componentes da tela com base no conteúdo do arquivo resources
@@ -38,17 +44,11 @@ namespace PizzariaDoZe
             this.Text = Properties.Resources.ResourceManager.GetString("txtTituloPrincipal");
             #endregion
 
-            cadastroFuncionario = new CadastroFuncionarioForms();
-            cadastroCliente = new CadastroClienteForms();
-            cadastroIgrediente = new CadastroIngredienteForms();
-            cadastroSabor = new CadastroSaborForms();
-            cadastroValor = new CadastroValorForms();
-            cadastroProduto = new CadastroProdutoForms();
-
             SetEventosBarraLateralInicio();
             SetEventosBarraLateralFuncionarios();
             SetEventosBarraLateralClientes();
             SetEventosBarraLateralIngredientes();
+            SetEventosBarraLateralEnderecos();
             SetEventosBarraLateralSabores();
             SetEventosBarraLateralValores();
             SetEventosBarraLateralProdutos();
@@ -64,11 +64,12 @@ namespace PizzariaDoZe
             inicioToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.F1;
             funcionariosToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.F2;
             clientesToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.F3;
-            ingredientesToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.F4;
-            saboresToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.F5;
-            valoresToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.F6;
-            produtosToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.F7;
-            configuracoesToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.F8;
+            enderecoToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.F4;
+            ingredientesToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.F5;
+            saboresToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.F6;
+            valoresToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.F7;
+            produtosToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.F8;
+            configuracoesToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.F9;
             sairToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.Delete;
         }
 
@@ -77,6 +78,7 @@ namespace PizzariaDoZe
             inicioToolStripMenuItem.Click += new EventHandler(IrParaInicio!);
             funcionariosToolStripMenuItem.Click += new EventHandler(IrParaFuncionarios!);
             clientesToolStripMenuItem.Click += new EventHandler(IrParaClientes!);
+            enderecoToolStripMenuItem.Click += new EventHandler(IrParaEnderecos!);
             ingredientesToolStripMenuItem.Click += new EventHandler(IrParaIngredientes!);
             saboresToolStripMenuItem.Click += new EventHandler(IrParaSabores!);
             valoresToolStripMenuItem.Click += new EventHandler(IrParaValores!);
@@ -103,6 +105,13 @@ namespace PizzariaDoZe
             barraLateralUserControlForm.panelClientes.Click += IrParaClientes;
             barraLateralUserControlForm.labelClientes.Click += IrParaClientes;
             barraLateralUserControlForm.pictureBoxClientes.Click += IrParaClientes;
+        }
+
+        private void SetEventosBarraLateralEnderecos()
+        {
+            barraLateralUserControlForm.panelEnderecos.Click += IrParaEnderecos;
+            barraLateralUserControlForm.labelEnderecos.Click += IrParaEnderecos;
+            barraLateralUserControlForm.pictureBoxEndereco.Click += IrParaEnderecos;
         }
 
         private void SetEventosBarraLateralIngredientes()
@@ -142,32 +151,40 @@ namespace PizzariaDoZe
 
         private void btnCadastroFuncionario_Click(object sender, EventArgs e)
         {
+            cadastroFuncionario = new CadastroFuncionarioForms();
             cadastroFuncionario.ShowDialog();
+            AtualizarTela(GetFuncionarioDataTable());
         }
 
         private void btnCadastroCliente_Click(object sender, EventArgs e)
         {
+            cadastroCliente = new CadastroClienteForms();
             cadastroCliente.ShowDialog();
+            AtualizarTela(GetClienteDataTable());
         }
 
         private void btnCadastroIngredientes_Click(object sender, EventArgs e)
         {
+            cadastroIgrediente = new CadastroIngredienteForms();
             cadastroIgrediente.ShowDialog();
-            AtualizarTela();
+            AtualizarTela(GetIngredienteDataTable());
         }
 
         private void btnCadastroSabores_Click(object sender, EventArgs e)
         {
+            cadastroSabor = new CadastroSaborForms();
             cadastroSabor.ShowDialog();
         }
 
         private void btnCadastroValores_Click(object sender, EventArgs e)
         {
+            cadastroValor = new CadastroValorForms();
             cadastroValor.ShowDialog();
         }
 
         private void btnCadastroProdutos_Click(object sender, EventArgs e)
         {
+            cadastroProduto = new CadastroProdutoForms();
             cadastroProduto.ShowDialog();
         }
 
@@ -216,7 +233,9 @@ namespace PizzariaDoZe
             setTodosCadastrosParaNaoVisiveis();
             setTodasAsCoresDaBarraLateralParaPadrao();
             panelCadastroFuncionario.Visible = true;
+            dataGridViewDados.Visible = true;
             barraLateralUserControlForm.panelFuncionario.BackColor = Color.FromArgb(163, 184, 247);
+            AtualizarTela(GetFuncionarioDataTable());
         }
 
         private void IrParaClientes(object? sender, EventArgs e)
@@ -224,7 +243,18 @@ namespace PizzariaDoZe
             setTodosCadastrosParaNaoVisiveis();
             setTodasAsCoresDaBarraLateralParaPadrao();
             panelCadastroCliente.Visible = true;
+            dataGridViewDados.Visible = true;
             barraLateralUserControlForm.panelClientes.BackColor = Color.FromArgb(163, 184, 247);
+            AtualizarTela(GetClienteDataTable());
+        }
+
+        private void IrParaEnderecos(object? sender, EventArgs e)
+        {
+            setTodosCadastrosParaNaoVisiveis();
+            setTodasAsCoresDaBarraLateralParaPadrao();
+            dataGridViewDados.Visible = true;
+            barraLateralUserControlForm.panelEnderecos.BackColor = Color.FromArgb(163, 184, 247);
+            AtualizarTela(GetEnderecoDataTable());
         }
 
         private void IrParaIngredientes(object? sender, EventArgs e)
@@ -234,6 +264,7 @@ namespace PizzariaDoZe
             panelCadastroIngrediente.Visible = true;
             dataGridViewDados.Visible = true;
             barraLateralUserControlForm.panelIngredientes.BackColor = Color.FromArgb(163, 184, 247);
+            AtualizarTela(GetIngredienteDataTable());
         }
 
         private void IrParaSabores(object? sender, EventArgs e)
@@ -277,6 +308,7 @@ namespace PizzariaDoZe
             barraLateralUserControlForm.panelInicio.BackColor = Color.FromArgb(88, 95, 105);
             barraLateralUserControlForm.panelFuncionario.BackColor = Color.FromArgb(88, 95, 105);
             barraLateralUserControlForm.panelClientes.BackColor = Color.FromArgb(88, 95, 105);
+            barraLateralUserControlForm.panelEnderecos.BackColor = Color.FromArgb(88, 95, 105);
             barraLateralUserControlForm.panelIngredientes.BackColor = Color.FromArgb(88, 95, 105);
             barraLateralUserControlForm.panelSabores.BackColor = Color.FromArgb(88, 95, 105);
             barraLateralUserControlForm.panelConfiguracoes.BackColor = Color.FromArgb(88, 95, 105);
@@ -320,6 +352,34 @@ namespace PizzariaDoZe
             // obtém a connectionString e atualiza em tela
             configuracoesUserControlForm.textBoxStringConnection.Text = connectionStringSettings.ConnectionString;
         }
+
+        #region ReturnItensDAO
+
+        private DataTable GetIngredienteDataTable()
+        {
+            var ingrediente = new Ingrediente();
+            return ingredienteDAO.Buscar(ingrediente);
+        }
+
+        private DataTable GetEnderecoDataTable()
+        {
+            var endereco = new Endereco();
+            return enderecoDAO.Buscar(endereco);
+        }
+
+        private DataTable GetClienteDataTable()
+        {
+            var cliente = new Cliente();
+            return clienteDAO.Buscar(cliente);
+        }
+
+        private DataTable GetFuncionarioDataTable()
+        {
+            var funcionario = new Funcionario();
+            return funcionarioDAO.Buscar(funcionario);
+        }
+
+        #endregion
 
         private void ConfiguraDB(object sender, EventArgs e)
         {
@@ -376,14 +436,16 @@ namespace PizzariaDoZe
             Application.Exit();
         }
 
-        private void AtualizarTela()
+        #region AtualizaTela
+
+        private void AtualizarTela(DataTable linhas)
         {
             //Instância e Preenche o objeto com os dados da view
-            var ingrediente = new Ingrediente();
+
             try
             {
                 //chama o método para buscar todos os dados da nossa camada model
-                DataTable linhas = ingredienteDAO.Buscar(ingrediente);
+
                 // seta o datasouce do dataGridView com os dados retornados
                 dataGridViewDados.Columns.Clear();
                 dataGridViewDados.AutoGenerateColumns = true;
@@ -395,6 +457,7 @@ namespace PizzariaDoZe
                 MessageBox.Show(ex.Message);
             }
         }
+        #endregion
         /// <summary>
         /// Valida conexão com database
         /// </summary>
@@ -415,6 +478,39 @@ namespace PizzariaDoZe
                 MessageBox.Show(ex.Message);
                 new ConfigurarBancoDeDadosForm().ShowDialog();
                 ValidaConexaoDB();
+            }
+        }
+
+        private void dataGridViewDados_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (e.RowIndex == this.dataGridViewDados.NewRowIndex || e.Value.ToString().Trim().Length == 0)
+            {
+                return;
+            }
+            if (this.dataGridViewDados.Columns[e.ColumnIndex].Name.Equals("Grupo"))
+            {
+                e.Value = EnumExtensions.GetDescription((EnumFuncionarioGrupo)int.Parse(e.Value.ToString()));
+            }
+            else if (this.dataGridViewDados.Columns[e.ColumnIndex].Name.Equals("CPF"))
+            {
+                long value = long.Parse(e.Value.ToString().Replace(" ", ""));
+                e.Value = string.Format(@"{0:000\.000\.000\-00}", value);
+            }
+            else if (this.dataGridViewDados.Columns[e.ColumnIndex].Name.Equals("CEP"))
+            {
+                long value = long.Parse(e.Value.ToString().Replace(" ", ""));
+                e.Value = string.Format(@"{0:00\.000\-000}", value);
+            }
+            else if (this.dataGridViewDados.Columns[e.ColumnIndex].Name.Equals("Telefone"))
+            {
+                long value = long.Parse(e.Value.ToString().Replace(" ", ""));
+                e.Value = string.Format(@"{0:(00) 00000\-0000}", value);
+            }
+            else if (this.dataGridViewDados.Columns[e.ColumnIndex].Name.Equals("Valor"))
+            {
+                // formata valor numérico com duas casa decimais
+                double d = double.Parse(e.Value.ToString());
+                e.Value = d.ToString("N2");
             }
         }
     }

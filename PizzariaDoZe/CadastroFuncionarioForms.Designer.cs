@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            enderecoUserControlForm1 = new EnderecoUserControlForm();
+            userControlEndereco = new EnderecoUserControlForm();
             labelCadastrarFuncionario = new Label();
             panel1 = new Panel();
             labelGrupo = new Label();
@@ -63,14 +63,14 @@
             panel2.SuspendLayout();
             SuspendLayout();
             // 
-            // enderecoUserControlForm1
+            // userControlEndereco
             // 
-            enderecoUserControlForm1.BackColor = Color.FromArgb(39, 39, 41);
-            enderecoUserControlForm1.Location = new Point(520, 93);
-            enderecoUserControlForm1.Margin = new Padding(1);
-            enderecoUserControlForm1.Name = "enderecoUserControlForm1";
-            enderecoUserControlForm1.Size = new Size(364, 754);
-            enderecoUserControlForm1.TabIndex = 66;
+            userControlEndereco.BackColor = Color.FromArgb(39, 39, 41);
+            userControlEndereco.Location = new Point(520, 93);
+            userControlEndereco.Margin = new Padding(1);
+            userControlEndereco.Name = "userControlEndereco";
+            userControlEndereco.Size = new Size(364, 800);
+            userControlEndereco.TabIndex = 66;
             // 
             // labelCadastrarFuncionario
             // 
@@ -241,6 +241,7 @@
             maskedTxtVerificarSenha.PasswordChar = '*';
             maskedTxtVerificarSenha.Size = new Size(312, 31);
             maskedTxtVerificarSenha.TabIndex = 53;
+            maskedTxtVerificarSenha.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             // 
             // labelVerificarSenha
             // 
@@ -263,6 +264,7 @@
             maskedTxtSenha.PasswordChar = '*';
             maskedTxtSenha.Size = new Size(312, 31);
             maskedTxtSenha.TabIndex = 51;
+            maskedTxtSenha.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             // 
             // labelSenha
             // 
@@ -306,6 +308,7 @@
             maskedTxtCPF.Name = "maskedTxtCPF";
             maskedTxtCPF.Size = new Size(215, 31);
             maskedTxtCPF.TabIndex = 44;
+            maskedTxtCPF.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             // 
             // labelCPF
             // 
@@ -388,9 +391,11 @@
             maskedTxtTelefone.ForeColor = Color.FromArgb(39, 39, 41);
             maskedTxtTelefone.Location = new Point(34, 999);
             maskedTxtTelefone.Margin = new Padding(2, 4, 2, 4);
+            maskedTxtTelefone.Mask = "\\(00\\) 90000\\-0000";
             maskedTxtTelefone.Name = "maskedTxtTelefone";
             maskedTxtTelefone.Size = new Size(312, 31);
             maskedTxtTelefone.TabIndex = 64;
+            maskedTxtTelefone.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             // 
             // labelEmail
             // 
@@ -430,7 +435,7 @@
             Controls.Add(panel2);
             Controls.Add(saveCloseUserControlForm1);
             Controls.Add(panel1);
-            Controls.Add(enderecoUserControlForm1);
+            Controls.Add(userControlEndereco);
             ForeColor = SystemColors.ControlText;
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             KeyPreview = true;
@@ -447,7 +452,7 @@
 
         #endregion
 
-        private EnderecoUserControlForm enderecoUserControlForm1;
+        private EnderecoUserControlForm userControlEndereco;
         private Label labelCadastrarFuncionario;
         private Panel panel1;
         private MaskedTextBox maskedTxtCPF;

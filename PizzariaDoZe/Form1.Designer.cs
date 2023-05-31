@@ -57,6 +57,7 @@
             inicioToolStripMenuItem = new ToolStripMenuItem();
             funcionariosToolStripMenuItem = new ToolStripMenuItem();
             clientesToolStripMenuItem = new ToolStripMenuItem();
+            enderecoToolStripMenuItem = new ToolStripMenuItem();
             ingredientesToolStripMenuItem = new ToolStripMenuItem();
             saboresToolStripMenuItem = new ToolStripMenuItem();
             valoresToolStripMenuItem = new ToolStripMenuItem();
@@ -368,7 +369,7 @@
             // 
             configuracoesUserControlForm.BackColor = Color.FromArgb(39, 39, 41);
             configuracoesUserControlForm.Location = new Point(324, 179);
-            configuracoesUserControlForm.Margin = new Padding(5, 5, 5, 5);
+            configuracoesUserControlForm.Margin = new Padding(5);
             configuracoesUserControlForm.Name = "configuracoesUserControlForm";
             configuracoesUserControlForm.Size = new Size(1544, 824);
             configuracoesUserControlForm.TabIndex = 3;
@@ -376,9 +377,9 @@
             // contextMenuStripGeral
             // 
             contextMenuStripGeral.ImageScalingSize = new Size(24, 24);
-            contextMenuStripGeral.Items.AddRange(new ToolStripItem[] { inicioToolStripMenuItem, funcionariosToolStripMenuItem, clientesToolStripMenuItem, ingredientesToolStripMenuItem, saboresToolStripMenuItem, valoresToolStripMenuItem, produtosToolStripMenuItem, configuracoesToolStripMenuItem, sairToolStripMenuItem });
+            contextMenuStripGeral.Items.AddRange(new ToolStripItem[] { inicioToolStripMenuItem, funcionariosToolStripMenuItem, clientesToolStripMenuItem, enderecoToolStripMenuItem, ingredientesToolStripMenuItem, saboresToolStripMenuItem, valoresToolStripMenuItem, produtosToolStripMenuItem, configuracoesToolStripMenuItem, sairToolStripMenuItem });
             contextMenuStripGeral.Name = "contextMenuStripGeral";
-            contextMenuStripGeral.Size = new Size(199, 292);
+            contextMenuStripGeral.Size = new Size(199, 324);
             // 
             // inicioToolStripMenuItem
             // 
@@ -397,6 +398,12 @@
             clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
             clientesToolStripMenuItem.Size = new Size(198, 32);
             clientesToolStripMenuItem.Text = "Clientes";
+            // 
+            // enderecoToolStripMenuItem
+            // 
+            enderecoToolStripMenuItem.Name = "enderecoToolStripMenuItem";
+            enderecoToolStripMenuItem.Size = new Size(198, 32);
+            enderecoToolStripMenuItem.Text = "Endereço";
             // 
             // ingredientesToolStripMenuItem
             // 
@@ -478,13 +485,14 @@
             dataGridViewDados.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dataGridViewDados.BackgroundColor = Color.FromArgb(39, 39, 41);
             dataGridViewDados.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewDados.Location = new Point(354, 236);
-            dataGridViewDados.Margin = new Padding(4, 4, 4, 4);
+            dataGridViewDados.Location = new Point(333, 203);
+            dataGridViewDados.Margin = new Padding(4);
             dataGridViewDados.Name = "dataGridViewDados";
             dataGridViewDados.RowHeadersWidth = 51;
             dataGridViewDados.RowTemplate.Height = 29;
             dataGridViewDados.Size = new Size(1509, 766);
             dataGridViewDados.TabIndex = 20;
+            dataGridViewDados.CellFormatting += dataGridViewDados_CellFormatting;
             // 
             // PaginaPrincipalForm
             // 
@@ -578,5 +586,6 @@
         public NotifyIcon notifyIconSystemTray;
         public ContextMenuStrip contextMenuStripSystemStray;
         private DataGridView dataGridViewDados;
+        private ToolStripMenuItem enderecoToolStripMenuItem;
     }
 }

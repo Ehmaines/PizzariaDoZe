@@ -40,7 +40,7 @@
             labelNome = new Label();
             textBoxNome = new TextBox();
             labelCadastrarCliente = new Label();
-            enderecoUserControlForm1 = new EnderecoUserControlForm();
+            userControlEndereco = new EnderecoUserControlForm();
             saveCloseUserControlForm1 = new SaveCloseUserControlForm();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -66,6 +66,7 @@
             maskedTxtTelefone.Name = "maskedTxtTelefone";
             maskedTxtTelefone.Size = new Size(312, 31);
             maskedTxtTelefone.TabIndex = 23;
+            maskedTxtTelefone.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             // 
             // textBoxEmail
             // 
@@ -115,6 +116,7 @@
             maskedTxtCPF.Name = "maskedTxtCPF";
             maskedTxtCPF.Size = new Size(215, 31);
             maskedTxtCPF.TabIndex = 44;
+            maskedTxtCPF.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             // 
             // labelCPF
             // 
@@ -183,19 +185,19 @@
             labelCadastrarCliente.TabIndex = 10;
             labelCadastrarCliente.Text = "Cadastro de Clientes";
             // 
-            // enderecoUserControlForm1
+            // userControlEndereco
             // 
-            enderecoUserControlForm1.BackColor = Color.FromArgb(39, 39, 41);
-            enderecoUserControlForm1.Location = new Point(388, 76);
-            enderecoUserControlForm1.Margin = new Padding(1);
-            enderecoUserControlForm1.Name = "enderecoUserControlForm1";
-            enderecoUserControlForm1.Size = new Size(358, 736);
-            enderecoUserControlForm1.TabIndex = 33;
+            userControlEndereco.BackColor = Color.FromArgb(39, 39, 41);
+            userControlEndereco.Location = new Point(388, 76);
+            userControlEndereco.Margin = new Padding(1);
+            userControlEndereco.Name = "userControlEndereco";
+            userControlEndereco.Size = new Size(358, 800);
+            userControlEndereco.TabIndex = 33;
             // 
             // saveCloseUserControlForm1
             // 
             saveCloseUserControlForm1.BackColor = Color.FromArgb(39, 39, 41);
-            saveCloseUserControlForm1.Location = new Point(421, 820);
+            saveCloseUserControlForm1.Location = new Point(422, 906);
             saveCloseUserControlForm1.Margin = new Padding(4, 6, 4, 6);
             saveCloseUserControlForm1.Name = "saveCloseUserControlForm1";
             saveCloseUserControlForm1.Size = new Size(324, 71);
@@ -206,9 +208,9 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(39, 39, 41);
-            ClientSize = new Size(748, 891);
+            ClientSize = new Size(753, 984);
             Controls.Add(saveCloseUserControlForm1);
-            Controls.Add(enderecoUserControlForm1);
+            Controls.Add(userControlEndereco);
             Controls.Add(labelCadastrarCliente);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
@@ -235,7 +237,7 @@
         private Label labelNome;
         private TextBox textBoxNome;
         private Label labelCadastrarCliente;
-        private EnderecoUserControlForm enderecoUserControlForm1;
+        private EnderecoUserControlForm userControlEndereco;
         private SaveCloseUserControlForm saveCloseUserControlForm1;
     }
 }
