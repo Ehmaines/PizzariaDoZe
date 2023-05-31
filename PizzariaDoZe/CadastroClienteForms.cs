@@ -100,6 +100,7 @@ namespace PizzariaDoZe
                 userControlEndereco.textBoxPais.Text = "";
                 foreach (DataRow row in linhas.Rows)
                 {
+                    userControlEndereco.textBoxId.Text = row["id"].ToString();
                     userControlEndereco.maskedTextBoxCEP.Text = row["cep"].ToString();
                     userControlEndereco.textBoxRua.Text = row["logradouro"].ToString();
                     userControlEndereco.textBoxBairro.Text = row["bairro"].ToString();
