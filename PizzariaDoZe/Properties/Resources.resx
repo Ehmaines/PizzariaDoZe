@@ -251,7 +251,7 @@
     <value>Cadastrar Sabor</value>
   </data>
   <data name="labelCadastrarValor.Text" xml:space="preserve">
-    <value>Cadastrar Sabor</value>
+    <value>Cadastrar Valor</value>
   </data>
   <data name="btnCancelar.Text" xml:space="preserve">
     <value>Cancelar</value>

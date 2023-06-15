@@ -316,7 +316,7 @@ namespace PizzariaDoZe.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cadastrar Sabor.
+        ///   Looks up a localized string similar to Cadastrar Valor.
         /// </summary>
         internal static string labelCadastrarValor_Text {
             get {

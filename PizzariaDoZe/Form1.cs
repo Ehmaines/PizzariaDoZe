@@ -3,6 +3,7 @@ using PizzariaDoZe_DAO;
 using System.Configuration;
 using System.Data;
 using System.Data.Common;
+using System.Text;
 
 namespace PizzariaDoZe
 {
@@ -21,6 +22,9 @@ namespace PizzariaDoZe
         EnderecoDAO enderecoDAO;
         ClienteDAO clienteDAO;
         FuncionarioDAO funcionarioDAO;
+        SaborDAO saborDAO;
+        ValorDAO valorDAO;
+        ProdutoDAO produtoDAO;
 
         /// <summary>
         /// Página Principal da aplicação
@@ -35,6 +39,9 @@ namespace PizzariaDoZe
             enderecoDAO = new EnderecoDAO(provider, strConnection);
             clienteDAO = new ClienteDAO(provider, strConnection);
             funcionarioDAO = new FuncionarioDAO(provider, strConnection);
+            saborDAO = new SaborDAO(provider, strConnection);
+            valorDAO = new ValorDAO(provider, strConnection);
+            produtoDAO = new ProdutoDAO(provider, strConnection);
 
             #region idioma/região interface - satellite assembly
             // com base no idioma/região escolhido pelo usuário,
@@ -174,18 +181,21 @@ namespace PizzariaDoZe
         {
             cadastroSabor = new CadastroSaborForms();
             cadastroSabor.ShowDialog();
+            AtualizarTela(GetSaborDataTable());
         }
 
         private void btnCadastroValores_Click(object sender, EventArgs e)
         {
             cadastroValor = new CadastroValorForms();
             cadastroValor.ShowDialog();
+            AtualizarTela(GetValorDataTable());
         }
 
         private void btnCadastroProdutos_Click(object sender, EventArgs e)
         {
             cadastroProduto = new CadastroProdutoForms();
             cadastroProduto.ShowDialog();
+            AtualizarTela(GetProdutoDataTable());
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -272,7 +282,9 @@ namespace PizzariaDoZe
             setTodosCadastrosParaNaoVisiveis();
             setTodasAsCoresDaBarraLateralParaPadrao();
             panelCadastroSabor.Visible = true;
+            dataGridViewDados.Visible = true;
             barraLateralUserControlForm.panelSabores.BackColor = Color.FromArgb(163, 184, 247);
+            AtualizarTela(GetSaborDataTable());
         }
 
         private void IrParaValores(object? sender, EventArgs e)
@@ -281,7 +293,9 @@ namespace PizzariaDoZe
             setTodasAsCoresDaBarraLateralParaPadrao();
             //TODO: Alterar aqui para Valores
             panelCadastroValor.Visible = true;
+            dataGridViewDados.Visible = true;
             barraLateralUserControlForm.panelValores.BackColor = Color.FromArgb(163, 184, 247);
+            AtualizarTela(GetValorDataTable());
         }
 
         private void IrParaProdutos(object? sender, EventArgs e)
@@ -290,7 +304,9 @@ namespace PizzariaDoZe
             setTodasAsCoresDaBarraLateralParaPadrao();
             //TODO: Alterar aqui para Produtos
             panelCadastroProduto.Visible = true;
+            dataGridViewDados.Visible = true;
             barraLateralUserControlForm.panelProdutos.BackColor = Color.FromArgb(163, 184, 247);
+            AtualizarTela(GetProdutoDataTable());
         }
 
         private void IrParaConfiguracoes(object? sender, EventArgs e)
@@ -359,6 +375,24 @@ namespace PizzariaDoZe
         {
             var ingrediente = new Ingrediente();
             return ingredienteDAO.Buscar(ingrediente);
+        }
+
+        private DataTable GetSaborDataTable()
+        {
+            var sabor = new Sabor();
+            return saborDAO.Buscar(sabor);
+        }
+        
+        private DataTable GetValorDataTable()
+        {
+            var valor = new Valor();
+            return valorDAO.Buscar(valor);
+        }    
+        
+        private DataTable GetProdutoDataTable()
+        {
+            var produto = new Produto();
+            return produtoDAO.Buscar(produto);
         }
 
         private DataTable GetEnderecoDataTable()
@@ -490,6 +524,18 @@ namespace PizzariaDoZe
             if (this.dataGridViewDados.Columns[e.ColumnIndex].Name.Equals("Grupo"))
             {
                 e.Value = EnumExtensions.GetDescription((EnumFuncionarioGrupo)int.Parse(e.Value.ToString()));
+            }
+            else if (this.dataGridViewDados.Columns[e.ColumnIndex].Name.Equals("Categoria"))
+            {
+                e.Value = EnumExtensions.GetDescription((EnumSaborCategoria)char.Parse(e.Value.ToString()));
+            }
+            else if (this.dataGridViewDados.Columns[e.ColumnIndex].Name.Equals("Tipo"))
+            {
+                e.Value = EnumExtensions.GetDescription((EnumSaborCategoria)char.Parse(e.Value.ToString()));
+            }
+            else if (this.dataGridViewDados.Columns[e.ColumnIndex].Name.Equals("Tipo Produto"))
+            {
+                e.Value = EnumExtensions.GetDescription((EnumProdutoTipo)char.Parse(e.Value.ToString()));
             }
             else if (this.dataGridViewDados.Columns[e.ColumnIndex].Name.Equals("CPF"))
             {

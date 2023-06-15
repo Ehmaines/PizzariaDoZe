@@ -1,6 +1,8 @@
-﻿using System;
+﻿using PizzariaDoZe_DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -15,6 +17,7 @@ namespace PizzariaDoZe
     /// </summary>
     public partial class CadastroValorForms : Form
     {
+        private ValorDAO valorDAO;
         /// <summary>
         /// Formulário de Cadastro de Valores
         /// </summary>
@@ -28,6 +31,51 @@ namespace PizzariaDoZe
             //ajuste manual de campos ou mensagens para o usuário que não puderam ser automatizadas acima
             this.Text = Properties.Resources.ResourceManager.GetString("txtTituloPrincipal");
             #endregion
+
+            CarregaEnumListBox();
+
+            // pega os dados do banco de dados
+            string provider = ConfigurationManager.ConnectionStrings["BD"].ProviderName;
+            string strConnection =
+            ConfigurationManager.ConnectionStrings["BD"].ConnectionString;
+            // cria a instancia da classe da model
+            valorDAO = new ValorDAO(provider, strConnection);
+
+            saveCloseUserControlForm1.btnSalvar.Click += ButtonSalvar_Click!;
+        }
+
+        private void CarregaEnumListBox()
+        {
+            //popular listBoxTipo
+            listBoxTamanho.Items.Clear();
+            listBoxTamanho.DataSource = Enum.GetValues(typeof(EnumValorTamanho));
+            //popular listBoxCategoria
+            listBoxCategoria.Items.Clear();
+            listBoxCategoria.DataSource = Enum.GetValues(typeof(EnumSaborCategoria));
+        }
+
+        private void ButtonSalvar_Click(object? sender, EventArgs e)
+        {
+
+            //Instância e Preenche o objeto com os dados da view
+            var valor = new Valor
+            {
+                Id = 0,
+                Tamanho = (char)(EnumValorTamanho)Enum.Parse(typeof(EnumValorTamanho), listBoxTamanho.Text),
+                Categoria = (char)(EnumSaborCategoria)Enum.Parse(typeof(EnumSaborCategoria), listBoxCategoria.Text),
+                ValorPizza = decimal.Parse(txtValor.Text),
+                ValorBorda = decimal.Parse(txtValorBorda.Text),
+            };
+            try
+            {
+                // chama o método para inserir da camada model
+                valorDAO.Inserir(valor);
+                MessageBox.Show("Dados inseridos com sucesso!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
